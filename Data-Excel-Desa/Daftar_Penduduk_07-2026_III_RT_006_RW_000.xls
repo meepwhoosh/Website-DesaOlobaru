@@ -1,0 +1,2006 @@
+﻿<table align="center" border="1" >
+                <thead>
+                    <tr>
+                        <td style="background: #f0f7ff; font-weight: bold; color: #2c5282;">No.Kartu Keluarga</td>
+                        <td style="background: #fff0f0; font-weight: bold; color: #822727;">No. KTP-e/NIK</td>
+                        <td style="background: #f0fff4; font-weight: bold; color: #276749;">SHDK</td>
+                        <td style="background: #faf5ff; font-weight: bold; color: #553c9a;">Nama Lengkap</td>
+                        <td style="background: #fff7ed; font-weight: bold; color: #9c4221;">Tempat Lahir</td>
+                        <td style="background: #fff7ed; font-weight: bold; color: #9c4221;">Tanggal Lahir</td>
+                        <td style="background: #fff0f0; font-weight: bold; color: #822727;">Jenis Kelamin</td>
+                        <td style="background: #f0fff4; font-weight: bold; color: #276749;">Agama</td>
+                        <td style="background: #faf5ff; font-weight: bold; color: #553c9a;">Status</td>
+                        <td style="background: #f0f7ff; font-weight: bold; color: #2c5282;">Pendidikan</td>
+                        <td style="background: #fff7ed; font-weight: bold; color: #9c4221;">Pekerjaan</td>
+                        <td style="background: #faf5ff; font-weight: bold; color: #553c9a;">Nama Ibu</td>
+                        <td style="background: #faf5ff; font-weight: bold; color: #553c9a;">Nama Ayah</td>
+                        <td style="background: #f0f7ff; font-weight: bold; color: #2c5282;">Dusun</td>
+                        <td style="background: #f0fff4; font-weight: bold; color: #276749;">RT/RW</td>
+                    </tr>
+                </thead>
+                <tbody><tr style="background-color: #F0F7FF;">
+                        <td>_7208110202260003</td>
+                        <td>_7208112005050002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>JUMARDIN</td>
+                        <td>PARIGI</td>
+                        <td>20/05/2005</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN TERCATAT</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>BURUH TANI/PERKEBUNAN</td>
+                        <td>MASNA</td>
+                        <td>ASRUDIN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7208110202260003</td>
+                        <td>_7208115710050001</td>
+                        <td>ISTRI</td>
+                        <td>NORMA LATURISI</td>
+                        <td>PARIGI</td>
+                        <td>07/10/2005</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN TERCATAT</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>HASIMA</td>
+                        <td>IRSAN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7208110202260003</td>
+                        <td>_7208115612240001</td>
+                        <td>ANAK</td>
+                        <td>ARQIYA NAHWA</td>
+                        <td>PARIGI MOUTONG</td>
+                        <td>16/12/2024</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>NORMA LATURISI</td>
+                        <td>JUMARDIN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208110502080100</td>
+                        <td>_7208110107760025</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>JUSMAN ALIKUMPA</td>
+                        <td>UNA-UNA</td>
+                        <td>07/01/1976</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>JAMURIA</td>
+                        <td>ALIKUMPA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208110502080100</td>
+                        <td>_7208114302720001</td>
+                        <td>ISTRI</td>
+                        <td>HASNA SAURI KADENTINA</td>
+                        <td>AMPANA</td>
+                        <td>03/02/1892</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>JAIDA</td>
+                        <td>SAURI KADENTINA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208110502080100</td>
+                        <td>_7208111003980003</td>
+                        <td>ANAK</td>
+                        <td>FANDI</td>
+                        <td>OLOBARU</td>
+                        <td>10/03/1998</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>BURUH HARIAN LEPAS</td>
+                        <td>HASNA SAURI KADENTINA</td>
+                        <td>JUSMAN ALIKUMPA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208110502080100</td>
+                        <td>_7208114810000001</td>
+                        <td>ANAK</td>
+                        <td>FATNI</td>
+                        <td>OLOBARU</td>
+                        <td>08/10/2000</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>BURUH HARIAN LEPAS</td>
+                        <td>HASNA SAURI KADENTINA</td>
+                        <td>JUSMAN ALIKUMPA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208110502080100</td>
+                        <td>_7208114906060001</td>
+                        <td>ANAK</td>
+                        <td>FARADILA</td>
+                        <td>OLOBARU</td>
+                        <td>09/06/2006</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>HASNA SAURI KADENTINA</td>
+                        <td>JUSMAN ALIKUMPA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208110502080103</td>
+                        <td>_7208111903740001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>ALAMSYAH</td>
+                        <td>AMPANA</td>
+                        <td>19/03/1973</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>JAIDA</td>
+                        <td>SAHURI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208110502080103</td>
+                        <td>_7208115908830002</td>
+                        <td>ISTRI</td>
+                        <td>SABARIA</td>
+                        <td>AMPANA</td>
+                        <td>19/08/1983</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>DAHARIA</td>
+                        <td>LEKANONDO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208110502080103</td>
+                        <td>_7208116607030001</td>
+                        <td>ANAK</td>
+                        <td>RISKA</td>
+                        <td>AMPANA</td>
+                        <td>26/07/2003</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>SABARIA</td>
+                        <td>ALAMSYAH</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208110502080103</td>
+                        <td>_7208110712070002</td>
+                        <td>ANAK</td>
+                        <td>MUHAMAD RIFKAL</td>
+                        <td>OLOBARU</td>
+                        <td>07/12/2007</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>SABARIA</td>
+                        <td>ALAMSYAH</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208110502080107</td>
+                        <td>_7208112912740001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>SAMSUDIN A.N.A. AKASE</td>
+                        <td>PASUNGI</td>
+                        <td>29/12/1974</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>DAIYA</td>
+                        <td>AHNI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208110502080107</td>
+                        <td>_7208115708790002</td>
+                        <td>ISTRI</td>
+                        <td>ZAENAB BUHARI</td>
+                        <td>UNA UNA</td>
+                        <td>17/08/1979</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>NOU</td>
+                        <td>BUHARI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208110502080107</td>
+                        <td>_7208116910010001</td>
+                        <td>ANAK</td>
+                        <td>NOERMAYANTI A.N.A. AKASE</td>
+                        <td>MANTANGISI</td>
+                        <td>29/10/2001</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>DIPLOMA IV/STRATA I</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>ZAENAB BUHARI</td>
+                        <td>SAMSUDIN A.N.A. AKASE</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208110502080107</td>
+                        <td>_7208114408060002</td>
+                        <td>ANAK</td>
+                        <td>RUKHMIATI AKASE</td>
+                        <td>AMPANA</td>
+                        <td>04/08/2006</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>ZAENAB BUHARI</td>
+                        <td>SAMSUDIN A.N.A. AKASE</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208110502080107</td>
+                        <td>_7208117107170002</td>
+                        <td>ANAK</td>
+                        <td>ASSYIFA AZZAHRA S. AKASE</td>
+                        <td>PARIGI</td>
+                        <td>31/07/2017</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TK</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>ZAENAB BUHARI</td>
+                        <td>SAMSUDIN A.N.A. AKASE</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208110502080113</td>
+                        <td>_7208110202600001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>BAHYUDIN PEVOKE</td>
+                        <td>UNA UNA</td>
+                        <td>02/02/1960</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>-</td>
+                        <td>PEVOKE</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208110502080113</td>
+                        <td>_7208116010690002</td>
+                        <td>ISTRI</td>
+                        <td>RITA</td>
+                        <td>UNA UNA</td>
+                        <td>20/10/1969</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>-</td>
+                        <td>BUHARI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208110502080113</td>
+                        <td>_7208112006930001</td>
+                        <td>ANAK</td>
+                        <td>LUKMAN</td>
+                        <td>OLOBARU</td>
+                        <td>20/06/1993</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>RITA</td>
+                        <td>BAHYUDIN PEVOKE</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208110502080113</td>
+                        <td>_7208115806050003</td>
+                        <td>ANAK</td>
+                        <td>ISMA</td>
+                        <td>OLOBARU</td>
+                        <td>18/06/2005</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>RITA</td>
+                        <td>BAHYUDIN PEVOKE</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208110502080113</td>
+                        <td>_7208111010070003</td>
+                        <td>ANAK</td>
+                        <td>MUH. KADIR</td>
+                        <td>OLOBARU</td>
+                        <td>10/10/2007</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>RITA</td>
+                        <td>BAHYUDIN PEVOKE</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208110502080126</td>
+                        <td>_7208111202630001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>MUHLIS</td>
+                        <td>PARIGI</td>
+                        <td>02/02/1963</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>SARINDITU</td>
+                        <td>LATURISI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208110502080126</td>
+                        <td>_7208114302690002</td>
+                        <td>ISTRI</td>
+                        <td>ANCEASA</td>
+                        <td>PARIGI</td>
+                        <td>03/02/1969</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>ANI</td>
+                        <td>SAUA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208110502080126</td>
+                        <td>_7208114310930001</td>
+                        <td>ANAK</td>
+                        <td>ASMAINA</td>
+                        <td>PARIGI</td>
+                        <td>03/10/1993</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>ANCEASA</td>
+                        <td>MUHLIS</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208110502080126</td>
+                        <td>_7208115811960001</td>
+                        <td>ANAK</td>
+                        <td>IMA</td>
+                        <td>PARIGI</td>
+                        <td>18/11/1996</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>ANCEASA</td>
+                        <td>MUHLIS</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208110502080126</td>
+                        <td>_7208114710990002</td>
+                        <td>ANAK</td>
+                        <td>ARIMA</td>
+                        <td>PARIGI</td>
+                        <td>07/10/1999</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>BURUH HARIAN LEPAS</td>
+                        <td>ANCEASA</td>
+                        <td>MUHLIS</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208110502080126</td>
+                        <td>_7208110107470013</td>
+                        <td>MERTUA</td>
+                        <td>ASRUDIN</td>
+                        <td>PARIGI</td>
+                        <td>07/01/1947</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>CERAI MATI</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208110502080129</td>
+                        <td>_7208111304720001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>HAMKA BALANGO</td>
+                        <td>AMPANA</td>
+                        <td>13/04/1972</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>SAMUIA</td>
+                        <td>RAHMAN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208110502080129</td>
+                        <td>_7208115111750001</td>
+                        <td>ISTRI</td>
+                        <td>HUSNA</td>
+                        <td>AMPANA</td>
+                        <td>11/11/1975</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>GIDI SILA</td>
+                        <td>T JANGKA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208110502080129</td>
+                        <td>_7208110203960002</td>
+                        <td>ANAK</td>
+                        <td>MOH. RAFLI</td>
+                        <td>AMPANA</td>
+                        <td>02/03/1996</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>HUSNA</td>
+                        <td>HAMKA BALANGO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208110502080129</td>
+                        <td>_7208111006990002</td>
+                        <td>ANAK</td>
+                        <td>ARDIAN</td>
+                        <td>AMPANA</td>
+                        <td>10/06/1999</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>HUSNA</td>
+                        <td>HAMKA BALANGO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208110502080129</td>
+                        <td>_7208112810000001</td>
+                        <td>ANAK</td>
+                        <td>ISRA</td>
+                        <td>AMPANA</td>
+                        <td>28/10/2000</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>HUSNA</td>
+                        <td>HAMKA BALANGO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208110502080129</td>
+                        <td>_7208115005100002</td>
+                        <td>ANAK</td>
+                        <td>NUR ANDINI</td>
+                        <td>PARIGI</td>
+                        <td>10/05/2010</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>HUSNA</td>
+                        <td>HAMKA BALANGO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208110502080145</td>
+                        <td>_7208112404620001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>ANTON ENTE</td>
+                        <td>GORONTALO</td>
+                        <td>24/04/1962</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>TUKANG BATU</td>
+                        <td>ADI LAKORO</td>
+                        <td>SAHMIN ENTE</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208110502080145</td>
+                        <td>_7208114810920002</td>
+                        <td>ANAK</td>
+                        <td>YUNI OKTAVIA IRMAWATI</td>
+                        <td>OLOBARU</td>
+                        <td>08/10/1992</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>DIPLOMA IV/STRATA I</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>RATNA DJ. USMAN (ALM) (alm)</td>
+                        <td>ANTON ENTE</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208110502080145</td>
+                        <td>_7208112709010001</td>
+                        <td>ANAK</td>
+                        <td>MOHAMMAD REZA ENTE</td>
+                        <td>OLOBARU</td>
+                        <td>26/09/2001</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>DIPLOMA IV/STRATA I</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>RATNA DJ. USMAN (ALM) (alm)</td>
+                        <td>ANTON ENTE</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208110502080145</td>
+                        <td>_7208116607030002</td>
+                        <td>ANAK</td>
+                        <td>RANI ANGGRAINI</td>
+                        <td>OLOBARU</td>
+                        <td>07/10/2004</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>RATNA DJ. USMAN (ALM) (alm)</td>
+                        <td>ANTON ENTE</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208110502080145</td>
+                        <td>_7208114710040002</td>
+                        <td>ANAK</td>
+                        <td>NUR MIRANDA ENTE</td>
+                        <td>OLOBARU</td>
+                        <td>07/10/2004</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>RATNA DJ. USMAN (ALM) (alm)</td>
+                        <td>ANTON ENTE</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208110502080147</td>
+                        <td>_7208112910690001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>MOHAMAD S KADENTINA</td>
+                        <td>UNA UNA</td>
+                        <td>29/10/1969</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>JAIDA</td>
+                        <td>SAURI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208110502080147</td>
+                        <td>_7208116010740003</td>
+                        <td>ISTRI</td>
+                        <td>HUSNA</td>
+                        <td>AMPANA</td>
+                        <td>20/10/1974</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>NENI</td>
+                        <td>IBO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208110502080147</td>
+                        <td>_7208114506950001</td>
+                        <td>ANAK</td>
+                        <td>SILFIA</td>
+                        <td>WAKAI</td>
+                        <td>05/01/1995</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>HUSNA</td>
+                        <td>MOHAMAD S. KADENTINA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208110502080147</td>
+                        <td>_7208111212980002</td>
+                        <td>ANAK</td>
+                        <td>SANDI.M.SAURI</td>
+                        <td>PARIGI</td>
+                        <td>12/12/1998</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>HUSNA</td>
+                        <td>MOHAMAD S. KADENTINA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208110502080147</td>
+                        <td>_7208112412990002</td>
+                        <td>ANAK</td>
+                        <td>SOFYAN M. SAURI</td>
+                        <td>PARIGI</td>
+                        <td>24/12/1999</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>HUSNA</td>
+                        <td>MOHAMAD S. KADENTINA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F7EDFF;">
+                        <td>_7208110708230001</td>
+                        <td>_7208111407800002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>SALIM</td>
+                        <td>AMPANA</td>
+                        <td>14/07/1980</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>JAIDA</td>
+                        <td>SAURI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208110708250004</td>
+                        <td>_7209050107980024</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>AKBAR LIRA GOUWA</td>
+                        <td>PUSUNGI</td>
+                        <td>02/04/0195</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208110708250004</td>
+                        <td>_7209105410941001</td>
+                        <td>ISTRI</td>
+                        <td>SALMA H. BALANGO</td>
+                        <td>AMPANA</td>
+                        <td>14/10/1994</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208110708250004</td>
+                        <td>_7209106703221001</td>
+                        <td>ANAK</td>
+                        <td>NUR ALIFAH A. GOUWA</td>
+                        <td>AMPANA</td>
+                        <td>27/03/2022</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208110710130001</td>
+                        <td>_7208115508670001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>IRAWATI LASINGKA</td>
+                        <td>POMBALOWO</td>
+                        <td>15/08/1967</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>SISA</td>
+                        <td>LASINGKA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7208110809170001</td>
+                        <td>_7208112511930001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>EFENDI</td>
+                        <td>OLOBARU</td>
+                        <td>25/11/1993</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>HASNA SAURI KADENTINA</td>
+                        <td>JUSMAN ALIKUMPA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7208110809170001</td>
+                        <td>_7208026110960001</td>
+                        <td>ISTRI</td>
+                        <td>RISNAWATI</td>
+                        <td>PARIGI</td>
+                        <td>21/10/1995</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>SITI ROSNA</td>
+                        <td>TASDIN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7208110809170001</td>
+                        <td>_7208110709150002</td>
+                        <td>ANAK</td>
+                        <td>MOH.AZRIL</td>
+                        <td>PARIGI</td>
+                        <td>07/09/2015</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>RISNAWATI</td>
+                        <td>EFENDI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7208110809170001</td>
+                        <td>_7208111509230028</td>
+                        <td>ANAK</td>
+                        <td>DINDAZALFATUNISA</td>
+                        <td>PARIGI MOUTONG</td>
+                        <td>15/09/2023</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>RISNAWATI</td>
+                        <td>EFENDI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208110809200003</td>
+                        <td>_7208110612930003</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>ARIYANTO</td>
+                        <td>TANALANTO</td>
+                        <td>06/12/1993</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>BURUH TANI/PERKEBUNAN</td>
+                        <td>IRAWATI LASINGKA</td>
+                        <td>USMAN J. LATURISI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208110809200003</td>
+                        <td>_7208160108100001</td>
+                        <td>ANAK</td>
+                        <td>MAZIRUL AZAM</td>
+                        <td>PARIGI</td>
+                        <td>01/08/2010</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>SITTI MARIAM</td>
+                        <td>ARIYANTO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208110809200003</td>
+                        <td>_7208162803130003</td>
+                        <td>ANAK</td>
+                        <td>MOHAMAD ILYAS</td>
+                        <td>KAYUBOKO</td>
+                        <td>28/03/2013</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>SITTI MARIAM</td>
+                        <td>ARIYANTO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208110809200003</td>
+                        <td>_7208110407150003</td>
+                        <td>ANAK</td>
+                        <td>RAMADHAN</td>
+                        <td>OLOBARU</td>
+                        <td>04/07/2015</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TK</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>SITTI MARIAM</td>
+                        <td>ARIYANTO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208110809200003</td>
+                        <td>_7208116909180001</td>
+                        <td>ANAK</td>
+                        <td>FATIMAH TUL AZAHRA</td>
+                        <td>LOBU</td>
+                        <td>29/09/2018</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>SITTI MARIAM</td>
+                        <td>ARIYANTO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208110906160002</td>
+                        <td>_7208052609850001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>MOHAMAD NIZAR</td>
+                        <td>TINGKULANG</td>
+                        <td>26/09/1985</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>DIPLOMA IV/STRATA I</td>
+                        <td>TENAGA AHLI</td>
+                        <td>MUSLIMAH</td>
+                        <td>AMIN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208110906160002</td>
+                        <td>_7209050404840007</td>
+                        <td>ISTRI</td>
+                        <td>MIRANTI</td>
+                        <td>PALU</td>
+                        <td>04/04/1984</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>DIPLOMA IV/STRATA I</td>
+                        <td>ARSITEK</td>
+                        <td>-</td>
+                        <td>ANTON ENTE</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208110906160002</td>
+                        <td>_7208110310160003</td>
+                        <td>ANAK</td>
+                        <td>AFFAN ARSALAN BAQIR</td>
+                        <td>PARIGI</td>
+                        <td>03/10/2016</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TK</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>MIRANTI</td>
+                        <td>MOHAMMAD NIZAR</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208110906160002</td>
+                        <td>_7208116203180001</td>
+                        <td>ANAK</td>
+                        <td>ADZKIYA FITRI SALIMA</td>
+                        <td>PARIGI</td>
+                        <td>22/03/2006</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>MIRANTI</td>
+                        <td>MOHAMMAD NIZAR</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208111003100001</td>
+                        <td>_7208012109790002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>ISWANDI MARDANI</td>
+                        <td>KOTAMOBAGU</td>
+                        <td>21/09/1979</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>NELMIN</td>
+                        <td>ISMAIL</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208111003100001</td>
+                        <td>_7208014202850004</td>
+                        <td>ISTRI</td>
+                        <td>NINING</td>
+                        <td>PARIGI</td>
+                        <td>02/02/1985</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>BECE</td>
+                        <td>AHRIN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208111003100001</td>
+                        <td>_7208015303060001</td>
+                        <td>ANAK</td>
+                        <td>DIVA ANDINI MARDANI</td>
+                        <td>PARIGI</td>
+                        <td>13/03/2006</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>NINING</td>
+                        <td>ISWANDI MARDANI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208111003100001</td>
+                        <td>_7208015001080001</td>
+                        <td>ANAK</td>
+                        <td>DEVIDA MARDANI</td>
+                        <td>PARIGI</td>
+                        <td>10/01/2008</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>NINING</td>
+                        <td>ISWANDI MARDANI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208111003100001</td>
+                        <td>_7208110911130001</td>
+                        <td>ANAK</td>
+                        <td>MOH. AL- GHAZALI MARDANI</td>
+                        <td>PARIGI</td>
+                        <td>09/11/2013</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>NINING</td>
+                        <td>ISWANDI MARDANI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208111003100001</td>
+                        <td>_7208115705160001</td>
+                        <td>ANAK</td>
+                        <td>ANISA MARDANI</td>
+                        <td>PARIGI</td>
+                        <td>17/05/2016</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>NINING</td>
+                        <td>ISWANDI MARDANI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208111003100001</td>
+                        <td>_7208110910200000</td>
+                        <td>ANAK</td>
+                        <td>MUHAMMAD ADAM</td>
+                        <td>PARIGI</td>
+                        <td>09/10/2020</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>NINING</td>
+                        <td>ISWANDI MARDANI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208111105160004</td>
+                        <td>_7202024910860001</td>
+                        <td>ISTRI</td>
+                        <td>ERNI</td>
+                        <td>MASAMBA</td>
+                        <td>09/10/1986</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>MARIAM</td>
+                        <td>LALLO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208111112240002</td>
+                        <td>_7208111608040001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>AAN KURNIAWAN</td>
+                        <td>PARIGI MOUTONG</td>
+                        <td>16/08/2004</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN TERCATAT</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>BURUH TANI/PERKEBUNAN</td>
+                        <td>FATMA</td>
+                        <td>ROMANSYAH RAIS PAKAYA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208111112240002</td>
+                        <td>_7208114412040001</td>
+                        <td>ISTRI</td>
+                        <td>ALYA</td>
+                        <td>PARIGI MOUTONG</td>
+                        <td>04/12/2004</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN TERCATAT</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208111210100010</td>
+                        <td>_7208111010730004</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>ASRUDIN</td>
+                        <td>PARIGI</td>
+                        <td>10/10/1973</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>MARIAM</td>
+                        <td>MUSTARI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208111210100010</td>
+                        <td>_7208114107870039</td>
+                        <td>ISTRI</td>
+                        <td>MASNA</td>
+                        <td>TOMPE</td>
+                        <td>01/07/1987</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>ANDI POLE</td>
+                        <td>AHMADI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208111210100010</td>
+                        <td>_7208115004060001</td>
+                        <td>ANAK</td>
+                        <td>PUSPITA SARI</td>
+                        <td>PARIGI</td>
+                        <td>22/08/2006</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>MASNA</td>
+                        <td>ASRUDIN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208111210100010</td>
+                        <td>_7208114409120002</td>
+                        <td>ANAK</td>
+                        <td>ULFANA</td>
+                        <td>PARIGI</td>
+                        <td>04/09/2012</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>MASNA</td>
+                        <td>ASRUDIN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208111210100010</td>
+                        <td>_7208111408160001</td>
+                        <td>ANAK</td>
+                        <td>MUH. ASRIL</td>
+                        <td>PARIGI</td>
+                        <td>14/08/0216</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TK</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>MASNA</td>
+                        <td>ASRUDIN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208111210100010</td>
+                        <td>_7208110105240014</td>
+                        <td>ANAK</td>
+                        <td>MOH. ALFARIZKI</td>
+                        <td>PARIGI MOUTONG</td>
+                        <td>01/05/2024</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>MASNA</td>
+                        <td>ASRUDIN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208111210100013</td>
+                        <td>_7208111303630004</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>KASMAD</td>
+                        <td>AMPANA</td>
+                        <td>03/12/1963</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>CERAI HIDUP</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>BURUH TANI/PERKEBUNAN</td>
+                        <td>NUNIHA</td>
+                        <td>KADIR</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208111210100016</td>
+                        <td>_7208113112790006</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>BUDENG GINA</td>
+                        <td>BORNEANG</td>
+                        <td>31/12/1979</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>CERAI MATI</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>UNDING</td>
+                        <td>GINA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208111210100016</td>
+                        <td>_7208115606990001</td>
+                        <td>ANAK</td>
+                        <td>NIMANG</td>
+                        <td>BORNEANG</td>
+                        <td>16/06/1999</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>SETIN</td>
+                        <td>BUDENG GINA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208111210100016</td>
+                        <td>_7208111809010001</td>
+                        <td>ANAK</td>
+                        <td>ALDI</td>
+                        <td>BORNEANG</td>
+                        <td>18/09/2001</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>BURUH TANI/PERKEBUNAN</td>
+                        <td>SETIN</td>
+                        <td>BUDENG GINA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208111210100016</td>
+                        <td>_7208115710040002</td>
+                        <td>ANAK</td>
+                        <td>YANTI</td>
+                        <td>BORNEANG</td>
+                        <td>17/10/2004</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>SETIN</td>
+                        <td>BUDENG GINA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F7EDFF;">
+                        <td>_7208111302190002</td>
+                        <td>_7208114602630001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>HASIMA</td>
+                        <td>KASIMBAR</td>
+                        <td>02/06/1963</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>CERAI MATI</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>HASANA</td>
+                        <td>MALUM</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F7EDFF;">
+                        <td>_7208111302190002</td>
+                        <td>_7208112003100002</td>
+                        <td>CUCU</td>
+                        <td>RAHMAN</td>
+                        <td>OLOBARU</td>
+                        <td>01/02/2010</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>NILMA LATURISI</td>
+                        <td>RIZAL</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F7EDFF;">
+                        <td>_7208111302190002</td>
+                        <td>_7208116609140001</td>
+                        <td>CUCU</td>
+                        <td>ALISA</td>
+                        <td>OLOBARU</td>
+                        <td>06/02/2014</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>NILMA LATURISI</td>
+                        <td>RIZAL</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208111308200003</td>
+                        <td>_7208114107850005</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>NURAIN</td>
+                        <td>AMPANA</td>
+                        <td>01/07/1985</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>CERAI MATI</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>NENI</td>
+                        <td>IBO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208111308200003</td>
+                        <td>_7208113006120002</td>
+                        <td>ANAK</td>
+                        <td>MUHAMMAD RUSDIN</td>
+                        <td>AMPANA</td>
+                        <td>30/06/2012</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>NURAIN</td>
+                        <td>SYUKUR</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208111406190001</td>
+                        <td>_7209072603860001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>ZULKARNAIN LAMURENDA</td>
+                        <td>TOLIBA</td>
+                        <td>26/03/1986</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>DJALINA</td>
+                        <td>BAHRUDIN LAMURENDA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208111406190001</td>
+                        <td>_7208115708970002</td>
+                        <td>ISTRI</td>
+                        <td>NOVIANTI LATURISI</td>
+                        <td>OLOBARU</td>
+                        <td>17/08/1997</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>HASIMA</td>
+                        <td>IRSAN LATURISI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208111406190001</td>
+                        <td>_7209070411080001</td>
+                        <td>ANAK</td>
+                        <td>MOH. FIKRI LAMURENDA</td>
+                        <td>OLOBARU</td>
+                        <td>04/11/2008</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>NOVIANTI LATURISI</td>
+                        <td>ZULKARNAIN LAMURENDA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208111406190001</td>
+                        <td>_7209074608141001</td>
+                        <td>ANAK</td>
+                        <td>DZAKIRA AFTANI</td>
+                        <td>OLOBARU</td>
+                        <td>06/08/2014</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>NOVIANTI LATURISI</td>
+                        <td>ZULKARNAIN LAMURENDA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208111406190001</td>
+                        <td>_7209074504161002</td>
+                        <td>ANAK</td>
+                        <td>ARESA NAZLA FAUZIA</td>
+                        <td>OLOBARU</td>
+                        <td>05/04/2016</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TK</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>NOVIANTI LATURISI</td>
+                        <td>ZULKARNAIN LAMURENDA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7208111504080002</td>
+                        <td>_7208114607500001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>MAIDA</td>
+                        <td>KENDARI</td>
+                        <td>06/07/1950</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>CERAI MATI</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>PADIDI</td>
+                        <td>GAMPA</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208111609190001</td>
+                        <td>_7208012408930002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>MOH. AGFIL HENANSA</td>
+                        <td>MAMBORO</td>
+                        <td>24/08/1993</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>WIRASWASTA</td>
+                        <td>HERNI</td>
+                        <td>SAIFUL</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208111609190001</td>
+                        <td>_7208114712870001</td>
+                        <td>ISTRI</td>
+                        <td>RATIH</td>
+                        <td>PALOPO</td>
+                        <td>24/09/1994</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>SAMSIA</td>
+                        <td>HAMSYAH DG RAJENG</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208111812250001</td>
+                        <td>_7201092510950002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>RUDI CAHYONO</td>
+                        <td>TIRTASARI</td>
+                        <td>25/01/1995</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN TERCATAT</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>BURUH TANI/PERKEBUNAN</td>
+                        <td>SIAMI</td>
+                        <td>HARYANTO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208111812250001</td>
+                        <td>_7208114210010002</td>
+                        <td>ISTRI</td>
+                        <td>NOVA LATURISI</td>
+                        <td>OLOBARU</td>
+                        <td>27/03/2002</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN TERCATAT</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208112004170002</td>
+                        <td>_7208112705730001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>EDI SANTOSO</td>
+                        <td>TORUE</td>
+                        <td>27/05/1973</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>ROHYANI</td>
+                        <td>BACO ANDI M</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208112004170002</td>
+                        <td>_7208116203530001</td>
+                        <td>ORANG TUA</td>
+                        <td>ROHYANI</td>
+                        <td>JAWA</td>
+                        <td>22/03/1953</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>CERAI MATI</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>NAGADINA</td>
+                        <td>S KARTO SUHARJO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208112005150003</td>
+                        <td>_7208110205780001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>ANIS LAPABANDE</td>
+                        <td>UNA UNA</td>
+                        <td>02/05/1978</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>CERAI HIDUP</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>IMAM MASJID</td>
+                        <td>MASLIHA</td>
+                        <td>BAYHAKI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208112005150003</td>
+                        <td>_7208011202110002</td>
+                        <td>ANAK</td>
+                        <td>MOH. IQBAL LAPABANDE</td>
+                        <td>OLOBARU</td>
+                        <td>12/02/2011</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>FATMA LAMBA</td>
+                        <td>ANIS LAPABANDE</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208112005150003</td>
+                        <td>_7208116802050001</td>
+                        <td>ANAK</td>
+                        <td>NUR FADILLA</td>
+                        <td>PARIGI</td>
+                        <td>28/02/2005</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>FATMA LAMBA</td>
+                        <td>ANIS LAPABANDE</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208112005150003</td>
+                        <td>_7208117110150001</td>
+                        <td>ANAK</td>
+                        <td>BILQIS OKTAVIA LAPABANDE</td>
+                        <td>OLOBARU</td>
+                        <td>11/03/2011</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>FATMA LAMBA</td>
+                        <td>ANIS LAPABANDE</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208112012210003</td>
+                        <td>_7208090610000002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>ARIFGAL</td>
+                        <td>LORU</td>
+                        <td>06/10/2000</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>NURIFA</td>
+                        <td>ARFAN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208112012210003</td>
+                        <td>_7208114502990001</td>
+                        <td>ISTRI</td>
+                        <td>FIKA PUJI LESTARI</td>
+                        <td>PARIGI</td>
+                        <td>05/02/1999</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>NURLINA</td>
+                        <td>BUDI SETIAWAN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208112108240002</td>
+                        <td>_7501130805930004</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>ISKANDAR MAHMUD</td>
+                        <td>LAKEYA</td>
+                        <td>05/08/1993</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN TERCATAT</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>SUMI</td>
+                        <td>KUMA MAHMUD</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208112108240002</td>
+                        <td>_7208106908990002</td>
+                        <td>ISTRI</td>
+                        <td>SUMITRA</td>
+                        <td>SIGENTI</td>
+                        <td>29/08/1999</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN TERCATAT</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>UHAIA</td>
+                        <td>SAMIUN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208112108240002</td>
+                        <td>_7208106606170003</td>
+                        <td>ANAK</td>
+                        <td>FITRA RAMADANI</td>
+                        <td>KABUPATEN PARIGI MOUTONG</td>
+                        <td>26/06/2017</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>SUMITRA</td>
+                        <td>ISKANDAR MAHMUD</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208112109120001</td>
+                        <td>_7208110707820002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>MOH. NASIR</td>
+                        <td>LUWU</td>
+                        <td>07/07/1982</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>SAMSIA</td>
+                        <td>HAMSYAH DG RAJENG</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208112109120004</td>
+                        <td>_7208110107630002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>KUMABANTO</td>
+                        <td>PAGUYAMAN</td>
+                        <td>01/07/1963</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>-</td>
+                        <td>BANTO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208112109120004</td>
+                        <td>_7208115205680002</td>
+                        <td>ISTRI</td>
+                        <td>KARSUM K IGRISA</td>
+                        <td>PAGUYAMAN</td>
+                        <td>12/05/1968</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>-</td>
+                        <td>KOYO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F7EDFF;">
+                        <td>_7208112109120005</td>
+                        <td>_7208111208740001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>NASRIN</td>
+                        <td>AMPANA</td>
+                        <td>12/08/1974</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>HADASIA</td>
+                        <td>SAMBUKU</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F7EDFF;">
+                        <td>_7208112109120005</td>
+                        <td>_7208114505770002</td>
+                        <td>ISTRI</td>
+                        <td>IDA</td>
+                        <td>MANGKUTANA</td>
+                        <td>05/05/1977</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>MAIDA</td>
+                        <td>MARDAM PUANG LOMPENG</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208112409120006</td>
+                        <td>_7209083112690008</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>HASANUDIN</td>
+                        <td>AMPANA</td>
+                        <td>31/12/1969</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>JANUIYA</td>
+                        <td>AMBU</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208112409120006</td>
+                        <td>_7209081109030001</td>
+                        <td>ANAK</td>
+                        <td>ULUL AMRI</td>
+                        <td>SANDADA</td>
+                        <td>11/06/2003</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>JAIDAH</td>
+                        <td>HASANUDIN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208112601120002</td>
+                        <td>_7208110607840001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>AMBO TUO</td>
+                        <td>MANGKUTANA</td>
+                        <td>06/07/1984</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD</td>
+                        <td>PETANI</td>
+                        <td>MAIDA</td>
+                        <td>MARDAM PANG LOMPENG</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208112601120002</td>
+                        <td>_7208116202890001</td>
+                        <td>ISTRI</td>
+                        <td>MARIAM</td>
+                        <td>AMPANA</td>
+                        <td>22/02/1989</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>HAEDA ALJUFRI</td>
+                        <td>JAHIDIN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208112601120002</td>
+                        <td>_7208112601130001</td>
+                        <td>ANAK</td>
+                        <td>MOH ZIDAN</td>
+                        <td>OLOBARU</td>
+                        <td>26/01/2013</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SD</td>
+                        <td>PELAJAR</td>
+                        <td>MARIAM</td>
+                        <td>AMBO TUO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208112601120002</td>
+                        <td>_7208111203140001</td>
+                        <td>ANAK</td>
+                        <td>ALIF AL VATIH</td>
+                        <td>OLOBARU</td>
+                        <td>12/03/2014</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SD</td>
+                        <td>PELAJAR</td>
+                        <td>MARIAM</td>
+                        <td>AMBO TUO</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7209052106110006</td>
+                        <td>_7209051010740006</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>HAKIM USMAN</td>
+                        <td>MOUTONG</td>
+                        <td>10/10/1974</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>JAMU</td>
+                        <td>DJOGU USMAN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7209052106110006</td>
+                        <td>_7209056004780002</td>
+                        <td>ISTRI</td>
+                        <td>HASNAN B. DJANATI</td>
+                        <td>AMPANA</td>
+                        <td>20/04/1976</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>RUKYA</td>
+                        <td>BASIR DJANATI</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7209052106110006</td>
+                        <td>_7209051407000003</td>
+                        <td>ANAK</td>
+                        <td>RAFLI H. USMAN</td>
+                        <td>MOUTONG</td>
+                        <td>14/07/2000</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>HASNAN B. DJANATI</td>
+                        <td>HAKIM USMAN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7209052106110006</td>
+                        <td>_7209051906110001</td>
+                        <td>ANAK</td>
+                        <td>MOH. ISHAK H. USMAN</td>
+                        <td>AMPANA</td>
+                        <td>19/06/2011</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>HASNAN B. DJANATI</td>
+                        <td>HAKIM USMAN</td>
+                        <td>III</td>
+                        <td>006/000</td>
+                        </tr></tbody>
+                </table>

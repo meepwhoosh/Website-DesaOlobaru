@@ -1,0 +1,2422 @@
+﻿<table align="center" border="1" >
+                <thead>
+                    <tr>
+                        <td style="background: #f0f7ff; font-weight: bold; color: #2c5282;">No.Kartu Keluarga</td>
+                        <td style="background: #fff0f0; font-weight: bold; color: #822727;">No. KTP-e/NIK</td>
+                        <td style="background: #f0fff4; font-weight: bold; color: #276749;">SHDK</td>
+                        <td style="background: #faf5ff; font-weight: bold; color: #553c9a;">Nama Lengkap</td>
+                        <td style="background: #fff7ed; font-weight: bold; color: #9c4221;">Tempat Lahir</td>
+                        <td style="background: #fff7ed; font-weight: bold; color: #9c4221;">Tanggal Lahir</td>
+                        <td style="background: #fff0f0; font-weight: bold; color: #822727;">Jenis Kelamin</td>
+                        <td style="background: #f0fff4; font-weight: bold; color: #276749;">Agama</td>
+                        <td style="background: #faf5ff; font-weight: bold; color: #553c9a;">Status</td>
+                        <td style="background: #f0f7ff; font-weight: bold; color: #2c5282;">Pendidikan</td>
+                        <td style="background: #fff7ed; font-weight: bold; color: #9c4221;">Pekerjaan</td>
+                        <td style="background: #faf5ff; font-weight: bold; color: #553c9a;">Nama Ibu</td>
+                        <td style="background: #faf5ff; font-weight: bold; color: #553c9a;">Nama Ayah</td>
+                        <td style="background: #f0f7ff; font-weight: bold; color: #2c5282;">Dusun</td>
+                        <td style="background: #f0fff4; font-weight: bold; color: #276749;">RT/RW</td>
+                    </tr>
+                </thead>
+                <tbody><tr style="background-color: #F0F7FF;">
+                        <td>_7202270103160002</td>
+                        <td>_7202271205770001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>MARTHEN ALLO LAYUK</td>
+                        <td>TORAJA</td>
+                        <td>08/05/1969</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>YOHANA DASA'U</td>
+                        <td>DAUD GATE</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7202270103160002</td>
+                        <td>_7202275205770001</td>
+                        <td>ISTRI</td>
+                        <td>LILI RIWO</td>
+                        <td>TOMBI</td>
+                        <td>12/05/1977</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>NELI TAROPO</td>
+                        <td>TAKE RIWO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208110000000001</td>
+                        <td>_7208112208900001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>AGUS PANCA SATRIA</td>
+                        <td>TINDAKI</td>
+                        <td>22/08/1990</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208110000000001</td>
+                        <td>_7208114504920001</td>
+                        <td>ISTRI</td>
+                        <td>RINNY INDRIYANI WOKI</td>
+                        <td>OLOBARU</td>
+                        <td>05/04/1992</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>AKADEMI/DIPLOMA III/SARJANA MUDA</td>
+                        <td>BIDAN</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208110104080028</td>
+                        <td>_7208111904550001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>ALFRETS MOKODASER</td>
+                        <td>TOLI-TOLI</td>
+                        <td>19/04/1955</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>CERAI HIDUP</td>
+                        <td>TAMAT SD</td>
+                        <td>BURUH TANI</td>
+                        <td>ARIANCI KATUPAYAN</td>
+                        <td>WELLEM MOKODASER</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208110104080029</td>
+                        <td>_7208112904790002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>KRISTIAN</td>
+                        <td>OLOBARU</td>
+                        <td>29/04/1979</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>DIPLOMA IV/STRATA I</td>
+                        <td>PNS</td>
+                        <td>MINTE MANGA</td>
+                        <td>PETRUS MAPPADANG</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208110104080029</td>
+                        <td>_7208115605860004</td>
+                        <td>ISTRI</td>
+                        <td>VISCHA BATAREN</td>
+                        <td>OLOBARU</td>
+                        <td>16/05/1986</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>BEAUTY KARISO</td>
+                        <td>EDY BATAREN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208110104080029</td>
+                        <td>_7208111103080001</td>
+                        <td>ANAK</td>
+                        <td>LIONEL CHRISTOVIANDO MAPPADANG</td>
+                        <td>PARIGI</td>
+                        <td>11/03/2008</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SMP</td>
+                        <td>PELAJAR</td>
+                        <td>VISCHA BATAREN</td>
+                        <td>KRISTIAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208110104080029</td>
+                        <td>_7208111210120001</td>
+                        <td>ANAK</td>
+                        <td>LIVANDO MAPPADANG</td>
+                        <td>PARIGI</td>
+                        <td>12/10/2012</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SD</td>
+                        <td>PELAJAR</td>
+                        <td>VISCHA BATAREN</td>
+                        <td>KRISTIAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208110308090001</td>
+                        <td>_7208111701800001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>YANTJE TOKARE</td>
+                        <td>PARIGI</td>
+                        <td>17/01/1980</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>PNS</td>
+                        <td>MINTJE TOBO</td>
+                        <td>BARNABAS TOKARE</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208110308090001</td>
+                        <td>_7208116305780001</td>
+                        <td>ISTRI</td>
+                        <td>ADOLFINA SUMOKO</td>
+                        <td>OLAYA</td>
+                        <td>23/05/1978</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>ELISABETH MENDAI</td>
+                        <td>YOSUA SOMOKO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208110308090001</td>
+                        <td>_7208114207110001</td>
+                        <td>ANAK</td>
+                        <td>AERILYN JUDITHA TOKARE</td>
+                        <td>PARIGI</td>
+                        <td>02/07/2011</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SD</td>
+                        <td>PELAJAR</td>
+                        <td>ADOLFINA SUMOKO</td>
+                        <td>YANTJE TOKARE</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208110308090001</td>
+                        <td>_7208111209130001</td>
+                        <td>ANAK</td>
+                        <td>TRISTAN RAFAEL</td>
+                        <td>PARIGI</td>
+                        <td>12/09/2013</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SD</td>
+                        <td>BELUM BEKERJA</td>
+                        <td>ADOLFINA SUMOKO</td>
+                        <td>YANTJE TOKARE</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208110308090001</td>
+                        <td>_7208111011160001</td>
+                        <td>ANAK</td>
+                        <td>TIMOTHY OSWALDO TOKARE</td>
+                        <td>PARIGI</td>
+                        <td>10/11/2016</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM BEKERJA</td>
+                        <td>ADOLFINA SUMOKO</td>
+                        <td>YANTJE TOKARE</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208110401080008</td>
+                        <td>_7208112307740001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>YUSKAM SIORE</td>
+                        <td>LUMBEWE</td>
+                        <td>23/07/1974</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>DIPLOMA IV/STRATA I</td>
+                        <td>PENDETA</td>
+                        <td>ARI TEREKE</td>
+                        <td>ARNOL SIORE</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208110401080008</td>
+                        <td>_7208115806740001</td>
+                        <td>ISTRI</td>
+                        <td>MARIA MARTHA RONDONUWU</td>
+                        <td>PINELENG</td>
+                        <td>18/06/1974</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>DIPLOMA IV/STRATA I</td>
+                        <td>PNS</td>
+                        <td>ERNA BANSALENG</td>
+                        <td>YORRY RONDONUWU</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208110401080008</td>
+                        <td>_7208110608020002</td>
+                        <td>ANAK</td>
+                        <td>YAKUB J.P SIORE</td>
+                        <td>OLOBARU</td>
+                        <td>06/08/2002</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>TENTARA NASIONAL INDONESIA(TNI)</td>
+                        <td>MARIA MARTHA RONDONUWU</td>
+                        <td>YUSKAM SIORE</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208110401080008</td>
+                        <td>_7208111704050001</td>
+                        <td>ANAK</td>
+                        <td>JONATHAN ANUGERAH SIORE</td>
+                        <td>OLOBARU</td>
+                        <td>17/04/2005</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SMA</td>
+                        <td>PELAJAR</td>
+                        <td>MARIA MARTHA RONDONUWU</td>
+                        <td>YUSKAM SIORE</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208110401080008</td>
+                        <td>_7208117001130001</td>
+                        <td>ANAK</td>
+                        <td>JEANETH EKLESIA SIORE</td>
+                        <td>PARIGI</td>
+                        <td>01/03/2013</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>MARIA MARTHA RONDONUWU</td>
+                        <td>YUSKAM SIORE</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208110404190001</td>
+                        <td>_7208132511770001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>STEVEN NOVI RANTUNG</td>
+                        <td>KUMELEMBUAI</td>
+                        <td>25/11/1977</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>PENDETA</td>
+                        <td>IDA</td>
+                        <td>PAUL</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208110404190001</td>
+                        <td>_7208136408810001</td>
+                        <td>ISTRI</td>
+                        <td>VERA AGUSTINA PASLA</td>
+                        <td>AMURANG</td>
+                        <td>24/08/1981</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>ELLEN CL RASU</td>
+                        <td>WELLY PASLA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208110404190001</td>
+                        <td>_7208136301060001</td>
+                        <td>ANAK</td>
+                        <td>SHERINA CHRISTYELDA</td>
+                        <td>KUMELEMBUAI</td>
+                        <td>23/01/2006</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>VERA AGUSTINA PASLA</td>
+                        <td>STEVEN NOVI RANYUNG</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208110502080014</td>
+                        <td>_7208110709830002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>SEMUEL PALANDENG</td>
+                        <td>OLOBARU</td>
+                        <td>07/09/1983</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD</td>
+                        <td>BURUH TANI</td>
+                        <td>BETSI BAGUNA</td>
+                        <td>ROBERT PALANDENG</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208110502080014</td>
+                        <td>_7208110109070001</td>
+                        <td>ANAK</td>
+                        <td>EVRON PALANDENG</td>
+                        <td>PARIGI</td>
+                        <td>01/09/2007</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SMP</td>
+                        <td>PELAJAR</td>
+                        <td>-</td>
+                        <td>YENI DOTULONG</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208110502080015</td>
+                        <td>_7208111004570001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>BERLIN SARAGI SIDABUTAR</td>
+                        <td>P. SIANTAR</td>
+                        <td>10/04/1957</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>PETANI</td>
+                        <td>P SITOMORANG</td>
+                        <td>LAURENSIUS SIDABUTAR</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208110502080015</td>
+                        <td>_7208116207700001</td>
+                        <td>ISTRI</td>
+                        <td>YUL HARMIN SITINDAON</td>
+                        <td>AMPIBABO</td>
+                        <td>22/07/1970</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMP</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>ELISABET MENDAI</td>
+                        <td>YOSUA SUMOKO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F7EDFF;">
+                        <td>_7208110502080017</td>
+                        <td>_7208116210490001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>HERMINA MOKOLOMBAN</td>
+                        <td>TOMBATU</td>
+                        <td>22/10/1949</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>CERAI MATI</td>
+                        <td>TAMAT SMA</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>BETSI RATUWONGO</td>
+                        <td>SIMON MOKOLOMBAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208110502080018</td>
+                        <td>_7208110310520001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>FREDY TANGKIDI</td>
+                        <td>POSO</td>
+                        <td>03/10/1952</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMP</td>
+                        <td>PETANI</td>
+                        <td>BUNGA LEMPO</td>
+                        <td>WENTI TANGKIDI</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208110502080018</td>
+                        <td>_7208114205550001</td>
+                        <td>ISTRI</td>
+                        <td>NAOMI PAGIA</td>
+                        <td>LEMUSA</td>
+                        <td>02/05/1955</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMP</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>DUPA KAITU</td>
+                        <td>MELAHA PAGIA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208110502080020</td>
+                        <td>_7208112810430001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>SAMUEL SALINDEHO</td>
+                        <td>MARISA</td>
+                        <td>28/10/1943</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMP</td>
+                        <td>PETANI</td>
+                        <td>FRIDA BAWELSYE</td>
+                        <td>ALEX SALINDEHO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208110502080020</td>
+                        <td>_7208116810540001</td>
+                        <td>ISTRI</td>
+                        <td>NITA SILAMBA</td>
+                        <td>TORAJA</td>
+                        <td>28/08/1954</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMP</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>RUT KABIRANG</td>
+                        <td>SESA SILAMBA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208110502080020</td>
+                        <td>_7371142408900003</td>
+                        <td>ANAK</td>
+                        <td>MASKY STEVEN SALINDEHO</td>
+                        <td>PARIGI MOUTONG</td>
+                        <td>24/08/1990</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208110502080020</td>
+                        <td>_7208115504020001</td>
+                        <td>CUCU</td>
+                        <td>MILLITYA INKA CHRISTY SALINDEHO</td>
+                        <td>TARUNA</td>
+                        <td>15/04/2002</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SMA</td>
+                        <td>PELAJAR</td>
+                        <td>REGINA RUNGKAT</td>
+                        <td>JEMES SALINDEHO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7208110502080021</td>
+                        <td>_7208116604680001</td>
+                        <td>ISTRI</td>
+                        <td>PURNAMA SARI MOTILA</td>
+                        <td>SAWIDAGO</td>
+                        <td>26/04/1968</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>DJARINA</td>
+                        <td>PANUS MOTILA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7208110502080021</td>
+                        <td>_7208111001070001</td>
+                        <td>ANAK</td>
+                        <td>RAYMON MOKODASER</td>
+                        <td>OLOBAU</td>
+                        <td>10/01/2007</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SMP</td>
+                        <td>PELAJAR</td>
+                        <td>PURNAMA SARI MOTILA</td>
+                        <td>YESAYA MOKODASER (ALM) (ALM) (alm)</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208110502080023</td>
+                        <td>_7208110506550001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>JONI MATINDAS</td>
+                        <td>KASURATAN</td>
+                        <td>05/06/1955</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TIDAK TAMAT SD</td>
+                        <td>BURUH TANI</td>
+                        <td>VIN MUMEK</td>
+                        <td>YUSUF MATINDAS</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208110502080023</td>
+                        <td>_7208116012530001</td>
+                        <td>ISTRI</td>
+                        <td>BETSI BANGUNA</td>
+                        <td>TOMBATU</td>
+                        <td>20/12/1953</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TIDAK TAMAT SD</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>HELENA UMPULUMAYU</td>
+                        <td>PETRUS BAGUNA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208110502080025</td>
+                        <td>_7208111507590002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>YUNUS KALA BESA</td>
+                        <td>TORAJA</td>
+                        <td>15/07/1959</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD</td>
+                        <td>PETANI</td>
+                        <td>MARIA MANDI</td>
+                        <td>YOHANIS BESA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208110502080025</td>
+                        <td>_7208116909610001</td>
+                        <td>ISTRI</td>
+                        <td>STIN MAME</td>
+                        <td>LEMUSA</td>
+                        <td>29/09/1961</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>HERMINA KALEWU</td>
+                        <td>NANGSA MAME</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208110502080025</td>
+                        <td>_7208110501970001</td>
+                        <td>ANAK</td>
+                        <td>JENS RISKI</td>
+                        <td>OLOBARU</td>
+                        <td>05/01/1997</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TAMAT SMP</td>
+                        <td>KARY SWASTA</td>
+                        <td>STIN MAME</td>
+                        <td>YUNUS KALA BESA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208110502080026</td>
+                        <td>_7208114203450001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>YUSTINA LISU PINDAN</td>
+                        <td>TORAJA</td>
+                        <td>02/03/1945</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>CERAI HIDUP</td>
+                        <td>TAMAT SMP</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>ANNE TAPPE</td>
+                        <td>PRINUS TASIK</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208110502080027</td>
+                        <td>_7208110709700002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>RUBEN ROMPA</td>
+                        <td>TORAJA</td>
+                        <td>07/09/1970</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>DIPLOMA IV/STRATA I</td>
+                        <td>PENDETA</td>
+                        <td>S LIMBONG</td>
+                        <td>R ROMPA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208110502080027</td>
+                        <td>_7208117103700001</td>
+                        <td>ISTRI</td>
+                        <td>KEZIA ANI BATAN</td>
+                        <td>PARIGI</td>
+                        <td>31/03/1970</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>DIPLOMA IV/STRATA I</td>
+                        <td>GURU TK</td>
+                        <td>MB SOMBA</td>
+                        <td>P MUSA BATAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208110502080027</td>
+                        <td>_7208114407020002</td>
+                        <td>ANAK</td>
+                        <td>RUNITYA ZURISYADAI ROMPA BATAN</td>
+                        <td>PARIGI</td>
+                        <td>04/07/2002</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG S1</td>
+                        <td>MAHASISWA</td>
+                        <td>KEZIA ANI BATAN</td>
+                        <td>RUBEN ROMPA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208110502080027</td>
+                        <td>_7208110106060001</td>
+                        <td>ANAK</td>
+                        <td>GABRIEL CH. ROMPA BATAN</td>
+                        <td>PARIGI</td>
+                        <td>01/06/2006</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SMA</td>
+                        <td>PELAJAR</td>
+                        <td>KEZIA ANI BATAN</td>
+                        <td>RUBEN ROMPA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208110502080027</td>
+                        <td>_7208116003090001</td>
+                        <td>ANAK</td>
+                        <td>KASIH IMNUELA ROMPA BATAN</td>
+                        <td>PARIGI</td>
+                        <td>20/03/2009</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SMP</td>
+                        <td>PELAJAR</td>
+                        <td>KEZIA ANI BATAN</td>
+                        <td>RUBEN ROMPA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208110502080027</td>
+                        <td>_7208114108110001</td>
+                        <td>ANAK</td>
+                        <td>GRACE VICTORYA R ROMPA BATAN</td>
+                        <td>PARIGI</td>
+                        <td>01/08/2011</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SD</td>
+                        <td>PELAJAR</td>
+                        <td>KEZIA ANI BATAN</td>
+                        <td>RUBEN ROMPA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208110502080027</td>
+                        <td>_720811290710001</td>
+                        <td>ANAK</td>
+                        <td>RAFAEL GIOFANNI ROMPA BATAN</td>
+                        <td>PARIGI</td>
+                        <td>29/07/2016</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM BEKERJA</td>
+                        <td>KEZIA ANI BATAN</td>
+                        <td>RUBEN ROMPA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208110502080028</td>
+                        <td>_7208112802450001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>YOAB LIWAN</td>
+                        <td>MINAHASA</td>
+                        <td>28/02/1945</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>CERAI MATI</td>
+                        <td>TIDAK TAMAT SD</td>
+                        <td>PETANI</td>
+                        <td>YULIANA WATANIA</td>
+                        <td>YOHAN LIWAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208110502080030</td>
+                        <td>_7208115707760002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>YUSTINA MENGKOPI</td>
+                        <td>AMPIBABO</td>
+                        <td>17/07/1976</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>CERAI MATI</td>
+                        <td>TAMAT SMP</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>EMA LELA</td>
+                        <td>SATU MENGKOPI</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208110502080030</td>
+                        <td>_7208110605990001</td>
+                        <td>ANAK</td>
+                        <td>MEXEL CRHISTHOFEL SUMOKO</td>
+                        <td>OLOBARU</td>
+                        <td>06/05/1999</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG S1</td>
+                        <td>MAHASISWA</td>
+                        <td>YUSTINA MENGKOPI</td>
+                        <td>YOS DENI SUMOKO (ALM) (ALM) (alm)</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208110502080030</td>
+                        <td>_7208116806060003</td>
+                        <td>ANAK</td>
+                        <td>JEVERLIN AURELYA SUMOKO</td>
+                        <td>OLOBARU</td>
+                        <td>28/06/2006</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SMA</td>
+                        <td>PELAJAR</td>
+                        <td>YUSTINA MENGKOPI</td>
+                        <td>YOS DENI SUMOKO (ALM) (ALM) (alm)</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208110502080032</td>
+                        <td>_7208111504710002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>YOHANES RAYA</td>
+                        <td>TATOR</td>
+                        <td>15/04/1971</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>PETANI</td>
+                        <td>RIPI</td>
+                        <td>BOMABANG</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208110502080032</td>
+                        <td>_7208114406770001</td>
+                        <td>ISTRI</td>
+                        <td>ERVINA MARGARETHA</td>
+                        <td>TANALANTO</td>
+                        <td>04/06/1977</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>PNS</td>
+                        <td>RAHEL LAKOBASI</td>
+                        <td>YULIUS SALASA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208110502080032</td>
+                        <td>_7208116110030001</td>
+                        <td>ANAK</td>
+                        <td>NIKITA LIDYA</td>
+                        <td>ASTINA</td>
+                        <td>21/10/2003</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG S1</td>
+                        <td>MAHASISWA</td>
+                        <td>ERVINA MARGARETHA</td>
+                        <td>YOHANES RAYA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208110502080032</td>
+                        <td>_7208116710120001</td>
+                        <td>ANAK</td>
+                        <td>ELSADHAY</td>
+                        <td>PARIGI</td>
+                        <td>27/10/2012</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>ERFINA MARGARETHA</td>
+                        <td>YOHANES RAYA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208110502080033</td>
+                        <td>_7208112707500001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>YULES LAMANI (ALM) (ALM)</td>
+                        <td>LANDANGI</td>
+                        <td>27/07/1950</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>PETANI</td>
+                        <td>ANA</td>
+                        <td>TOMINGGI</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208110502080033</td>
+                        <td>_7208116309550002</td>
+                        <td>ISTRI</td>
+                        <td>ELSJE TOMPUNU</td>
+                        <td>PARIGI</td>
+                        <td>23/09/1955</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMP</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>YULIANA</td>
+                        <td>ESAW TOMPUNU</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208110502080033</td>
+                        <td>_7208111901960001</td>
+                        <td>ANAK</td>
+                        <td>ISAK LAMANI</td>
+                        <td>OLOBARU</td>
+                        <td>19/01/1996</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>BURUH TANI</td>
+                        <td>ELSJE TOMPUNU</td>
+                        <td>YULES LAMANI (ALM) (alm)</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F7EDFF;">
+                        <td>_7208110502080037</td>
+                        <td>_7208110607640004</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>SARJAN SAIBAN</td>
+                        <td>OLOBARU</td>
+                        <td>06/07/1964</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD</td>
+                        <td>PETANI</td>
+                        <td>NURJANA</td>
+                        <td>THIMOTIUS SAIBAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F7EDFF;">
+                        <td>_7208110502080037</td>
+                        <td>_7208115010750004</td>
+                        <td>ISTRI</td>
+                        <td>RIN TOWE</td>
+                        <td>OLOBARU</td>
+                        <td>10/10/1975</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>CINARIA</td>
+                        <td>YUSUP TOWE</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208110502080038</td>
+                        <td>_7208111001790002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>I WAYAN SENDRA</td>
+                        <td>TOLAI</td>
+                        <td>10/01/1979</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KHATOLIK</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMP</td>
+                        <td>PETANI</td>
+                        <td>KETUT RAKI</td>
+                        <td>WAYAN RINAG</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208110502080038</td>
+                        <td>_7208114909790004</td>
+                        <td>ISTRI</td>
+                        <td>SELVIANA LANGGABU</td>
+                        <td>OLOBARU</td>
+                        <td>09/09/1979</td>
+                        <td>PEREMPUAN</td>
+                        <td>KHATOLIK</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMP</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>HERENA KOMILE</td>
+                        <td>KALEBI LANGGABU</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208110502080038</td>
+                        <td>_7208110105060002</td>
+                        <td>ANAK</td>
+                        <td>MARIO ATANASIUS</td>
+                        <td>OLOBARU</td>
+                        <td>01/05/2006</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KHATOLIK</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>PELAJAR</td>
+                        <td>SELVIANA LANGGABU</td>
+                        <td>I WAYAN SENDRA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208110502080038</td>
+                        <td>_7208116505110002</td>
+                        <td>ANAK</td>
+                        <td>MERY ROSLIN LANGGABU</td>
+                        <td>PARIGI</td>
+                        <td>25/05/2011</td>
+                        <td>PEREMPUAN</td>
+                        <td>KHATOLIK</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SD</td>
+                        <td>PELAJAR</td>
+                        <td>SELVIANA LANGGABU</td>
+                        <td>I WAYAN SENDRA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208110502080039</td>
+                        <td>_7208110707750003</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>LUKAS MANGGUALI</td>
+                        <td>TORAJA</td>
+                        <td>07/07/1975</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KHATOLIK</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD</td>
+                        <td>BURUH TANI</td>
+                        <td>ELISABET BUTU</td>
+                        <td>NESEKE</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208110502080039</td>
+                        <td>_7208115301880002</td>
+                        <td>ISTRI</td>
+                        <td>JENI TODINGAN</td>
+                        <td>PALOPO</td>
+                        <td>13/01/1988</td>
+                        <td>PEREMPUAN</td>
+                        <td>KHATOLIK</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>HANA TODINGAN</td>
+                        <td>DOMINGGUS PARINDING</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208110502080039</td>
+                        <td>_7208114508070001</td>
+                        <td>ANAK</td>
+                        <td>AGNI MANGGUALI</td>
+                        <td>PARIGI</td>
+                        <td>05/08/2007</td>
+                        <td>PEREMPUAN</td>
+                        <td>KHATOLIK</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SMP</td>
+                        <td>PELAJAR</td>
+                        <td>JENI TODINGAN</td>
+                        <td>LUKAS MANGGUALI</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208110502080039</td>
+                        <td>_7208115203180001</td>
+                        <td>ANAK</td>
+                        <td>MELANI MANGGUALI</td>
+                        <td>PARIGI</td>
+                        <td>12/03/2018</td>
+                        <td>PEREMPUAN</td>
+                        <td>KHATOLIK</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM SEKOLAH</td>
+                        <td>BELUM BEKERJA</td>
+                        <td>JENI TODINGAN</td>
+                        <td>LUKAS MANGGUALI</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208110502080039</td>
+                        <td>_7208111507210002</td>
+                        <td>ANAK</td>
+                        <td>JULIO PANDI MANGGUALI</td>
+                        <td>PARIGI</td>
+                        <td>15/07/2021</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KATHOLIK</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>JENI TODINGAN</td>
+                        <td>LUKAS MANGGUALI</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7208110905230002</td>
+                        <td>_7208010905940001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>USMAN</td>
+                        <td>PARIGI</td>
+                        <td>09/05/1994</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>BURUH TANI/PERKEBUNAN</td>
+                        <td>RITA</td>
+                        <td>RAHIM</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7208110905230002</td>
+                        <td>_7208116406970001</td>
+                        <td>ISTRI</td>
+                        <td>MERLIN SAIBAN</td>
+                        <td>PARIGI</td>
+                        <td>26/06/1997</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>RIN TOWE</td>
+                        <td>SARJAN SAIBAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7208110905230002</td>
+                        <td>_7208015607160003</td>
+                        <td>ANAK</td>
+                        <td>AURA AZAHRA</td>
+                        <td>BANTAYA</td>
+                        <td>16/07/2016</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>MERRY HANDAYANI</td>
+                        <td>USMAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7208110905230002</td>
+                        <td>_7208012203190001</td>
+                        <td>ANAK</td>
+                        <td>MUHAMMAD ALFATIH</td>
+                        <td>PARIGI</td>
+                        <td>22/03/2019</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>MERLIN SAIBAN</td>
+                        <td>USMAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208110908070001</td>
+                        <td>_7208114101660001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>MARSIA TAPPI</td>
+                        <td>SALOSO</td>
+                        <td>01/01/1966</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>CERAI MATI</td>
+                        <td>TAMAT SMA</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>RIRI</td>
+                        <td>KODE</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208110908070001</td>
+                        <td>_7208112108980001</td>
+                        <td>ANAK</td>
+                        <td>ADRIANUS RANTEBUNGA</td>
+                        <td>SUMEDANG</td>
+                        <td>21/08/1998</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>BELUM BEKERJA</td>
+                        <td>MARSIA TAPPI</td>
+                        <td>MARTHEN S RANTEBUNGA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208110911120004</td>
+                        <td>_7208070702610001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>PARMENAS DAREHO</td>
+                        <td>SIDOAN</td>
+                        <td>07/02/1961</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD</td>
+                        <td>PETANI</td>
+                        <td>SARLOTA KATOPO</td>
+                        <td>ELKANA DAREHO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208110911120004</td>
+                        <td>_7208076909740002</td>
+                        <td>ISTRI</td>
+                        <td>SERLI MOKERE</td>
+                        <td>OLOBARU</td>
+                        <td>29/09/1974</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMP</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>HERMINA KALEWU</td>
+                        <td>MARKUS MOKERE</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208110911120004</td>
+                        <td>_7208070311970002</td>
+                        <td>ANAK</td>
+                        <td>REFANDI</td>
+                        <td>TINOMBALA</td>
+                        <td>03/11/1997</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>SERLI</td>
+                        <td>PARMENAS DAREHO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208111007070001</td>
+                        <td>_7208111612720001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>I MADE ENOS WIDASTRA</td>
+                        <td>MASARI</td>
+                        <td>16/12/1972</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>DIPLOMA IV/STRATA I</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>I NYOMAN SETIA</td>
+                        <td>I WAYAN NGANTU</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208111007070001</td>
+                        <td>_7208116009730001</td>
+                        <td>ISTRI</td>
+                        <td>YULIANTI BUNGKUNDAPU</td>
+                        <td>POSO</td>
+                        <td>20/09/1973</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>HAMIDA DAENG PAGALA</td>
+                        <td>YUSTINUS BUNGKUNDAPU</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208111007070001</td>
+                        <td>_7208111807000001</td>
+                        <td>ANAK</td>
+                        <td>I WAYAN MELKI TEOPHILUS</td>
+                        <td>PARIGI</td>
+                        <td>18/07/2000</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>KEPOLISIAN RI(POLRI)</td>
+                        <td>YULIANTI BUNGKUNDAPU</td>
+                        <td>I MADE ENOS WIDASTRA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208111007070001</td>
+                        <td>_7208112307040001</td>
+                        <td>ANAK</td>
+                        <td>I MADE JULIANT HENDRIK</td>
+                        <td>POSO</td>
+                        <td>23/07/2004</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>YULIANTI BUNGKUNDAPU</td>
+                        <td>I MADE ENOS WIDASTRA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208111007070001</td>
+                        <td>_7208111810100001</td>
+                        <td>ANAK</td>
+                        <td>I NYOMAN YONATAN OKTAVIAN</td>
+                        <td>OLOBARU</td>
+                        <td>18/10/2010</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>YULIANTI BUNGKUNDAPU</td>
+                        <td>I MADE ENOS WIDASTRA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208111210100007</td>
+                        <td>_7208110208830006</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>HARIANTO TUMANAN</td>
+                        <td>PARIGI</td>
+                        <td>02/08/1983</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>BURUH TANI</td>
+                        <td>MINCE PELEALU</td>
+                        <td>BENYAMIN TUMANAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208111210100007</td>
+                        <td>_7208115708920002</td>
+                        <td>ISTRI</td>
+                        <td>AGUSTINA LELOI</td>
+                        <td>LEMUSA</td>
+                        <td>17/08/1992</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208111210100007</td>
+                        <td>_7208111407100001</td>
+                        <td>ANAK</td>
+                        <td>GILBERT TUMANAN</td>
+                        <td>OLOBARU</td>
+                        <td>14/07/2010</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>PELAJAR</td>
+                        <td>AGUSTINA LELOI</td>
+                        <td>HARIANTO TUMANAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208111210100007</td>
+                        <td>_7208115809120001</td>
+                        <td>ANAK</td>
+                        <td>GABBY GABRIELA</td>
+                        <td>OLOBARU</td>
+                        <td>18/09/2012</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SD</td>
+                        <td>PELAJAR</td>
+                        <td>AGUSTINA LELOI</td>
+                        <td>HARIANTO TUMANAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208111210100007</td>
+                        <td>_7208114904170001</td>
+                        <td>ANAK</td>
+                        <td>GINAR TUMANAN</td>
+                        <td>OLOBARU</td>
+                        <td>09/04/2017</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM BEKERJA</td>
+                        <td>AGUSTINA LELOI</td>
+                        <td>HARIANTO TUMANAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208111210100007</td>
+                        <td>_7208115305200001</td>
+                        <td>ANAK</td>
+                        <td>GRASELA ANGEL</td>
+                        <td>PARIGI</td>
+                        <td>13/05/2020</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>AGUSTINA LELOI</td>
+                        <td>HARIANTO TUMANAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208111210120005</td>
+                        <td>_7208112308690001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>ARNOLD MOKODASER</td>
+                        <td>OLOBARU</td>
+                        <td>23/08/1969</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD</td>
+                        <td>TABIB</td>
+                        <td>MAGDALENA TOHAO</td>
+                        <td>FERNI MOKODASER</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208111210120005</td>
+                        <td>_7208114107660006</td>
+                        <td>ISTRI</td>
+                        <td>I WAYAN MANDRI</td>
+                        <td>BALI</td>
+                        <td>01/07/1966</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TIDAK TAMAT SD</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>NILUH</td>
+                        <td>NYOMAN KANRO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208111310210002</td>
+                        <td>_7208114506890001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>SUSI SUSANTI MINDA DEWI SANUTU</td>
+                        <td>LEMUSA</td>
+                        <td>05/06/1989</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>CERAI MATI</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>WIRASWASTA</td>
+                        <td>DRUPRITA MALIKI</td>
+                        <td>WALDI SANUTU</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208111310210002</td>
+                        <td>_7208116108160001</td>
+                        <td>ANAK</td>
+                        <td>AILEEN NATHANIA SALINDEHO</td>
+                        <td>PARIGI</td>
+                        <td>21/08/2016</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>SUSI SUSANTI MINDA DEWI SANUTU</td>
+                        <td>JAMES SALINDEHO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208111503110002</td>
+                        <td>_7208112206760001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>VENGKI YUNG PUASA</td>
+                        <td>OLOBARU</td>
+                        <td>22/06/1976</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMP</td>
+                        <td>BURUH TANI</td>
+                        <td>HERMINA MOKOLOMBAN</td>
+                        <td>WELLEM THEOPILUS ASO PUASA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208111503110002</td>
+                        <td>_7208115904820001</td>
+                        <td>ISTRI</td>
+                        <td>ASRY LIKUAYANG</td>
+                        <td>OLOBARU</td>
+                        <td>19/04/1982</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMP</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>LEVINA DOPAS</td>
+                        <td>MARKUS LIKUAYANG</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208111503110002</td>
+                        <td>_7208111007100001</td>
+                        <td>ANAK</td>
+                        <td>JEFERSON PUASA</td>
+                        <td>OLOBARU</td>
+                        <td>10/07/2010</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SD</td>
+                        <td>PELAJAR</td>
+                        <td>ASRY LIKUAYANG</td>
+                        <td>VENGKI YUNG PUASA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208111601150001</td>
+                        <td>_7208114803720003</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>DELFI PUASA</td>
+                        <td>OLOBARU</td>
+                        <td>08/03/1972</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMP</td>
+                        <td>TKI</td>
+                        <td>HERMINA MOKOLOMBAN</td>
+                        <td>WELLEM THEOPILUS ASO PUASA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F7EDFF;">
+                        <td>_7208112007180002</td>
+                        <td>_7208111804920001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>ARRIYANTO</td>
+                        <td>OLOBARU</td>
+                        <td>18/04/1992</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>KARYAWAN SWASTA</td>
+                        <td>RIN TOWE</td>
+                        <td>SARJAN SAIBAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F7EDFF;">
+                        <td>_7208112007180002</td>
+                        <td>_7208114602870001</td>
+                        <td>ISTRI</td>
+                        <td>MARNI</td>
+                        <td>BOYANTONGO</td>
+                        <td>06/02/1987</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>INDARE</td>
+                        <td>MANSYUR</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F7EDFF;">
+                        <td>_7208112007180002</td>
+                        <td>_7208110312130001</td>
+                        <td>ANAK</td>
+                        <td>MOHAMAD FIKRI</td>
+                        <td>OLOBARU</td>
+                        <td>03/12/2013</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM TAMAT SD/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>MARNI</td>
+                        <td>ARRIYANTO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208112011130003</td>
+                        <td>_7208111503720002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>MARKUS LIWAN</td>
+                        <td>OLOBARU</td>
+                        <td>08/03/1972</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMP</td>
+                        <td>KARY SWASTA</td>
+                        <td>MARIA WATANIA</td>
+                        <td>YOAB LIWAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208112011130003</td>
+                        <td>_7326084910820001</td>
+                        <td>ISTRI</td>
+                        <td>HERLINA TULAK</td>
+                        <td>MANGKUTANA</td>
+                        <td>09/10/1982</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>DINA BA'RU</td>
+                        <td>TODING</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208112103180001</td>
+                        <td>_7202210906800001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>YANSEN LAPOLIWA</td>
+                        <td>POSO</td>
+                        <td>09/06/1080</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>KARYAWAN BUMN</td>
+                        <td>YULIANA POLII</td>
+                        <td>MARTHEN LAPOLIWA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208112103180001</td>
+                        <td>_7208115708880001</td>
+                        <td>ISTRI</td>
+                        <td>ANGGRINI PUASA</td>
+                        <td>OLOBARU</td>
+                        <td>17/08/1988</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>HONORER</td>
+                        <td>HERMINA MOKOLOMBAN</td>
+                        <td>WILLEM THEOPILUS ASO PUASA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208112103180001</td>
+                        <td>_7208115201150001</td>
+                        <td>ANAK</td>
+                        <td>CHATRINE JOVANKA LAPOLIWA</td>
+                        <td>PARIGI</td>
+                        <td>12/01/2015</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SD</td>
+                        <td>PELAJAR</td>
+                        <td>ANGGRINI PUASA</td>
+                        <td>YANSEN LAPOLIWA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7208112105260002</td>
+                        <td>_7324031408990001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>EFRAIM</td>
+                        <td>LIOKA</td>
+                        <td>14/08/1999</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>RITNA</td>
+                        <td>DARMON</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7208112105260002</td>
+                        <td>_7208114809940001</td>
+                        <td>ISTRI</td>
+                        <td>SIRKA THERESIA MOKODASER</td>
+                        <td>TOLI-TOLI</td>
+                        <td>08/09/1994</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>PURNAMA SARI MOTILA</td>
+                        <td>YESAYA MOKODASER</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208112111190002</td>
+                        <td>_7208070202940002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>FRANGKI DAREHO</td>
+                        <td>OLOBARU</td>
+                        <td>02/02/1994</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>BURUH HARIAN</td>
+                        <td>SERLI MOKERE</td>
+                        <td>PARMENAS DAREHO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208112111190002</td>
+                        <td>_7208112510130002</td>
+                        <td>ANAK</td>
+                        <td>IKER KADILAS DAREHO</td>
+                        <td>OLOBARU</td>
+                        <td>25/10/2013</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SD</td>
+                        <td>PELAJAR</td>
+                        <td>ESTER TANDIBOYONG</td>
+                        <td>ANGKI DAREHO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208112111190002</td>
+                        <td>_7208112203160001</td>
+                        <td>ANAK</td>
+                        <td>ALFARO DAREHO</td>
+                        <td>OLOBARU</td>
+                        <td>22/03/2016</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM BEKERJA</td>
+                        <td>ESTER TANDIBOYONG</td>
+                        <td>ANGKI DAREHO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208112112070001</td>
+                        <td>_7208114702530001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>ADOLFIN PONGOH</td>
+                        <td>SIDOAN</td>
+                        <td>07/02/1953</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>CERAI MATI</td>
+                        <td>TAMAT SD</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>HERMINA KALEWU</td>
+                        <td>KALFIN PONGOH</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208112203100001</td>
+                        <td>_7208012512630003</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>DAVID PULUNGAN</td>
+                        <td>SA'DAN</td>
+                        <td>25/10/1963</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>DIPLOMA IV/STRATA I</td>
+                        <td>PNS</td>
+                        <td>DAYA</td>
+                        <td>DARI</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208112203100001</td>
+                        <td>_7208014908760001</td>
+                        <td>ISTRI</td>
+                        <td>NIWAN PARUBA</td>
+                        <td>TORAJA</td>
+                        <td>09/08/1976</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>DIPLOMA IV/STRATA I</td>
+                        <td>PNS</td>
+                        <td>HERMIATY MANGIRI</td>
+                        <td>JOHN P</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208112203100001</td>
+                        <td>_7208111703160001</td>
+                        <td>ANAK</td>
+                        <td>DIPOMELO PULUNGAN</td>
+                        <td>PALU</td>
+                        <td>17/03/2016</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TK</td>
+                        <td>BELUM BEKERJA</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FAF5FF;">
+                        <td>_7208112203100001</td>
+                        <td>_7208112512080001</td>
+                        <td>ANAK</td>
+                        <td>KRISTIAN PULUNGAN ANGIRI</td>
+                        <td>PALU</td>
+                        <td>25/12/2008</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>NIWAN PARUBA</td>
+                        <td>DAVID PULUNGAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208112203110004</td>
+                        <td>_7208111501820001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>JEMI FAJAR ABDI SUMOKO</td>
+                        <td>OLOBARU</td>
+                        <td>15/01/1962</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>KARY SWASTA</td>
+                        <td>ELISABETH MENDAY</td>
+                        <td>YOSUA SUMOKO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208112203110004</td>
+                        <td>_7208115607870001</td>
+                        <td>ISTRI</td>
+                        <td>SISILIA WARO</td>
+                        <td>NAPU</td>
+                        <td>16/07/1987</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>SARLOTA GURU</td>
+                        <td>S WARO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF7ED;">
+                        <td>_7208112203110004</td>
+                        <td>_7208116809090001</td>
+                        <td>ANAK</td>
+                        <td>CASSEY JESI BILQISTYA SUMOKO</td>
+                        <td>PALU</td>
+                        <td>28/09/2009</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SD</td>
+                        <td>PELAJAR</td>
+                        <td>SISILIA WARO</td>
+                        <td>JEMI FAJAR ABDI SUMOKO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208112303180004</td>
+                        <td>_7202190501880002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>ROYMON SAPALEMBA NGGARIWO</td>
+                        <td>BATELEMBA</td>
+                        <td>05/01/1987</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>BURUH TANI</td>
+                        <td>ROS TETUMBA</td>
+                        <td>MAXWILIAM NGARIWO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208112303180004</td>
+                        <td>_7208114206840001</td>
+                        <td>ISTRI</td>
+                        <td>YULIANI</td>
+                        <td>OLOBARU</td>
+                        <td>02/06/1984</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>PEDAGANG</td>
+                        <td>STIN MAME</td>
+                        <td>YUNUS KALA BESA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FA;">
+                        <td>_7208112303180004</td>
+                        <td>_7208111609050001</td>
+                        <td>ANAK</td>
+                        <td>STEVE RANDA RUMOROY</td>
+                        <td>SAMARINDA</td>
+                        <td>16/09/2005</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SMP</td>
+                        <td>PELAJAR</td>
+                        <td>YULIANI</td>
+                        <td>RONI RUMOROY</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208112510180001</td>
+                        <td>_7208110712940001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>RISKI DARMANTO M.</td>
+                        <td>OLOBARU</td>
+                        <td>07/12/1994</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>KARYAWAN SWASTA</td>
+                        <td>HANA TODINGAN</td>
+                        <td>DOMINGGUS PARINDING</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208112510180001</td>
+                        <td>_6473027112960036</td>
+                        <td>ISTRI</td>
+                        <td>LIKU TULURAN</td>
+                        <td>TATOR</td>
+                        <td>16/06/1995</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>SAMPE SALU</td>
+                        <td>SURU</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F5;">
+                        <td>_7208112510180001</td>
+                        <td>_7208112011180001</td>
+                        <td>ANAK</td>
+                        <td>REIN HARD MANGAPE</td>
+                        <td>PARIGI</td>
+                        <td>20/11/2018</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>LIKU TULURAN</td>
+                        <td>RISKI DARMANTO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208112601080001</td>
+                        <td>_7208113012640002</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>DOMINGGUS PARINDING</td>
+                        <td>TANA TORAJA</td>
+                        <td>30/12/1964</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD</td>
+                        <td>TANI</td>
+                        <td>HALIMA</td>
+                        <td>ILOPA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F5F0FF;">
+                        <td>_7208112601080001</td>
+                        <td>_7208116712680001</td>
+                        <td>ISTRI</td>
+                        <td>HANA TODINGAN</td>
+                        <td>TANA TORAJA</td>
+                        <td>27/12/1968</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SD</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>BERTA</td>
+                        <td>PALINO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208112704200001</td>
+                        <td>_7208112608000001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>DIVEN NURU</td>
+                        <td>LEMUSA</td>
+                        <td>06/08/2000</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN TERCATAT</td>
+                        <td>TAMAT SD/SEDERAJAT</td>
+                        <td>PETANI/PEKEBUN</td>
+                        <td>ASAS WOWE</td>
+                        <td>ADIL SUTRISNO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208112704200001</td>
+                        <td>_7208115912040002</td>
+                        <td>ISTRI</td>
+                        <td>DELA NATALIA SAIBAN</td>
+                        <td>PARIGI</td>
+                        <td>19/12/2004</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>RIN TOWE</td>
+                        <td>SARJAN SAIBAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #EDFFF7;">
+                        <td>_7208112704200001</td>
+                        <td>_7208110809230001</td>
+                        <td>ANAK</td>
+                        <td>STEVIAN NURU</td>
+                        <td>PARIGI MOUTONG</td>
+                        <td>09/08/2023</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>DELA NATALIA SAIBAN</td>
+                        <td>DIVEN NURU</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F7EDFF;">
+                        <td>_7208112709190010</td>
+                        <td>_7208112402990001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>BRAYEN ADAM</td>
+                        <td>OLOBARU</td>
+                        <td>24/02/1999</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>PELAJAR/MAHASISWA</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208112806240002</td>
+                        <td>_6402032503830004</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>STEPANUS PERI</td>
+                        <td>TATOR</td>
+                        <td>25/03/1983</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN TERCATAT</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>KARYAWAN SWASTA</td>
+                        <td>LUDIA.S</td>
+                        <td>LUKAS.S</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208112806240002</td>
+                        <td>_7208114808890001</td>
+                        <td>ISTRI</td>
+                        <td>AGUSTIN TODINGAN</td>
+                        <td>TORAJA</td>
+                        <td>08/08/1989</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN TERCATAT</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>MENGURUS RUMAH TANGGA</td>
+                        <td>HANA TODINGAN</td>
+                        <td>DOMINGGUS PARINDING</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208112806240002</td>
+                        <td>_9109015603190001</td>
+                        <td>ANAK</td>
+                        <td>STACY MADATU TANDI PAYUNG</td>
+                        <td>TIMIKA</td>
+                        <td>16/03/2019</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>AGUSTIN TODINGAN</td>
+                        <td>STEPANUS PERI</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF5F0;">
+                        <td>_7208112806240002</td>
+                        <td>_9404012401240003</td>
+                        <td>ANAK</td>
+                        <td>STENLY MADATU TANDI PAYUNG</td>
+                        <td>TIMIKA</td>
+                        <td>24/01/2024</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK/BELUM SEKOLAH</td>
+                        <td>BELUM/TIDAK BEKERJA</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208112811080002</td>
+                        <td>_7208110403720001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>MAXI LALENO</td>
+                        <td>TAWAANG</td>
+                        <td>04/03/1972</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>SLTP/SEDERAJAT</td>
+                        <td>SOPIR</td>
+                        <td>YULIN PINORI</td>
+                        <td>FREDRIK LALENO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208112811080002</td>
+                        <td>_7208114606810003</td>
+                        <td>ISTRI</td>
+                        <td>YOHANA TASIK</td>
+                        <td>PARIGI</td>
+                        <td>06/06/1981</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>DAGANG</td>
+                        <td>YUSTINA LISUPINDAN</td>
+                        <td>PRIMUS TATO PAMINTURAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208112811080002</td>
+                        <td>_7208114412050003</td>
+                        <td>ANAK</td>
+                        <td>DHEA FRANSISKA PAMINTURAN</td>
+                        <td>OLOBARU</td>
+                        <td>04/12/2005</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SMP</td>
+                        <td>PELAJAR</td>
+                        <td>YOHANA TASIK</td>
+                        <td>-</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208112811080002</td>
+                        <td>_7208115209090001</td>
+                        <td>ANAK</td>
+                        <td>LISA VERONIKA</td>
+                        <td>OLOBARU</td>
+                        <td>12/09/2009</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SD</td>
+                        <td>PELAJAR</td>
+                        <td>YOHANA TASIK</td>
+                        <td>MAXI LALENO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208112811080002</td>
+                        <td>_7208110308110001</td>
+                        <td>ANAK</td>
+                        <td>RIVALDO VRANSISKUS LALENO</td>
+                        <td>OLOBARU</td>
+                        <td>13/08/2011</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SD</td>
+                        <td>PELAJAR</td>
+                        <td>YOHANA TASIK</td>
+                        <td>MAXI LALENO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF7;">
+                        <td>_7208112811080002</td>
+                        <td>_7208115402190001</td>
+                        <td>ANAK</td>
+                        <td>VERLITA LALENO</td>
+                        <td>PARIGI</td>
+                        <td>14/02/2019</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>BELUM SEKOLAH</td>
+                        <td>BELUM BEKERJA</td>
+                        <td>YOHANA TASIK</td>
+                        <td>MAXI LALENO</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7208112905180001</td>
+                        <td>_7208124107610032</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>SAMENI</td>
+                        <td>PALASA</td>
+                        <td>01/07/1961</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>CERAI MATI</td>
+                        <td>TIDAK TAMAT SD</td>
+                        <td>IBU RUMAH TANGGA</td>
+                        <td>KOMA</td>
+                        <td>KAHUHU</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0F7FF;">
+                        <td>_7208112905180001</td>
+                        <td>_7208120709670001</td>
+                        <td>ANAK</td>
+                        <td>BOBO</td>
+                        <td>BUGIS</td>
+                        <td>07/09/1967</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TIDAK TAMAT SD</td>
+                        <td>BURUH TANI</td>
+                        <td>SAMENI</td>
+                        <td>SAMAN</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208113011200005</td>
+                        <td>_7208111205900001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>GREGORIUS LETTE</td>
+                        <td>OOBIBI</td>
+                        <td>12/05/1990</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN TERCATAT</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>WIRASWASTA</td>
+                        <td>FERONIKA FINSAE</td>
+                        <td>THOMAS LETTE</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #FFF0F0;">
+                        <td>_7208113011200005</td>
+                        <td>_5301066708910002</td>
+                        <td>ISTRI</td>
+                        <td>YURI ARISTAL MANTOLAS</td>
+                        <td>LAUS</td>
+                        <td>27/08/1991</td>
+                        <td>PEREMPUAN</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>SLTA/SEDERAJAT</td>
+                        <td>KARYAWAN SWASTA</td>
+                        <td>ASMAT NITBANI</td>
+                        <td>RUBEN MANTOLAS</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208113108070005</td>
+                        <td>_7208112211790001</td>
+                        <td>KEPALA KELUARGA</td>
+                        <td>NOVI FRANKI</td>
+                        <td>OLOBARU</td>
+                        <td>22/11/1979</td>
+                        <td>LAKI-LAKI</td>
+                        <td>KRISTEN</td>
+                        <td>KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>PNS</td>
+                        <td>HERMINA MOKOLOMBAN</td>
+                        <td>WELLEM THEOPILUS ASO PUASA</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208113108070005</td>
+                        <td>_7208117112800001</td>
+                        <td>ISTRI</td>
+                        <td>ROSDIANA</td>
+                        <td>KULAWI</td>
+                        <td>31/12/1980</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>KAWIN</td>
+                        <td>AKADEMI/DIMLOMA III/SARJANA MUDA</td>
+                        <td>HONORER</td>
+                        <td>KAROLINA</td>
+                        <td>ANWAR YUMBU</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208113108070005</td>
+                        <td>_7208112704030001</td>
+                        <td>ANAK</td>
+                        <td>ADRI ALFARI</td>
+                        <td>PALU</td>
+                        <td>27/04/2003</td>
+                        <td>LAKI-LAKI</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>TAMAT SMA</td>
+                        <td>BELUM BEKERJA</td>
+                        <td>ROSDIANA</td>
+                        <td>NOVI FRANKI</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208113108070005</td>
+                        <td>_7208115704100001</td>
+                        <td>ANAK</td>
+                        <td>CINDI APRILIA</td>
+                        <td>PALU</td>
+                        <td>27/04/2010</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SD</td>
+                        <td>PELAJAR</td>
+                        <td>ROSDIANA</td>
+                        <td>NOVI FRANKI</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr><tr style="background-color: #F0FFF4;">
+                        <td>_7208113108070005</td>
+                        <td>_7208114712130001</td>
+                        <td>ANAK</td>
+                        <td>NABILA NATALIA</td>
+                        <td>PALU</td>
+                        <td>07/12/2013</td>
+                        <td>PEREMPUAN</td>
+                        <td>ISLAM</td>
+                        <td>BELUM KAWIN</td>
+                        <td>SEDANG SD</td>
+                        <td>PELAJAR</td>
+                        <td>ROSDIANA</td>
+                        <td>NOVI FRANKI</td>
+                        <td>II</td>
+                        <td>003/000</td>
+                        </tr></tbody>
+                </table>

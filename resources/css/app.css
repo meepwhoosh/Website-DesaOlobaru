@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../**/*.vue";
+
+@theme {
+    /* Overriding default font families */
+    --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-serif: 'Merriweather', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+
+    /* Custom Color Pattern: Heritage & Harvest */
+    /* Primary (Dark Green) mapped to Green palette */
+    --color-green-50: #e8eee7;
+    --color-green-100: #c5d7c3;
+    --color-green-200: #a2c09f;
+    --color-green-300: #7ea87a;
+    --color-green-400: #5b9156;
+    --color-green-500: #42753d;
+    --color-green-600: #335d30;
+    --color-green-700: #2d5a27; /* Exact Primary */
+    --color-green-800: #21411c;
+    --color-green-850: #1a3518;
+    --color-green-900: #152912;
+    --color-green-950: #0a1509;
+
+    /* Secondary (Light Brown) mapped to Orange palette */
+    --color-orange-50: #fcf6ef;
+    --color-orange-100: #f6e8da;
+    --color-orange-200: #eed5bd;
+    --color-orange-300: #e5c3a1;
+    --color-orange-400: #d4a373; /* Exact Secondary */
+    --color-orange-500: #c1884f;
+    --color-orange-600: #a16c3b;
+    --color-orange-700: #80532b;
+    --color-orange-800: #623e1f;
+    --color-orange-900: #462c15;
+
+    /* Tertiary and Neutral mapped to Slate palette */
+    --color-slate-50: #f6f7f8;
+    --color-slate-100: #e6e8eb;
+    --color-slate-200: #ced3d8;
+    --color-slate-300: #adb5bd;
+    --color-slate-400: #8c969f;
+    --color-slate-500: #6c757d; /* Exact Tertiary */
+    --color-slate-600: #575e64;
+    --color-slate-700: #43494e;
+    --color-slate-800: #333333; /* Exact Neutral */
+    --color-slate-900: #212121;
+    --color-slate-950: #121212;
+}
