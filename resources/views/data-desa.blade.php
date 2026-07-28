@@ -6,10 +6,10 @@
 <!-- Header Banner -->
 <section data-aos="fade-in" class="relative py-16 bg-slate-900 overflow-hidden">
     <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1200&auto=format&fit=crop" 
+        <img src="{{ asset('images/bg-data.jpg') }}" 
              alt="Data Desa" 
-             class="w-full h-full object-cover object-center opacity-30" />
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-slate-900/80"></div>
+             class="w-full h-full object-cover object-[50%_40%] opacity-40" />
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-slate-900/70"></div>
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <span class="text-xs font-bold text-green-400 uppercase tracking-widest block mb-2">Statistik & Kependudukan</span>
@@ -21,9 +21,40 @@
 <section data-aos="fade-in" class="py-12 bg-slate-50/50 dark:bg-slate-900/50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
 
-        <div class="mb-2">
-            <h2 class="text-2xl font-bold text-slate-800 dark:text-white">Dashboard</h2>
-            <p class="text-slate-500 dark:text-white text-sm mt-1">Ringkasan data kependudukan Desa Olobaru</p>
+        <div class="mb-2 flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+                <h2 class="text-2xl font-bold text-slate-800 dark:text-white">Dashboard</h2>
+                <p class="text-slate-500 dark:text-white text-sm mt-1">Ringkasan data kependudukan Desa Olobaru</p>
+            </div>
+            
+            <form action="{{ route('data-desa') }}" method="GET" class="flex flex-col sm:flex-row gap-3">
+                <select name="dusun" class="bg-white dark:bg-[#1e293b] border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-white rounded-xl px-4 py-2 focus:ring-2 focus:ring-green-500 focus:outline-none shadow-sm text-sm" onchange="this.form.submit()">
+                    <option value="">Semua Dusun</option>
+                    @foreach($dusunList as $d)
+                        <option value="{{ $d }}" {{ request('dusun') == $d ? 'selected' : '' }}>Dusun {{ $d }}</option>
+                    @endforeach
+                </select>
+
+                <select name="rw" class="bg-white dark:bg-[#1e293b] border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-white rounded-xl px-4 py-2 focus:ring-2 focus:ring-green-500 focus:outline-none shadow-sm text-sm" onchange="this.form.submit()">
+                    <option value="">Semua RW</option>
+                    @foreach($rwList as $rw)
+                        <option value="{{ $rw }}" {{ request('rw') == $rw ? 'selected' : '' }}>RW {{ $rw }}</option>
+                    @endforeach
+                </select>
+                
+                <select name="rt" class="bg-white dark:bg-[#1e293b] border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-white rounded-xl px-4 py-2 focus:ring-2 focus:ring-green-500 focus:outline-none shadow-sm text-sm" onchange="this.form.submit()">
+                    <option value="">Semua RT</option>
+                    @foreach($rtList as $rt)
+                        <option value="{{ $rt }}" {{ request('rt') == $rt ? 'selected' : '' }}>RT {{ $rt }}</option>
+                    @endforeach
+                </select>
+                
+                @if(request('rw') || request('rt') || request('dusun'))
+                    <a href="{{ route('data-desa') }}" class="px-4 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 rounded-xl text-sm font-semibold transition-colors flex items-center justify-center">
+                        Reset Filter
+                    </a>
+                @endif
+            </form>
         </div>
 
         <!-- Top Overview Cards -->

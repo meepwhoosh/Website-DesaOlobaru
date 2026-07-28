@@ -33,10 +33,10 @@
 <!-- Small Header Banner -->
 <section data-aos="fade-in" class="relative py-16 bg-slate-900 overflow-hidden">
     <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200&auto=format&fit=crop" 
-             alt="Struktur Organisasi Desa Olobaru" 
-             class="w-full h-full object-cover object-center opacity-30" />
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-slate-900/80"></div>
+        <img src="{{ asset('images/sotk-board.jpg') }}" 
+             alt="Papan SOTK Desa Olobaru" 
+             class="w-full h-full object-cover object-center opacity-40" />
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-slate-900/70"></div>
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <span class="text-xs font-bold text-green-400 uppercase tracking-widest block mb-2">Pemerintah Desa</span>
@@ -70,7 +70,7 @@
                     
                     <!-- 1. KEPALA DESA -->
                     <div class="flex flex-col items-center w-full relative">
-                        <div class="px-6 py-3 bg-green-950 text-white rounded-xl shadow-md border-2 border-green-800 text-center w-64 z-10 relative">
+                        <div onclick="openProfilModal('{{ addslashes($kades->nama ?? '') }}', 'Kepala Desa', '{{ $kades && $kades->gambar ? asset('storage/' . $kades->gambar) : '' }}')" class="cursor-pointer hover:scale-105 transition-transform group px-6 py-3 bg-green-950 text-white rounded-xl shadow-md border-2 border-green-800 text-center w-64 z-10 relative">
                             <div class="flex justify-center mb-2">
                                 <div class="w-16 h-16 rounded-full bg-green-900 border-2 border-green-700 flex items-center justify-center overflow-hidden">
                                     @if($kades && $kades->gambar)
@@ -83,38 +83,38 @@
                             <span class="block text-[10px] text-green-300 font-bold uppercase tracking-wider">Kepala Desa</span>
                             <span class="text-base font-bold">{{ $kades->nama ?? 'Belum Diisi' }}</span>
                         </div>
-                        <div class="w-0.5 h-8 bg-green-800"></div>
+                        <div class="w-0.5 h-8 bg-green-800 dark:bg-green-500"></div>
                     </div>
 
                     <!-- 2. SPLIT ROW: KASIS (Left) and SEKDES/KAURS (Right) -->
                     <div class="flex w-full items-stretch relative pt-6">
                         <!-- Main Central Line from Kades to Kadus -->
                         <!-- It starts from top-0 (where the Kades drop line ended) and goes down to bottom-0 -->
-                        <div class="absolute left-0 right-0 mx-auto top-0 bottom-0 w-0.5 bg-green-800 z-0"></div>
+                        <div class="absolute left-0 right-0 mx-auto top-0 bottom-0 w-0.5 bg-green-800 dark:bg-green-500 z-0"></div>
                         
                         <!-- Main Horizontal Crossbar (to Sekdes only) -->
-                        <div class="absolute top-0 h-0.5 bg-green-800 z-0" style="left: 50%; right: calc(25% - 12px);"></div>
+                        <div class="absolute top-0 h-0.5 bg-green-800 dark:bg-green-500 z-0" style="left: 50%; right: calc(25% - 12px);"></div>
                         
                         <!-- Drop line to Sekdes (Right) -->
-                        <div class="absolute top-0 translate-x-1/2 w-0.5 h-6 bg-green-800 z-0" style="right: calc(25% - 12px);"></div>
+                        <div class="absolute top-0 translate-x-1/2 w-0.5 h-6 bg-green-800 dark:bg-green-500 z-0" style="right: calc(25% - 12px);"></div>
 
                         <!-- LEFT COLUMN: KASI (3 Seksi) -->
                         <div class="w-1/2 pr-6 flex flex-col items-center relative z-10">
                             <!-- Horizontal line for 3 KASI -->
                             <div class="w-full relative pt-6 mt-auto">
                                 <!-- Line connecting center of Kasi to main central line -->
-                                <div class="absolute top-0 h-0.5 bg-green-800 z-0" style="left: 50%; right: -1.5rem;"></div>
+                                <div class="absolute top-0 h-0.5 bg-green-800 dark:bg-green-500 z-0" style="left: 50%; right: -1.5rem;"></div>
 
                                 <!-- Line spanning the 3 Kasi -->
-                                <div class="absolute top-0 h-0.5 bg-green-800 z-0" style="left: 16.666%; right: 16.666%;"></div>
-                                <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 z-0" style="left: 16.666%;"></div>
-                                <div class="absolute top-0 left-0 right-0 mx-auto w-0.5 h-6 bg-green-800 z-0"></div>
-                                <div class="absolute top-0 translate-x-1/2 w-0.5 h-6 bg-green-800 z-0" style="right: 16.666%;"></div>
+                                <div class="absolute top-0 h-0.5 bg-green-800 dark:bg-green-500 z-0" style="left: 16.666%; right: 16.666%;"></div>
+                                <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 dark:bg-green-500 z-0" style="left: 16.666%;"></div>
+                                <div class="absolute top-0 left-0 right-0 mx-auto w-0.5 h-6 bg-green-800 dark:bg-green-500 z-0"></div>
+                                <div class="absolute top-0 translate-x-1/2 w-0.5 h-6 bg-green-800 dark:bg-green-500 z-0" style="right: 16.666%;"></div>
                                 
                                 <div data-aos="fade-up" class="grid grid-cols-3 w-full gap-0">
                                     <!-- Kasi Pemerintahan -->
                                     <div class="px-1.5 w-full">
-                                        <div class="px-1.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
+                                        <div onclick="openProfilModal('{{ addslashes($kasiPem->nama ?? '') }}', 'Kepala Seksi Pemerintahan', '{{ $kasiPem && $kasiPem->gambar ? asset('storage/' . $kasiPem->gambar) : '' }}')" class="cursor-pointer hover:scale-105 transition-transform group px-1.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
                                             <div class="flex justify-center mb-1.5">
                                                 <div class="w-12 h-12 rounded-full bg-slate-100 dark:bg-[#1e293b] border border-slate-200 dark:border-slate-700/50 flex items-center justify-center overflow-hidden">
                                                     @if($kasiPem && $kasiPem->gambar)
@@ -131,7 +131,7 @@
 
                                     <!-- Kasi Kesejahteraan -->
                                     <div class="px-1.5 w-full">
-                                        <div class="px-1.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
+                                        <div onclick="openProfilModal('{{ addslashes($kasiKes->nama ?? '') }}', 'Kepala Seksi Kesejahteraan', '{{ $kasiKes && $kasiKes->gambar ? asset('storage/' . $kasiKes->gambar) : '' }}')" class="cursor-pointer hover:scale-105 transition-transform group px-1.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
                                             <div class="flex justify-center mb-1.5">
                                                 <div class="w-12 h-12 rounded-full bg-slate-100 dark:bg-[#1e293b] border border-slate-200 dark:border-slate-700/50 flex items-center justify-center overflow-hidden">
                                                     @if($kasiKes && $kasiKes->gambar)
@@ -148,7 +148,7 @@
 
                                     <!-- Kasi Pelayanan -->
                                     <div class="px-1.5 w-full">
-                                        <div class="px-1.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
+                                        <div onclick="openProfilModal('{{ addslashes($kasiPel->nama ?? '') }}', 'Kepala Seksi Pelayanan', '{{ $kasiPel && $kasiPel->gambar ? asset('storage/' . $kasiPel->gambar) : '' }}')" class="cursor-pointer hover:scale-105 transition-transform group px-1.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
                                             <div class="flex justify-center mb-1.5">
                                                 <div class="w-12 h-12 rounded-full bg-slate-100 dark:bg-[#1e293b] border border-slate-200 dark:border-slate-700/50 flex items-center justify-center overflow-hidden">
                                                     @if($kasiPel && $kasiPel->gambar)
@@ -169,7 +169,7 @@
                         <!-- RIGHT COLUMN: SEKDES & KAURS -->
                         <div class="w-1/2 pl-6 flex flex-col items-center relative z-10">
                             <!-- Sekretaris Desa Card -->
-                            <div class="px-6 py-2.5 bg-green-800 text-white rounded-xl shadow border border-green-750 text-center w-60 z-10 relative">
+                            <div onclick="openProfilModal('{{ addslashes($sekdes->nama ?? '') }}', 'Sekretariat Desa', '{{ $sekdes && $sekdes->gambar ? asset('storage/' . $sekdes->gambar) : '' }}')" class="cursor-pointer hover:scale-105 transition-transform group px-6 py-2.5 bg-green-800 text-white rounded-xl shadow border border-green-750 text-center w-60 z-10 relative">
                                 <div class="flex justify-center mb-1.5">
                                     <div class="w-14 h-14 rounded-full bg-green-700 border-2 border-green-600 flex items-center justify-center overflow-hidden">
                                         @if($sekdes && $sekdes->gambar)
@@ -184,19 +184,19 @@
                             </div>
                             
                             <!-- Line from Sekdes down to KAUR group -->
-                            <div class="w-0.5 h-6 bg-green-800"></div>
+                            <div class="w-0.5 h-6 bg-green-800 dark:bg-green-500"></div>
 
                             <!-- Kaurs (3 Jabatan under Sekretariat) -->
                             <div class="w-full relative pt-6">
-                                <div class="absolute top-0 h-0.5 bg-green-800 z-0" style="left: 16.666%; right: 16.666%;"></div>
-                                <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 z-0" style="left: 16.666%;"></div>
-                                <div class="absolute top-0 left-0 right-0 mx-auto w-0.5 h-6 bg-green-800 z-0"></div>
-                                <div class="absolute top-0 translate-x-1/2 w-0.5 h-6 bg-green-800 z-0" style="right: 16.666%;"></div>
+                                <div class="absolute top-0 h-0.5 bg-green-800 dark:bg-green-500 z-0" style="left: 16.666%; right: 16.666%;"></div>
+                                <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 dark:bg-green-500 z-0" style="left: 16.666%;"></div>
+                                <div class="absolute top-0 left-0 right-0 mx-auto w-0.5 h-6 bg-green-800 dark:bg-green-500 z-0"></div>
+                                <div class="absolute top-0 translate-x-1/2 w-0.5 h-6 bg-green-800 dark:bg-green-500 z-0" style="right: 16.666%;"></div>
                                 
                                 <div data-aos="fade-up" class="grid grid-cols-3 w-full gap-0">
                                     <!-- Kaur Tata Usaha & Umum -->
                                     <div class="px-1.5 w-full">
-                                        <div class="px-1.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
+                                        <div onclick="openProfilModal('{{ addslashes($kaurTu->nama ?? '') }}', 'Kepala Urusan Tata Usaha & Umum', '{{ $kaurTu && $kaurTu->gambar ? asset('storage/' . $kaurTu->gambar) : '' }}')" class="cursor-pointer hover:scale-105 transition-transform group px-1.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
                                             <div class="flex justify-center mb-1.5">
                                                 <div class="w-12 h-12 rounded-full bg-slate-100 dark:bg-[#1e293b] border border-slate-200 dark:border-slate-700/50 flex items-center justify-center overflow-hidden">
                                                     @if($kaurTu && $kaurTu->gambar)
@@ -213,7 +213,7 @@
 
                                     <!-- Kaur Perencanaan -->
                                     <div class="px-1.5 w-full">
-                                        <div class="px-1.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
+                                        <div onclick="openProfilModal('{{ addslashes($kaurPerencanaan->nama ?? '') }}', 'Kepala Urusan Perencanaan', '{{ $kaurPerencanaan && $kaurPerencanaan->gambar ? asset('storage/' . $kaurPerencanaan->gambar) : '' }}')" class="cursor-pointer hover:scale-105 transition-transform group px-1.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
                                             <div class="flex justify-center mb-1.5">
                                                 <div class="w-12 h-12 rounded-full bg-slate-100 dark:bg-[#1e293b] border border-slate-200 dark:border-slate-700/50 flex items-center justify-center overflow-hidden">
                                                     @if($kaurPerencanaan && $kaurPerencanaan->gambar)
@@ -230,7 +230,7 @@
 
                                     <!-- Kaur Keuangan -->
                                     <div class="px-1.5 w-full">
-                                        <div class="px-1.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
+                                        <div onclick="openProfilModal('{{ addslashes($kaurKeu->nama ?? '') }}', 'Kepala Urusan Keuangan', '{{ $kaurKeu && $kaurKeu->gambar ? asset('storage/' . $kaurKeu->gambar) : '' }}')" class="cursor-pointer hover:scale-105 transition-transform group px-1.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
                                             <div class="flex justify-center mb-1.5">
                                                 <div class="w-12 h-12 rounded-full bg-slate-100 dark:bg-[#1e293b] border border-slate-200 dark:border-slate-700/50 flex items-center justify-center overflow-hidden">
                                                     @if($kaurKeu && $kaurKeu->gambar)
@@ -250,23 +250,23 @@
                     </div>
 
                     <!-- 3. BOTTOM VERTICAL CONNECTOR LINE (FROM CENTER TO KADUSES) -->
-                    <div class="w-0.5 h-8 bg-green-800"></div>
+                    <div class="w-0.5 h-8 bg-green-800 dark:bg-green-500"></div>
 
                     <!-- 4. KEPALA DUSUN ROW (KADUS) -->
                     <div class="w-full flex flex-col items-center relative z-10">
                         <div class="w-full relative pt-6">
                             <!-- Kadus Horizontal Line (spans from center of Col 1 to center of Col 3) -->
-                            <div class="absolute top-0 h-0.5 bg-green-800 z-0" style="left: 16.666%; right: 16.666%;"></div>
+                            <div class="absolute top-0 h-0.5 bg-green-800 dark:bg-green-500 z-0" style="left: 16.666%; right: 16.666%;"></div>
                             
                             <!-- Drop lines for Kaduses -->
-                            <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 z-0" style="left: 16.666%;"></div>
-                            <div class="absolute top-0 left-0 right-0 mx-auto w-0.5 h-6 bg-green-800 z-0"></div>
-                            <div class="absolute top-0 translate-x-1/2 w-0.5 h-6 bg-green-800 z-0" style="right: 16.666%;"></div>
+                            <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 dark:bg-green-500 z-0" style="left: 16.666%;"></div>
+                            <div class="absolute top-0 left-0 right-0 mx-auto w-0.5 h-6 bg-green-800 dark:bg-green-500 z-0"></div>
+                            <div class="absolute top-0 translate-x-1/2 w-0.5 h-6 bg-green-800 dark:bg-green-500 z-0" style="right: 16.666%;"></div>
                             
                             <div data-aos="fade-up" class="grid grid-cols-3 w-full gap-0">
                                 <!-- Kadus 1 -->
                                 <div class="px-2 w-full">
-                                    <div class="px-3 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
+                                    <div onclick="openProfilModal('{{ addslashes($kadus1->nama ?? '') }}', 'Kepala Dusun I', '{{ $kadus1 && $kadus1->gambar ? asset('storage/' . $kadus1->gambar) : '' }}')" class="cursor-pointer hover:scale-105 transition-transform group px-3 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
                                         <div class="flex justify-center mb-1.5">
                                             <div class="w-12 h-12 rounded-full bg-slate-100 dark:bg-[#1e293b] border border-slate-200 dark:border-slate-700/50 flex items-center justify-center overflow-hidden">
                                                 @if($kadus1 && $kadus1->gambar)
@@ -283,7 +283,7 @@
 
                                 <!-- Kadus 2 -->
                                 <div class="px-2 w-full">
-                                    <div class="px-3 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
+                                    <div onclick="openProfilModal('{{ addslashes($kadus2->nama ?? '') }}', 'Kepala Dusun II', '{{ $kadus2 && $kadus2->gambar ? asset('storage/' . $kadus2->gambar) : '' }}')" class="cursor-pointer hover:scale-105 transition-transform group px-3 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
                                         <div class="flex justify-center mb-1.5">
                                             <div class="w-12 h-12 rounded-full bg-slate-100 dark:bg-[#1e293b] border border-slate-200 dark:border-slate-700/50 flex items-center justify-center overflow-hidden">
                                                 @if($kadus2 && $kadus2->gambar)
@@ -300,7 +300,7 @@
 
                                 <!-- Kadus 3 -->
                                 <div class="px-2 w-full">
-                                    <div class="px-3 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
+                                    <div onclick="openProfilModal('{{ addslashes($kadus3->nama ?? '') }}', 'Kepala Dusun III', '{{ $kadus3 && $kadus3->gambar ? asset('storage/' . $kadus3->gambar) : '' }}')" class="cursor-pointer hover:scale-105 transition-transform group px-3 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
                                         <div class="flex justify-center mb-1.5">
                                             <div class="w-12 h-12 rounded-full bg-slate-100 dark:bg-[#1e293b] border border-slate-200 dark:border-slate-700/50 flex items-center justify-center overflow-hidden">
                                                 @if($kadus3 && $kadus3->gambar)
@@ -331,7 +331,7 @@
 
             <div data-aos="fade-up" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 @forelse($pemdes as $p)
-                <div data-aos="fade-up" data-aos-delay="{{ $loop->iteration * 100 }}" class="bg-white dark:bg-[#1e293b] rounded-2xl border border-slate-100 dark:border-slate-700/50 p-5 shadow-sm text-center space-y-4 group hover:shadow-md transition-shadow">
+                <div data-aos="fade-up" data-aos-delay="{{ $loop->iteration * 100 }}" onclick="openProfilModal('{{ addslashes($p->nama) }}', '{{ addslashes($p->jabatan) }}', '{{ $p->gambar ? asset('storage/' . $p->gambar) : '' }}')" class="cursor-pointer bg-white dark:bg-[#1e293b] rounded-2xl border border-slate-100 dark:border-slate-700/50 p-5 shadow-sm text-center space-y-4 group hover:shadow-md hover:border-green-300 dark:hover:border-green-600 transition-all">
                     <div class="w-24 h-24 mx-auto rounded-full bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 overflow-hidden">
                         @if($p->gambar)
                             <img src="{{ asset('storage/' . $p->gambar) }}" class="w-full h-full object-cover" alt="{{ $p->nama }}">
@@ -375,7 +375,7 @@
                     
                     <!-- 1. KETUA BPD -->
                     <div class="flex flex-col items-center w-full relative z-10">
-                        <div class="px-6 py-3 bg-green-950 text-white rounded-xl shadow-md border-2 border-green-800 text-center w-64 z-10 relative">
+                        <div onclick="openProfilModal('{{ addslashes($ketuaBpd->nama ?? '') }}', 'Ketua BPD', '{{ $ketuaBpd && $ketuaBpd->gambar ? asset('storage/' . $ketuaBpd->gambar) : '' }}')" class="cursor-pointer hover:scale-105 transition-transform group px-6 py-3 bg-green-950 text-white rounded-xl shadow-md border-2 border-green-800 text-center w-64 z-10 relative">
                             <div class="flex justify-center mb-2">
                                 <div class="w-16 h-16 rounded-full bg-green-900 border-2 border-green-700 flex items-center justify-center overflow-hidden">
                                     @if($ketuaBpd && $ketuaBpd->gambar)
@@ -388,23 +388,23 @@
                             <span class="block text-[10px] text-green-300 font-bold uppercase tracking-wider">Ketua BPD</span>
                             <span class="text-base font-bold">{{ $ketuaBpd->nama ?? '-' }}</span>
                         </div>
-                        <div class="w-0.5 h-8 bg-green-800"></div>
+                        <div class="w-0.5 h-8 bg-green-800 dark:bg-green-500"></div>
                     </div>
 
                     <!-- 2. WAKIL & SEKRETARIS (Split 50/50) -->
                     <div class="w-full relative flex z-10">
                         <!-- Horizontal Crossbar -->
-                        <div class="absolute top-0 h-0.5 bg-green-800 z-0" style="left: 25%; right: 25%;"></div>
+                        <div class="absolute top-0 h-0.5 bg-green-800 dark:bg-green-500 z-0" style="left: 25%; right: 25%;"></div>
                         
                         <!-- Drop line to WAKIL -->
-                        <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 z-0" style="left: 25%;"></div>
+                        <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 dark:bg-green-500 z-0" style="left: 25%;"></div>
                         
                         <!-- Drop line to SEKRETARIS -->
-                        <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 z-0" style="left: 75%;"></div>
+                        <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 dark:bg-green-500 z-0" style="left: 75%;"></div>
 
                         <!-- WAKIL KETUA BPD (Left) -->
                         <div class="w-1/2 flex flex-col items-center pt-6">
-                            <div class="px-6 py-2.5 bg-green-800 text-white rounded-xl shadow border border-green-750 text-center w-60 z-10 relative">
+                            <div onclick="openProfilModal('{{ addslashes($wakilBpd->nama ?? '') }}', 'Wakil Ketua BPD', '{{ $wakilBpd && $wakilBpd->gambar ? asset('storage/' . $wakilBpd->gambar) : '' }}')" class="cursor-pointer hover:scale-105 transition-transform group px-6 py-2.5 bg-green-800 text-white rounded-xl shadow border border-green-750 text-center w-60 z-10 relative">
                                 <div class="flex justify-center mb-1.5">
                                     <div class="w-14 h-14 rounded-full bg-green-700 border-2 border-green-600 flex items-center justify-center overflow-hidden">
                                         @if($wakilBpd && $wakilBpd->gambar)
@@ -421,7 +421,7 @@
 
                         <!-- SEKRETARIS BPD (Right) -->
                         <div class="w-1/2 flex flex-col items-center pt-6">
-                            <div class="px-6 py-2.5 bg-green-800 text-white rounded-xl shadow border border-green-750 text-center w-60 z-10 relative">
+                            <div onclick="openProfilModal('{{ addslashes($sekBpd->nama ?? '') }}', 'Sekretaris', '{{ $sekBpd && $sekBpd->gambar ? asset('storage/' . $sekBpd->gambar) : '' }}')" class="cursor-pointer hover:scale-105 transition-transform group px-6 py-2.5 bg-green-800 text-white rounded-xl shadow border border-green-750 text-center w-60 z-10 relative">
                                 <div class="flex justify-center mb-1.5">
                                     <div class="w-14 h-14 rounded-full bg-green-700 border-2 border-green-600 flex items-center justify-center overflow-hidden">
                                         @if($sekBpd && $sekBpd->gambar)
@@ -439,26 +439,26 @@
 
                     <!-- Vertical Line continuing down from Sekretaris -->
                     <div class="w-full h-8 relative z-10">
-                        <div class="absolute top-0 bottom-0 -translate-x-1/2 w-0.5 bg-green-800 z-0" style="left: 75%;"></div>
+                        <div class="absolute top-0 bottom-0 -translate-x-1/2 w-0.5 bg-green-800 dark:bg-green-500 z-0" style="left: 75%;"></div>
                     </div>
 
                     <!-- 3. ANGGOTA ROW -->
                     <div class="w-full flex flex-col items-center relative z-10">
                         <div class="w-full relative pt-6">
                             <!-- Horizontal Line for Anggota -->
-                            <div class="absolute top-0 h-0.5 bg-green-800 z-0" style="left: 12.5%; right: 12.5%;"></div>
+                            <div class="absolute top-0 h-0.5 bg-green-800 dark:bg-green-500 z-0" style="left: 12.5%; right: 12.5%;"></div>
                             
                             <!-- Drop lines for Anggota -->
-                            <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 z-0" style="left: 12.5%;"></div>
-                            <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 z-0" style="left: 37.5%;"></div>
-                            <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 z-0" style="left: 62.5%;"></div>
-                            <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 z-0" style="left: 87.5%;"></div>
+                            <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 dark:bg-green-500 z-0" style="left: 12.5%;"></div>
+                            <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 dark:bg-green-500 z-0" style="left: 37.5%;"></div>
+                            <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 dark:bg-green-500 z-0" style="left: 62.5%;"></div>
+                            <div class="absolute top-0 -translate-x-1/2 w-0.5 h-6 bg-green-800 dark:bg-green-500 z-0" style="left: 87.5%;"></div>
                             
                             <div data-aos="fade-up" class="grid w-full gap-0" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
                                 @for($i = 0; $i < 4; $i++)
                                 @php $anggota = $anggotaBpd[$i] ?? null; @endphp
                                 <div class="px-2 w-full">
-                                    <div class="px-3 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
+                                    <div onclick="openProfilModal('{{ addslashes($anggota->nama ?? '') }}', 'Anggota BPD', '{{ $anggota && $anggota->gambar ? asset('storage/' . $anggota->gambar) : '' }}')" class="cursor-pointer hover:scale-105 transition-transform group px-3 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 rounded-xl text-xs text-center shadow-sm w-full z-10 h-full flex flex-col">
                                         <div class="flex justify-center mb-1.5">
                                             <div class="w-12 h-12 rounded-full bg-slate-100 dark:bg-[#1e293b] border border-slate-200 dark:border-slate-700/50 flex items-center justify-center overflow-hidden">
                                                 @if($anggota && $anggota->gambar)
@@ -490,7 +490,7 @@
 
             <div data-aos="fade-up" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 @forelse($bpd as $p)
-                <div data-aos="fade-up" data-aos-delay="{{ $loop->iteration * 100 }}" class="bg-white dark:bg-[#1e293b] rounded-2xl border border-slate-100 dark:border-slate-700/50 p-5 shadow-sm text-center space-y-4 group hover:shadow-md transition-shadow">
+                <div data-aos="fade-up" data-aos-delay="{{ $loop->iteration * 100 }}" onclick="openProfilModal('{{ addslashes($p->nama) }}', '{{ addslashes($p->jabatan) }}', '{{ $p->gambar ? asset('storage/' . $p->gambar) : '' }}')" class="cursor-pointer bg-white dark:bg-[#1e293b] rounded-2xl border border-slate-100 dark:border-slate-700/50 p-5 shadow-sm text-center space-y-4 group hover:shadow-md hover:border-green-300 dark:hover:border-green-600 transition-all">
                     <div class="w-24 h-24 mx-auto rounded-full bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 overflow-hidden">
                         @if($p->gambar)
                             <img src="{{ asset('storage/' . $p->gambar) }}" class="w-full h-full object-cover" alt="{{ $p->nama }}">
@@ -515,3 +515,77 @@
 
     </div>
 </section>
+
+<!-- Modal Profil (Berita-like Redesign) -->
+<div id="profilModal" class="fixed inset-0 z-[100] hidden bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+    <div class="relative bg-white dark:bg-[#1e293b] rounded-3xl shadow-2xl w-full max-w-lg overflow-hidden transform scale-95 transition-transform duration-300" id="profilModalContent">
+        <!-- Close Button -->
+        <button type="button" onclick="closeProfilModal()" class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-700/50 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 transition-colors z-10">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        
+        <div class="p-8 text-center space-y-6">
+            <!-- Image Container -->
+            <div class="mx-auto rounded-full bg-slate-100 dark:bg-slate-800 border-4 border-green-500 overflow-hidden shadow-xl" style="width: 200px; height: 200px; flex-shrink: 0;">
+                <img id="modalGambar" src="" class="w-full h-full object-cover hidden" alt="Foto Profil">
+                <div id="modalPlaceholder" class="w-full h-full flex items-center justify-center text-slate-400 dark:text-slate-500">
+                    <svg class="w-20 h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                </div>
+            </div>
+            
+            <!-- Text Content -->
+            <div class="space-y-2">
+                <span id="modalJabatan" class="inline-block px-4 py-1.5 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-bold uppercase tracking-wider rounded-full">Jabatan</span>
+                <h4 id="modalNama" class="font-serif font-bold text-slate-900 dark:text-white text-3xl">Nama Lengkap</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+window.openProfilModal = function(nama, jabatan, gambar) {
+    document.getElementById('modalNama').textContent = nama || 'Belum Diisi';
+    document.getElementById('modalJabatan').textContent = jabatan || '-';
+    
+    const imgEl = document.getElementById('modalGambar');
+    const placeholder = document.getElementById('modalPlaceholder');
+    
+    if (gambar) {
+        imgEl.src = gambar;
+        imgEl.classList.remove('hidden');
+        placeholder.classList.add('hidden');
+    } else {
+        imgEl.src = '';
+        imgEl.classList.add('hidden');
+        placeholder.classList.remove('hidden');
+    }
+    
+    const modal = document.getElementById('profilModal');
+    const content = document.getElementById('profilModalContent');
+    
+    modal.classList.remove('hidden');
+    // Trigger reflow
+    void modal.offsetWidth;
+    modal.classList.remove('opacity-0');
+    content.classList.remove('scale-95');
+};
+
+window.closeProfilModal = function() {
+    const modal = document.getElementById('profilModal');
+    const content = document.getElementById('profilModalContent');
+    
+    modal.classList.add('opacity-0');
+    content.classList.add('scale-95');
+    
+    setTimeout(() => {
+        modal.classList.add('hidden');
+    }, 300);
+};
+
+// Tutup modal jika klik di luar area konten
+document.getElementById('profilModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeProfilModal();
+    }
+});
+</script>

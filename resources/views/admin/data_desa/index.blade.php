@@ -92,13 +92,13 @@
 </div>
 
 <!-- Info Banner -->
-<div class="mt-6 bg-blue-50 dark:bg-blue-900/30 border border-blue-100 rounded-xl p-4 flex gap-4">
-    <svg class="w-6 h-6 text-blue-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<div class="mt-6 bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-xl p-4 flex gap-4">
+    <svg class="w-6 h-6 text-slate-500 dark:text-slate-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
     </svg>
     <div>
-        <h4 class="font-semibold text-blue-900">Mengapa Tabel Data Detail Tidak Ditampilkan?</h4>
-        <p class="text-sm text-blue-700 mt-1">
+        <h4 class="font-semibold text-slate-900 dark:text-white">Mengapa Tabel Data Detail Tidak Ditampilkan?</h4>
+        <p class="text-sm text-slate-700 dark:text-slate-300 mt-1">
             Mengingat tingginya sensitivitas privasi data penduduk (NIK, dll), kami menyembunyikan tabel data individu di antarmuka ini. Anda dapat menggunakan tombol <strong>Import Excel Baru</strong> untuk memperbarui data di Database yang akan langsung tersinkronisasi ke visualisasi Grafik Dashboard Website. Untuk mengedit secara individual, ubah data di file Excel lokal Anda dan lakukan proses re-import (sistem akan otomatis me-*replace* data tanpa duplikat).
         </p>
     </div>

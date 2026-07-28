@@ -7,10 +7,10 @@
 <section data-aos="fade-in" class="relative min-h-[90vh] flex items-center justify-center bg-slate-900 overflow-hidden pt-12">
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1500485035595-cbe6f645feb1?q=80&w=1600&auto=format&fit=crop" 
-             alt="Persawahan Desa Olobaru" 
+        <img src="{{ asset('images/ruang-pelayanan.jpg') }}" 
+             alt="Ruang Pelayanan Desa Olobaru" 
              class="w-full h-full object-cover object-center opacity-40 scale-105 animate-[subtle-zoom_20s_infinite_alternate]" />
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent"></div>
     </div>
 
     <!-- Hero Content -->
@@ -36,7 +36,7 @@
             <a href="{{ route('profil') }}" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-green-700 hover:bg-green-600 text-white font-semibold shadow-lg shadow-green-900/30 transition-all duration-200 transform hover:-translate-y-0.5">
                 Jelajahi Desa
             </a>
-            <a href="{{ route('profil') }}" class="w-full sm:w-auto px-8 py-3.5 rounded-full border-2 border-white/80 hover:border-white text-white font-semibold backdrop-blur-sm hover:bg-white dark:bg-[#1e293b]/10 transition-all duration-200 transform hover:-translate-y-0.5">
+            <a href="{{ route('struktur') }}" class="w-full sm:w-auto px-8 py-3.5 rounded-full border-2 border-white/80 hover:border-white text-white font-semibold backdrop-blur-sm hover:bg-white dark:bg-[#1e293b]/10 transition-all duration-200 transform hover:-translate-y-0.5">
                 Struktur Organisasi
             </a>
         </div>
@@ -66,7 +66,7 @@
             </a>
 
             <!-- Card 2: Struktur Organisasi -->
-            <a href="{{ route('profil') }}" data-aos="fade-up" data-aos-delay="200" class="group bg-white  dark:bg-[#1e293b] rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700/50 hover:shadow-xl hover:border-orange-100 dark:hover:border-orange-800 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between">
+            <a href="{{ route('struktur') }}" data-aos="fade-up" data-aos-delay="200" class="group bg-white  dark:bg-[#1e293b] rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700/50 hover:shadow-xl hover:border-orange-100 dark:hover:border-orange-800 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between">
                 <div>
                     <div class="w-12 h-12 rounded-xl bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 flex items-center justify-center mb-5 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -165,7 +165,7 @@
                          class="w-64 h-80 object-cover rounded-3xl shadow-xl border-4 border-white dark:border-[#334155]/50" />
                     <!-- Name badge -->
                     <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white dark:bg-[#1e293b] px-6 py-3 rounded-2xl shadow-lg border border-slate-100 dark:border-slate-700/50 w-[110%] text-center">
-                        <h4 class="font-bold text-slate-900 dark:text-white text-lg">Arnold</h4>
+                        <h4 class="font-bold text-slate-900 dark:text-white text-lg">Kepala Desa</h4>
                         <p class="text-xs text-green-700 dark:text-green-300 font-semibold uppercase tracking-wider mt-1">Kepala Desa Olobaru</p>
                     </div>
                 </div>
@@ -181,11 +181,11 @@
                     <svg class="absolute -top-4 -left-6 w-12 h-12 text-slate-200 dark:text-slate-800 dark:text-slate-100 -z-10 transform -scale-x-100" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
                         <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.896 3.456-8.352 9.12-8.352 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"></path>
                     </svg>
-                    <p class="text-slate-600 dark:text-white leading-relaxed text-lg font-medium italic">
+                    <p class="text-slate-600 dark:text-white leading-relaxed text-lg font-medium italic whitespace-pre-line">
                         "Selamat datang di Website Profil Desa Olobaru. Website ini hadir sebagai media informasi yang memperkenalkan sejarah, pemerintahan, kondisi wilayah, serta data desa Olobaru."
                     </p>
                 </div>
-                <p class="text-slate-600 dark:text-white leading-relaxed text-base">
+                <p class="text-sm md:text-base text-slate-700 dark:text-slate-200 leading-relaxed text-justify indent-8">
                     Melalui website ini, kami berharap masyarakat dan seluruh pengunjung dapat mengenal Desa Olobaru lebih dekat, memahami perkembangan desa. Semoga website ini menjadi jendela informasi yang memberikan manfaat bagi semua pihak dan semakin memperkenalkan Desa Olobaru kepada masyarakat luas.
                 </p>
                 <div class="pt-2">
@@ -205,8 +205,8 @@
             <div data-aos="fade-right" class="lg:col-span-5 relative">
                 <div class="absolute -top-4 -left-4 w-72 h-72 bg-green-200 dark:bg-green-900/40 rounded-3xl -z-10 opacity-60"></div>
                 <div class="absolute -bottom-4 -right-4 w-72 h-72 bg-yellow-100 dark:bg-yellow-900/40 rounded-3xl -z-10 opacity-70"></div>
-                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1000&auto=format&fit=crop" 
-                     alt="Kantor Desa Olobaru" 
+                <img src="{{ asset('images/ruang-pelayanan.jpg') }}" 
+                     alt="Ruang Pelayanan Desa Olobaru" 
                      class="w-full aspect-[4/3] object-cover rounded-2xl shadow-xl border-4 border-white dark:border-[#334155]/50" />
             </div>
 
@@ -216,17 +216,17 @@
                 <h2 class="text-3xl sm:text-4xl font-bold font-serif text-slate-900 dark:text-white tracking-tight leading-tight">
                     Membangun Desa Olobaru yang Maju, Sejahtera, dan Berbudaya
                 </h2>
-                <p class="text-slate-600 dark:text-white leading-relaxed text-base">
+                <p class="text-slate-600 dark:text-white leading-relaxed text-base whitespace-pre-line text-justify">
                     Desa Olobaru merupakan salah satu desa yang berada di Kecamatan Parigi Selatan, Kabupaten Parigi Moutong, Provinsi Sulawesi Tengah. Desa ini memiliki potensi di bidang pertanian, kekayaan alam, serta kehidupan masyarakat yang menjunjung tinggi nilai kebersamaan, gotong royong, dan adat istiadat yang diwariskan secara turun-temurun.
                 </p>
-                <p class="text-slate-600 dark:text-white leading-relaxed text-base">
+                <p class="text-slate-600 dark:text-white leading-relaxed text-base whitespace-pre-line text-justify">
                     Website ini hadir sebagai media informasi resmi Desa Olobaru untuk memperkenalkan profil desa, struktur organisasi pemerintahan, data desa, berita terbaru, galeri kegiatan, serta berbagai informasi yang dapat diakses dengan mudah oleh masyarakat maupun pengunjung.
                 </p>
                 <div class="pt-4 flex flex-wrap gap-4">
                     <a href="{{ route('profil') }}" class="px-6 py-3 bg-green-950 dark:bg-green-700 text-white rounded-xl font-semibold hover:bg-green-900 dark:hover:bg-green-600 transition-colors shadow-md text-sm">
                         Selengkapnya tentang Visi & Misi
                     </a>
-                    <a href="{{ route('profil') }}" class="px-6 py-3 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-white bg-white dark:bg-[#1e293b] rounded-xl font-semibold hover:bg-slate-50 dark:bg-slate-900/50 dark:hover:bg-slate-700 transition-colors text-sm">
+                    <a href="{{ route('kontak') }}" class="px-6 py-3 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-white bg-white dark:bg-[#1e293b] rounded-xl font-semibold hover:bg-slate-50 dark:bg-slate-900/50 dark:hover:bg-slate-700 transition-colors text-sm">
                         Hubungi Kami
                     </a>
                 </div>
@@ -279,7 +279,7 @@
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
                     <div class="space-y-2">
-                        <time class="text-xs text-slate-600 font-medium flex items-center gap-1.5">
+                        <time class="text-xs text-slate-600 dark:text-slate-300 font-medium flex items-center gap-1.5">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
@@ -292,7 +292,7 @@
                             {{ Str::limit(strip_tags($berita->konten), 100) }}
                         </p>
                     </div>
-                    <a href="{{ route('berita') }}" class="text-xs font-semibold text-green-700 dark:text-green-300 flex items-center gap-1 group-hover:gap-2 transition-all">
+                    <a href="{{ route('berita') }}" class="text-xs font-semibold text-green-700 dark:text-green-400 flex items-center gap-1 group-hover:gap-2 transition-all">
                         Baca Selengkapnya
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />

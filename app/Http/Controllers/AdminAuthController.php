@@ -31,7 +31,7 @@ class AdminAuthController extends Controller
         if (Auth::attempt($credentials)) {
             \Illuminate\Support\Facades\RateLimiter::clear($throttleKey);
             $request->session()->regenerate();
-            return redirect()->intended('admin/dashboard');
+            return redirect()->intended(route('admin.dashboard', [], false));
         }
 
         \Illuminate\Support\Facades\RateLimiter::hit($throttleKey, 30); // 30 seconds

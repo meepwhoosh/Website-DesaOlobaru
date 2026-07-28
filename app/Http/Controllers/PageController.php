@@ -28,7 +28,8 @@ class PageController extends Controller
         $misis = \App\Models\Misi::orderBy('urutan', 'asc')->get();
         $pemdes = \App\Models\PerangkatDesa::where('kategori', 'pemdes')->get();
         $bpd = \App\Models\PerangkatDesa::where('kategori', 'bpd')->get();
-        return view('profil', compact('sejarahs', 'misis', 'pemdes', 'bpd'));
+        $mantanKades = \App\Models\MantanKades::orderBy('urutan', 'asc')->get();
+        return view('profil', compact('sejarahs', 'misis', 'pemdes', 'bpd', 'mantanKades'));
     }
 
     public function struktur()
@@ -98,10 +99,19 @@ class PageController extends Controller
             $query->where('pekerjaan', $request->pekerjaan);
         }
 
+        if ($request->filled('rt')) {
+            $query->where('rt', $request->rt);
+        }
+
+        if ($request->filled('rw')) {
+            $query->where('rw', $request->rw);
+        }
+
+        // Apply query to stats so charts reflect the selected filter
+        $allData = (clone $query)->get();
+
         $dataDesa = $query->paginate(20)->withQueryString();
         
-        // Stats using all data (no filter for stats to show full picture)
-        $allData = \App\Models\DataDesa::all();
         $totalPenduduk = $allData->count();
         $lakiLaki = $allData->where('jenis_kelamin', 'Laki-laki')->count();
         $perempuan = $allData->where('jenis_kelamin', 'Perempuan')->count();
@@ -161,7 +171,30 @@ class PageController extends Controller
         // Remove 'Tidak Diketahui' if 0 to keep chart clean
         if ($umur['Tidak Diketahui'] === 0) unset($umur['Tidak Diketahui']);
 
-        return view('data-desa', compact('dataDesa', 'totalPenduduk', 'lakiLaki', 'perempuan', 'pendidikan', 'pekerjaan', 'dusun', 'agama', 'status_perkawinan', 'umur'));
+        // Use full data for dropdown lists so options don't disappear on filter
+        $fullData = \App\Models\DataDesa::all();
+        $rtList = $fullData->pluck('rt')->filter()->unique()->sort();
+        $rwList = $fullData->pluck('rw')->filter()->unique()->sort();
+        $dusunList = $fullData->pluck('dusun')->filter()->unique()->sort();
+
+        return view('data-desa', compact('dataDesa', 'totalPenduduk', 'lakiLaki', 'perempuan', 'pendidikan', 'pekerjaan', 'dusun', 'agama', 'status_perkawinan', 'umur', 'rtList', 'rwList', 'dusunList'));
+    }
+
+    public function apbdes(Request $request)
+    {
+        $tahunList = \App\Models\Apbdes::select('tahun_anggaran')->distinct()->orderBy('tahun_anggaran', 'desc')->pluck('tahun_anggaran');
+        $tahun = $request->input('tahun', $tahunList->first() ?? date('Y'));
+
+        $apbdesData = \App\Models\Apbdes::where('tahun_anggaran', $tahun)->orderBy('urutan')->get();
+
+        $totalPendapatan = $apbdesData->where('jenis', 'pendapatan')->where('level', 1)->sum('anggaran');
+        $totalBelanja = $apbdesData->where('jenis', 'belanja')->where('level', 0)->sum('anggaran');
+        $totalPembiayaan = $apbdesData->where('jenis', 'pembiayaan')->whereIn('level', [1, 2])->first()?->anggaran ?? 0;
+
+        $pendapatanData = $apbdesData->where('jenis', 'pendapatan')->where('level', 1)->values();
+        $belanjaData = $apbdesData->where('jenis', 'belanja')->where('level', 0)->values();
+
+        return view('apbdes', compact('tahunList', 'tahun', 'apbdesData', 'totalPendapatan', 'totalBelanja', 'totalPembiayaan', 'pendapatanData', 'belanjaData'));
     }
 
 

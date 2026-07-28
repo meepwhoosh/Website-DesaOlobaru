@@ -35,7 +35,10 @@
                     <td class="px-6 py-4 text-sm">{{ $loop->iteration }}</td>
                     <td class="px-6 py-4">
                         <div class="font-medium text-slate-900 dark:text-white">{{ $pesan->nama_pengirim }}</div>
-                        <div class="text-xs text-slate-500 dark:text-slate-400">{{ $pesan->email_hp }}</div>
+                        <div class="text-xs text-slate-500 dark:text-slate-400">{{ $pesan->email }}</div>
+                        @if($pesan->no_hp)
+                            <div class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">HP: {{ $pesan->no_hp }}</div>
+                        @endif
                     </td>
                     <td class="px-6 py-4 text-sm font-medium">{{ $pesan->subjek }}</td>
                     <td class="px-6 py-4">
@@ -46,17 +49,19 @@
                     <td class="px-6 py-4 text-sm text-slate-500 dark:text-slate-400">
                         {{ $pesan->created_at->format('d M Y, H:i') }}
                     </td>
-                    <td class="px-6 py-4 space-x-2">
-                        <a href="{{ route('admin.pesan.show', $pesan->id) }}" class="inline-flex items-center px-3 py-1.5 bg-blue-100 text-blue-700 hover:bg-blue-200 rounded-lg text-sm font-medium transition-colors">
-                            Buka
-                        </a>
-                        <form action="{{ route('admin.pesan.destroy', $pesan->id) }}" method="POST" class="inline-block" onsubmit="return confirm('Yakin ingin menghapus pesan ini?');">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="inline-flex items-center px-3 py-1.5 bg-red-100 text-red-700 hover:bg-red-200 rounded-lg text-sm font-medium transition-colors">
-                                Hapus
-                            </button>
-                        </form>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center gap-2">
+                            <a href="{{ route('admin.pesan.show', $pesan->id) }}" title="Buka Pesan" class="p-2 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-900/50 rounded-xl transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                            </a>
+                            <form action="{{ route('admin.pesan.destroy', $pesan->id) }}" method="POST" class="inline-block" onsubmit="return confirm('Yakin ingin menghapus pesan ini?');">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" title="Hapus Pesan" class="p-2 bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-900/50 rounded-xl transition-colors">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
+                                </button>
+                            </form>
+                        </div>
                     </td>
                 </tr>
                 @empty

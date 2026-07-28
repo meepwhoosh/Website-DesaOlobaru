@@ -84,6 +84,24 @@
                     placeholder="Contoh: Dusun 1">
                 @error('dusun') <span class="text-red-500 text-xs mt-1">{{ $message }}</span> @enderror
             </div>
+
+            <!-- RT -->
+            <div>
+                <label for="rt" class="block text-sm font-semibold text-slate-700 dark:text-slate-200 mb-1.5">RT</label>
+                <input type="text" name="rt" id="rt" value="{{ old('rt') }}"
+                    class="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 focus:border-green-600 focus:ring focus:ring-green-600/20 transition-all outline-none text-slate-700 dark:text-slate-200 dark:bg-slate-800 dark:text-white dark:border-slate-700"
+                    placeholder="Contoh: 001">
+                @error('rt') <span class="text-red-500 text-xs mt-1">{{ $message }}</span> @enderror
+            </div>
+
+            <!-- RW -->
+            <div>
+                <label for="rw" class="block text-sm font-semibold text-slate-700 dark:text-slate-200 mb-1.5">RW</label>
+                <input type="text" name="rw" id="rw" value="{{ old('rw') }}"
+                    class="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 focus:border-green-600 focus:ring focus:ring-green-600/20 transition-all outline-none text-slate-700 dark:text-slate-200 dark:bg-slate-800 dark:text-white dark:border-slate-700"
+                    placeholder="Contoh: 002">
+                @error('rw') <span class="text-red-500 text-xs mt-1">{{ $message }}</span> @enderror
+            </div>
         </div>
 
         <!-- Tombol Simpan -->

@@ -6,10 +6,10 @@
 <!-- Small Header Banner -->
 <section data-aos="fade-in" class="relative py-16 bg-slate-900 overflow-hidden">
     <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1200&auto=format&fit=crop" 
-             alt="Pers Desa Olobaru" 
-             class="w-full h-full object-cover object-center opacity-30" />
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-slate-900/80"></div>
+        <img src="{{ asset('images/bg-struktur.jpg') }}" 
+             alt="Kegiatan Desa Olobaru" 
+             class="w-full h-full object-cover object-[50%_30%] opacity-40" />
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-slate-900/70"></div>
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <span class="text-xs font-bold text-green-400 uppercase tracking-widest block mb-2">Pusat Kabar</span>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
                     <div class="space-y-2">
-                        <time class="text-xs text-slate-600 font-medium flex items-center gap-1.5">
+                        <time class="text-xs text-slate-600 dark:text-slate-300 font-medium flex items-center gap-1.5">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
@@ -89,7 +89,7 @@
                             {{ $berita->konten }}
                         </p>
                     </div>
-                    <span class="text-xs font-semibold text-green-700 dark:text-green-300 flex items-center gap-1 group-hover:gap-2 transition-all">
+                    <span class="text-xs font-semibold text-green-700 dark:text-green-400 flex items-center gap-1 group-hover:gap-2 transition-all">
                         Selengkapnya
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />

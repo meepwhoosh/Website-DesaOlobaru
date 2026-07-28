@@ -17,6 +17,9 @@ Route::get('/berita', [PageController::class, 'berita'])->name('berita');
 Route::get('/galeri', [PageController::class, 'galeri'])->name('galeri');
 
 Route::get('/data-desa', [PageController::class, 'dataDesa'])->name('data-desa');
+Route::get('/apbdes', [PageController::class, 'apbdes'])->name('apbdes');
+Route::get('/apbdes/export/pdf', [App\Http\Controllers\ApbdesController::class, 'exportPdf'])->name('apbdes.export.pdf');
+Route::get('/apbdes/export/excel', [App\Http\Controllers\ApbdesController::class, 'exportExcel'])->name('apbdes.export.excel');
 Route::get('/kontak', [PageController::class, 'kontak'])->name('kontak');
 Route::post('/kontak/kirim', [App\Http\Controllers\PesanController::class, 'store'])->name('kontak.kirim');
 // Public API
@@ -24,7 +27,7 @@ Route::get('/api/visitor-stats', [PageController::class, 'visitorStatsAjax'])->n
 Route::post('/berita/{id}/view', [PageController::class, 'incrementBeritaView'])->name('api.berita.view');
 
 // Admin Routes
-Route::prefix('admin')->group(function () {
+Route::prefix('admin_desa_olobaru')->group(function () {
     Route::get('/login', [AdminAuthController::class, 'showLoginForm'])->name('admin.login');
     Route::post('/login', [AdminAuthController::class, 'login']);
     Route::post('/logout', [AdminAuthController::class, 'logout'])->name('admin.logout');
@@ -68,6 +71,18 @@ Route::prefix('admin')->group(function () {
             ]
         ]);
 
+        // Mantan Kades CRUD
+        Route::resource('mantankades', App\Http\Controllers\MantanKadesController::class, [
+            'names' => [
+                'index' => 'admin.mantankades.index',
+                'create' => 'admin.mantankades.create',
+                'store' => 'admin.mantankades.store',
+                'edit' => 'admin.mantankades.edit',
+                'update' => 'admin.mantankades.update',
+                'destroy' => 'admin.mantankades.destroy',
+            ]
+        ]);
+
         // Misi CRUD
         Route::resource('misi', App\Http\Controllers\MisiController::class, [
             'names' => [
@@ -106,6 +121,13 @@ Route::prefix('admin')->group(function () {
                 'destroy' => 'admin.data-desa.destroy',
             ]
         ]);
+
+
+
+        // APBDes
+        Route::get('/apbdes', [App\Http\Controllers\ApbdesController::class, 'index'])->name('admin.apbdes.index');
+        Route::post('/apbdes/import', [App\Http\Controllers\ApbdesController::class, 'import'])->name('admin.apbdes.import');
+        Route::delete('/apbdes/delete-excel/{filename}', [App\Http\Controllers\ApbdesController::class, 'deleteExcel'])->name('admin.apbdes.delete-excel');
 
         // Pesan Masuk CRUD
         Route::resource('pesan', App\Http\Controllers\PesanController::class, [

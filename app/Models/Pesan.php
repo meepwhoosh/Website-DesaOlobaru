@@ -11,7 +11,8 @@ class Pesan extends Model
 
     protected $fillable = [
         'nama_pengirim',
-        'email_hp',
+        'email',
+        'no_hp',
         'subjek',
         'isi_pesan',
         'status',

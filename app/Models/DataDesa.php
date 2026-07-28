@@ -15,6 +15,8 @@ class DataDesa extends Model
         'tempat_tanggal_lahir',
         'pendidikan',
         'pekerjaan',
-        'dusun'
+        'dusun',
+        'rt',
+        'rw'
     ];
 }

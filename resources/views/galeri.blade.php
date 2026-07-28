@@ -6,10 +6,10 @@
 <!-- Small Header Banner -->
 <section data-aos="fade-in" class="relative py-16 bg-slate-900 overflow-hidden">
     <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1500485035595-cbe6f645feb1?q=80&w=1200&auto=format&fit=crop" 
+        <img src="{{ asset('images/bg-galeri.jpg') }}" 
              alt="Galeri Desa Olobaru" 
-             class="w-full h-full object-cover object-center opacity-30" />
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-slate-900/80"></div>
+             class="w-full h-full object-cover object-center opacity-40" />
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-slate-900/70"></div>
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <span class="text-xs font-bold text-green-400 uppercase tracking-widest block mb-2">Dokumentasi Visual</span>

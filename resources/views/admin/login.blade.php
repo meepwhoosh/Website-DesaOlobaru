@@ -34,7 +34,7 @@
     <div class="max-w-md w-full px-6 relative z-10 animate-fade-in-up">
         <div class="text-center mb-8">
             <h1 class="text-3xl font-bold font-serif text-slate-900 dark:text-white">Admin Portal</h1>
-            <p class="text-slate-500 dark:text-slate-300 dark:text-white mt-2">Masuk untuk mengelola data dan informasi desa.</p>
+            <p class="text-slate-700 dark:text-slate-300 dark:text-white mt-2">Masuk untuk mengelola data dan informasi desa.</p>
         </div>
 
         <div class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/50 dark:border-slate-700/50 overflow-hidden transition-all hover:shadow-green-900/5 dark:hover:shadow-green-900/20">
@@ -53,13 +53,13 @@
                     @csrf
                     <div class="space-y-5">
                         <div>
-                            <label for="email" class="block text-sm font-medium text-slate-700 dark:text-slate-200 mb-1.5">Alamat Email</label>
+                            <label for="email" class="block text-sm font-bold text-slate-900 dark:text-slate-200 mb-1.5">Alamat Email</label>
                             <input type="email" name="email" id="email" value="{{ old('email') }}" required autofocus
                                 class="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 focus:border-green-600 focus:ring focus:ring-green-600/20 transition-all outline-none text-slate-700 dark:text-slate-200 dark:bg-slate-800 dark:text-white dark:border-slate-700">
                         </div>
 
                         <div>
-                            <label for="password" class="block text-sm font-medium text-slate-700 dark:text-slate-200 mb-1.5">Kata Sandi</label>
+                            <label for="password" class="block text-sm font-bold text-slate-900 dark:text-slate-200 mb-1.5">Kata Sandi</label>
                             <input type="password" name="password" id="password" required
                                 class="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 focus:border-green-600 focus:ring focus:ring-green-600/20 transition-all outline-none text-slate-700 dark:text-slate-200 dark:bg-slate-800 dark:text-white dark:border-slate-700">
                         </div>
@@ -75,8 +75,8 @@
                 </form>
             </div>
             <div class="bg-slate-50 dark:bg-[#0f0f0f]/50 dark:bg-slate-800/50 py-4 text-center border-t border-slate-100 dark:border-slate-700/50">
-                <a href="{{ route('home') }}" class="text-sm text-green-700 hover:text-green-800 font-medium inline-flex items-center gap-1">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                <a href="{{ route('home') }}" class="text-sm text-green-800 hover:text-green-900 font-bold inline-flex items-center gap-1">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
                     Kembali ke Beranda
                 </a>
             </div>

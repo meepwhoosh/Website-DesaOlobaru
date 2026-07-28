@@ -90,6 +90,9 @@
                     <a href="{{ route('data-desa') }}" class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 {{ request()->routeIs('data-desa') ? 'text-green-700 bg-green-50' : 'text-slate-600 dark:text-white hover:text-green-700 dark:text-green-300 hover:bg-slate-50 dark:bg-slate-900/50' }}">
                         Data Desa
                     </a>
+                    <a href="{{ route('apbdes') }}" class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 {{ request()->routeIs('apbdes') ? 'text-green-700 bg-green-50' : 'text-slate-600 dark:text-white hover:text-green-700 dark:text-green-300 hover:bg-slate-50 dark:bg-slate-900/50' }}">
+                        Transparansi APBDes
+                    </a>
                     <a href="{{ route('berita') }}" class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 {{ request()->routeIs('berita') ? 'text-green-700 bg-green-50' : 'text-slate-600 dark:text-white hover:text-green-700 dark:text-green-300 hover:bg-slate-50 dark:bg-slate-900/50' }}">
                         Berita
                     </a>
@@ -142,6 +145,9 @@
                 <a href="{{ route('data-desa') }}" class="block px-4 py-3 rounded-xl text-base font-semibold {{ request()->routeIs('data-desa') ? 'text-green-700 dark:text-green-300 bg-green-50' : 'text-slate-700 dark:text-slate-100 hover:text-green-700 dark:text-green-300 hover:bg-slate-50 dark:bg-slate-900/50' }}">
                     Data Desa
                 </a>
+                <a href="{{ route('apbdes') }}" class="block px-4 py-3 rounded-xl text-base font-semibold {{ request()->routeIs('apbdes') ? 'text-green-700 dark:text-green-300 bg-green-50' : 'text-slate-700 dark:text-slate-100 hover:text-green-700 dark:text-green-300 hover:bg-slate-50 dark:bg-slate-900/50' }}">
+                    Transparansi APBDes
+                </a>
                 <a href="{{ route('berita') }}" class="block px-4 py-3 rounded-xl text-base font-semibold {{ request()->routeIs('berita') ? 'text-green-700 dark:text-green-300 bg-green-50' : 'text-slate-700 dark:text-slate-100 hover:text-green-700 dark:text-green-300 hover:bg-slate-50 dark:bg-slate-900/50' }}">
                     Berita
                 </a>
@@ -188,17 +194,17 @@
                     </p>
                     <div class="flex space-x-4 pt-2">
                         <!-- Social Media Icon Buttons -->
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-slate-800 text-slate-400 hover:bg-green-700 hover:text-white flex items-center justify-center transition-colors">
+                        <a href="https://www.facebook.com/share/1HmLppXA4m/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-slate-800 text-slate-400 hover:bg-green-700 hover:text-white flex items-center justify-center transition-colors">
                             <span class="sr-only">Facebook</span>
                             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
                         </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-slate-800 text-slate-400 hover:bg-green-700 hover:text-white flex items-center justify-center transition-colors">
+                        <a href="https://www.instagram.com/olobaru?igsh=MWRybmxsdHlnMXBvNA==" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-slate-800 text-slate-400 hover:bg-green-700 hover:text-white flex items-center justify-center transition-colors">
                             <span class="sr-only">Instagram</span>
                             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c2.717 0 3.056.01 4.122.058 1.065.048 1.79.217 2.428.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.637.416 1.363.465 2.428.047 1.066.058 1.405.058 4.122 0 2.717-.01 3.056-.058 4.122-.048 1.065-.217 1.79-.465 2.428a4.88 4.88 0 01-1.153 1.772 4.88 4.88 0 01-1.772 1.153c-.637.247-1.363.416-2.428.465-1.066.047-1.405.058-4.122.058-2.717 0-3.056-.01-4.122-.058-1.065-.048-1.79-.217-2.428-.465a4.89 4.89 0 01-1.772-1.153 4.89 4.89 0 01-1.153-1.772c-.247-.637-.416-.1363-.465-2.428C2.01 15.056 2 14.717 2 12c0-2.717.01-3.056.058-4.122.048-1.065.217-1.79.465-2.428a4.88 4.88 0 011.153-1.772A4.88 4.88 0 015.45 2.525c.637-.247 1.363-.416 2.428-.465C8.944 2.01 9.283 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6zm5.6-7.51a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" /></svg>
                         </a>
-                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-slate-800 text-slate-400 hover:bg-green-700 hover:text-white flex items-center justify-center transition-colors">
-                            <span class="sr-only">YouTube</span>
-                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.42 4.814c-.23.861-.907 1.538-1.768 1.768C18.254 19 12 19 12 19s-6.254 0-7.812-.418c-.861-.23-1.538-.907-1.768-1.768C2 15.254 2 12 2 12s0-3.255.418-4.814c.23-.861.907-1.538 1.768-1.768C5.746 5 12 5 12 5s6.254 0 7.812.418zM9.75 15.02l5.75-3.02-5.75-3.02v6.04z" clip-rule="evenodd" /></svg>
+                        <a href="https://www.tiktok.com/@pemdes.olobaru?_r=1&_t=ZS-98PNuKAKQ2m" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-slate-800 text-slate-400 hover:bg-green-700 hover:text-white flex items-center justify-center transition-colors">
+                            <span class="sr-only">TikTok</span>
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
                         </a>
                     </div>
                 </div>
@@ -208,7 +214,7 @@
                     <h3 class="text-sm font-bold text-white uppercase tracking-wider">Tautan Cepat</h3>
                     <ul class="space-y-2.5 text-sm text-slate-300">
                         <li><a href="{{ route('profil') }}" class="hover:text-green-400 transition-colors">Profil Visi & Misi</a></li>
-                        <li><a href="{{ route('profil') }}" class="hover:text-green-400 transition-colors">Struktur Organisasi</a></li>
+                        <li><a href="{{ route('struktur') }}" class="hover:text-green-400 transition-colors">Struktur Organisasi</a></li>
                         <li><a href="{{ route('kontak') }}" class="hover:text-green-400 transition-colors">Kontak & Hubungi Kami</a></li>
 
                     </ul>
@@ -243,7 +249,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>
-                            <span class="text-white">Kantor Kepala Desa Olobaru, Parigi Selatan, Kab. Parigi Moutong, Sulawesi Tengah, 94371</span>
+                            <span class="text-white">Kantor Kepala Desa Olobaru, Parigi Selatan, Kab. Parigi Moutong, Sulawesi Tengah, 94471</span>
                         </li>
                         <li class="flex items-center gap-2.5">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -265,10 +271,9 @@
             <!-- Footer Bottom -->
             <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
                 <p class="text-white">&copy; 2026 Pemerintah Desa Olobaru. KKN Tematik 117 Universitas Tadulako. All Rights Reserved.</p>
-                <div class="flex space-x-6 text-slate-600">
-                    <a href="{{ route('home') }}" class="hover:text-green-400">Kebijakan Privasi</a>
-                    <a href="{{ route('home') }}" class="hover:text-green-400">Syarat & Ketentuan</a>
-                    <a href="{{ route('home') }}" class="hover:text-green-400">Peta Situs</a>
+                <div class="flex space-x-6 text-slate-400">
+                    <span>Kebijakan Privasi</span>
+                    <span>Syarat & Ketentuan</span>
                 </div>
             </div>
         </div>

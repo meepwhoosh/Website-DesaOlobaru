@@ -49,7 +49,7 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-xs font-bold text-slate-600 uppercase tracking-wider">Surel Resmi</h3>
+                            <h3 class="text-xs font-bold text-slate-600 uppercase tracking-wider">Email Resmi</h3>
                             <p class="text-sm font-semibold text-slate-800 dark:text-white mt-1 break-all">info@desa-olobaru.id</p>
                         </div>
                     </div>
@@ -71,20 +71,27 @@
                             </div>
                         @endif
 
-                        <div data-aos="fade-up" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div data-aos="fade-up" class="space-y-4">
                             <div class="space-y-1.5">
-                                <label class="text-xs font-bold text-slate-700 dark:text-white block" for="nama">Nama Lengkap</label>
+                                <label class="text-xs font-bold text-slate-700 dark:text-white block" for="nama">Nama Lengkap <span class="text-red-500">*</span></label>
                                 <input type="text" id="nama" name="nama_pengirim" required placeholder="Tulis nama Anda" value="{{ old('nama_pengirim') }}" class="w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 dark:text-white rounded-xl text-sm focus:outline-none focus:bg-white dark:bg-[#1e293b] dark:focus:bg-slate-800 focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all">
                                 @error('nama_pengirim') <p class="text-[10px] text-red-500 mt-1">{{ $message }}</p> @enderror
                             </div>
-                            <div class="space-y-1.5">
-                                <label class="text-xs font-bold text-slate-700 dark:text-white block" for="kontak">Email / HP Aktif</label>
-                                <input type="text" id="kontak" name="email_hp" required placeholder="Alamat kontak" value="{{ old('email_hp') }}" class="w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 dark:text-white rounded-xl text-sm focus:outline-none focus:bg-white dark:bg-[#1e293b] dark:focus:bg-slate-800 focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all">
-                                @error('email_hp') <p class="text-[10px] text-red-500 mt-1">{{ $message }}</p> @enderror
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="space-y-1.5">
+                                    <label class="text-xs font-bold text-slate-700 dark:text-white block" for="email">Alamat Email <span class="text-red-500">*</span></label>
+                                    <input type="email" id="email" name="email" required placeholder="Email aktif" value="{{ old('email') }}" class="w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 dark:text-white rounded-xl text-sm focus:outline-none focus:bg-white dark:bg-[#1e293b] dark:focus:bg-slate-800 focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all">
+                                    @error('email') <p class="text-[10px] text-red-500 mt-1">{{ $message }}</p> @enderror
+                                </div>
+                                <div class="space-y-1.5">
+                                    <label class="text-xs font-bold text-slate-700 dark:text-white block" for="no_hp">No. HP / WhatsApp <span class="text-slate-400 font-normal">(Opsional)</span></label>
+                                    <input type="text" id="no_hp" name="no_hp" placeholder="Contoh: 08123456789" value="{{ old('no_hp') }}" class="w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 dark:text-white rounded-xl text-sm focus:outline-none focus:bg-white dark:bg-[#1e293b] dark:focus:bg-slate-800 focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all">
+                                    @error('no_hp') <p class="text-[10px] text-red-500 mt-1">{{ $message }}</p> @enderror
+                                </div>
                             </div>
                         </div>
                         <div class="space-y-1.5">
-                            <label class="text-xs font-bold text-slate-700 dark:text-white block" for="pesan">Pesan atau Pertanyaan</label>
+                            <label class="text-xs font-bold text-slate-700 dark:text-white block" for="pesan">Pesan atau Pertanyaan <span class="text-red-500">*</span></label>
                             <textarea id="pesan" name="isi_pesan" required rows="4" placeholder="Tuliskan pesan Anda..." class="w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 dark:text-white rounded-xl text-sm focus:outline-none focus:bg-white dark:bg-[#1e293b] dark:focus:bg-slate-800 focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all">{{ old('isi_pesan') }}</textarea>
                             @error('isi_pesan') <p class="text-[10px] text-red-500 mt-1">{{ $message }}</p> @enderror
                         </div>
@@ -125,18 +132,35 @@
 @section('scripts')
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        // Coordinates for Olobaru, Parigi Selatan, Parigi Moutong (Approx)
-        const lat = -0.9231;
-        const lng = 120.1983;
+        // Koordinat Kantor Desa Olobaru
+        const lat = -0.8595265432711364;
+        const lng = 120.18106742480242;
 
         // Initialize Leaflet Map
-        const map = L.map('map-container').setView([lat, lng], 13);
+        const map = L.map('map-container').setView([lat, lng], 14);
 
-        // Add OpenStreetMap Tile Layer
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        // OpenStreetMap Layer
+        const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
+        });
+
+        // Satellite Layer (Google)
+        const satellite = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+            maxZoom: 20,
+            subdomains:['mt0','mt1','mt2','mt3'],
+            attribution: '&copy; Google Maps'
+        });
+
+        // Default layer
+        osm.addTo(map);
+
+        // Layer Control
+        const baseMaps = {
+            "OpenStreetMap": osm,
+            "Satelit": satellite
+        };
+        L.control.layers(baseMaps).addTo(map);
 
         // Add Marker
         const marker = L.marker([lat, lng]).addTo(map);

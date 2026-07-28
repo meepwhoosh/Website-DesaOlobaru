@@ -33,12 +33,22 @@ class DataDesaController extends Controller
             $query->where('pekerjaan', $request->pekerjaan);
         }
 
+        if ($request->filled('rt')) {
+            $query->where('rt', $request->rt);
+        }
+
+        if ($request->filled('rw')) {
+            $query->where('rw', $request->rw);
+        }
+
         $dataDesaCount = $query->count();
         
         $allData = DataDesa::all();
         $dusunList = $allData->pluck('dusun')->filter()->unique()->sort();
         $pendidikanList = $allData->pluck('pendidikan')->filter()->unique()->sort();
         $pekerjaanList = $allData->pluck('pekerjaan')->filter()->unique()->sort();
+        $rtList = $allData->pluck('rt')->filter()->unique()->sort();
+        $rwList = $allData->pluck('rw')->filter()->unique()->sort();
 
         // Ambil daftar file Excel dari folder Data-Excel-Desa
         $excelFiles = [];
@@ -54,7 +64,7 @@ class DataDesaController extends Controller
             }
         }
 
-        return view('admin.data_desa.index', compact('dataDesaCount', 'dusunList', 'pendidikanList', 'pekerjaanList', 'excelFiles'));
+        return view('admin.data_desa.index', compact('dataDesaCount', 'dusunList', 'pendidikanList', 'pekerjaanList', 'rtList', 'rwList', 'excelFiles'));
     }
 
     public function create()
@@ -74,6 +84,8 @@ class DataDesaController extends Controller
             'pendidikan' => 'nullable|string|max:255',
             'pekerjaan' => 'nullable|string|max:255',
             'dusun' => 'nullable|string|max:255',
+            'rt' => 'nullable|string|max:50',
+            'rw' => 'nullable|string|max:50',
         ]);
 
         DataDesa::create($validated);
@@ -101,6 +113,8 @@ class DataDesaController extends Controller
             'pendidikan' => 'nullable|string|max:255',
             'pekerjaan' => 'nullable|string|max:255',
             'dusun' => 'nullable|string|max:255',
+            'rt' => 'nullable|string|max:50',
+            'rw' => 'nullable|string|max:50',
         ]);
 
         $data->update($validated);

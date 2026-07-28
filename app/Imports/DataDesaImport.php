@@ -24,6 +24,23 @@ class DataDesaImport implements ToModel, WithHeadingRow
             return null;
         }
 
+        // Parse RT and RW from rt_rw
+        $rt = null;
+        $rw = null;
+        if (isset($row['rt_rw']) && !empty($row['rt_rw'])) {
+            $parts = explode('/', $row['rt_rw']);
+            if (count($parts) == 2) {
+                $rt = trim($parts[0]);
+                $rw = trim($parts[1]);
+            }
+        } elseif (isset($row['rtrw']) && !empty($row['rtrw'])) {
+            $parts = explode('/', $row['rtrw']);
+            if (count($parts) == 2) {
+                $rt = trim($parts[0]);
+                $rw = trim($parts[1]);
+            }
+        }
+
         return new DataDesa([
             'nik' => $row['nik'] ?? null,
             'nama_lengkap' => $row['nama_lengkap'],
@@ -32,6 +49,8 @@ class DataDesaImport implements ToModel, WithHeadingRow
             'pendidikan' => $row['pendidikan'] ?? null,
             'pekerjaan' => $row['pekerjaan'] ?? null,
             'dusun' => $row['dusun'] ?? null,
+            'rt' => $rt,
+            'rw' => $rw,
         ]);
     }
 }

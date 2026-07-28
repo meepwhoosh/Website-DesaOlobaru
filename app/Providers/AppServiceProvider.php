@@ -26,6 +26,13 @@ class AppServiceProvider extends ServiceProvider
         \Illuminate\Support\Facades\View::composer('*', function ($view) {
             $view->with('globalVisitorCount', \App\Models\Visitor::count());
             $view->with('globalVisitorsToday', \App\Models\Visitor::whereDate('created_at', \Carbon\Carbon::today())->count());
+            
+            try {
+                $globalSettings = \App\Models\Setting::pluck('value', 'key')->toArray();
+                $view->with('globalSettings', $globalSettings);
+            } catch (\Exception $e) {
+                $view->with('globalSettings', []);
+            }
         });
     }
 }

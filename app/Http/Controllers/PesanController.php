@@ -10,15 +10,16 @@ class PesanController extends Controller
     {
         $request->validate([
             'nama_pengirim' => 'required|string|max:255',
-            'email_hp' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'no_hp' => 'nullable|string|max:20',
             'isi_pesan' => 'required|string',
             'g-recaptcha-response' => 'required',
         ], [
             'g-recaptcha-response.required' => 'Mohon centang kotak "I\'m not a robot" untuk melanjutkan.'
         ]);
 
-        // Validasi Google reCAPTCHA API
-        $recaptchaResponse = \Illuminate\Support\Facades\Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
+        // Validasi Google reCAPTCHA API (disable SSL verification to fix local cURL error 60)
+        $recaptchaResponse = \Illuminate\Support\Facades\Http::withoutVerifying()->asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
             'secret' => env('RECAPTCHA_SECRET_KEY'),
             'response' => $request->input('g-recaptcha-response'),
             'remoteip' => $request->ip()
@@ -30,7 +31,8 @@ class PesanController extends Controller
 
         \App\Models\Pesan::create([
             'nama_pengirim' => $request->nama_pengirim,
-            'email_hp' => $request->email_hp,
+            'email' => $request->email,
+            'no_hp' => $request->no_hp,
             'subjek' => 'Pesan dari Pengunjung Web',
             'isi_pesan' => $request->isi_pesan,
             'status' => 'Belum Dibaca',
