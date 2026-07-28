@@ -4,7 +4,7 @@
 
 @section('content')
 <!-- Small Header Banner -->
-<section class="relative py-16 bg-slate-900 overflow-hidden">
+<section data-aos="fade-in" class="relative py-16 bg-slate-900 overflow-hidden">
     <div class="absolute inset-0 z-0">
         <img src="https://images.unsplash.com/photo-1500485035595-cbe6f645feb1?q=80&w=1200&auto=format&fit=crop" 
              alt="Potensi Desa Olobaru" 
@@ -18,30 +18,30 @@
 </section>
 
 <!-- Content Body -->
-<section class="py-16 bg-slate-50/50">
+<section data-aos="fade-in" class="py-16 bg-slate-50/50 dark:bg-slate-900/50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
         <!-- Wisata Section -->
         <div>
             <div class="max-w-3xl text-left space-y-4 mb-8">
-                <span class="text-xs font-bold text-green-700 uppercase tracking-widest block">Jelajahi Keindahan</span>
-                <h2 class="text-3xl font-bold font-serif text-slate-950">Destinasi & Daya Tarik Wisata</h2>
-                <p class="text-sm text-slate-600 leading-relaxed">
+                <span class="text-xs font-bold text-green-700 dark:text-green-400 uppercase tracking-widest block">Jelajahi Keindahan</span>
+                <h2 class="text-3xl font-bold font-serif text-slate-950 dark:text-white">Destinasi & Daya Tarik Wisata</h2>
+                <p class="text-sm text-slate-600 dark:text-white leading-relaxed">
                     Desa Olobaru menyimpan kekayaan alam yang asri, kebudayaan lokal yang lestari, serta potensi komoditas unggulan yang menarik dikunjungi. Mari temukan kearifan lokal kami.
                 </p>
             </div>
 
             <!-- Places Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div data-aos="fade-up" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 @forelse($wisatas as $wisata)
-                <div class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
-                    <div class="aspect-square bg-slate-100 relative overflow-hidden">
+                <div class="group bg-white dark:bg-[#1e293b] rounded-2xl border border-slate-100 dark:border-slate-700/50 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+                    <div class="aspect-square bg-slate-100 dark:bg-slate-900 relative overflow-hidden">
                         @if($wisata->gambar)
                             <img src="{{ asset('storage/' . $wisata->gambar) }}" 
                                  alt="{{ $wisata->nama_tempat }}" 
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                         @else
-                            <div class="w-full h-full flex items-center justify-center bg-slate-100 text-slate-300">
+                            <div class="w-full h-full flex items-center justify-center bg-slate-100 dark:bg-slate-900 text-slate-300 dark:text-slate-200 dark:text-white">
                                 <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                             </div>
                         @endif
@@ -50,49 +50,49 @@
                         </span>
                     </div>
                     <div class="p-5 space-y-3">
-                        <h3 class="font-bold text-slate-900 text-lg group-hover:text-green-700 transition-colors">{{ $wisata->nama_tempat }}</h3>
-                        <p class="text-xs text-slate-500 leading-relaxed line-clamp-3">
+                        <h3 class="font-bold text-slate-900 dark:text-white text-lg group-hover:text-green-700 dark:text-green-300 dark:group-hover:text-green-400 transition-colors">{{ $wisata->nama_tempat }}</h3>
+                        <p class="text-xs text-slate-500 dark:text-white leading-relaxed line-clamp-3">
                             {{ $wisata->deskripsi ?? 'Belum ada deskripsi yang ditambahkan untuk tempat wisata ini.' }}
                         </p>
-                        <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400 mt-4">
-                            <span class="font-semibold text-green-700">{{ $wisata->lokasi ?? '-' }}</span>
+                        <div class="pt-2 border-t border-slate-100 dark:border-slate-700/50 flex items-center justify-between text-[11px] text-slate-600 mt-4">
+                            <span class="font-semibold text-green-700 dark:text-green-400">{{ $wisata->lokasi ?? '-' }}</span>
                         </div>
                     </div>
                 </div>
                 @empty
                 <div class="col-span-full py-10 flex flex-col items-center justify-center text-center">
-                    <div class="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center mb-4">
-                        <svg class="w-10 h-10 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"></path></svg>
+                    <div class="w-20 h-20 bg-slate-50 dark:bg-[#1e293b] rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-10 h-10 text-slate-300 dark:text-slate-200 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-700">Belum Ada Pariwisata</h3>
-                    <p class="text-slate-500 mt-2 max-w-sm">Daftar potensi wisata desa belum tersedia saat ini. Silakan kunjungi kembali nanti.</p>
+                    <h3 class="text-xl font-bold text-slate-700 dark:text-white">Belum Ada Pariwisata</h3>
+                    <p class="text-slate-500 dark:text-white mt-2 max-w-sm">Daftar potensi wisata desa belum tersedia saat ini. Silakan kunjungi kembali nanti.</p>
                 </div>
                 @endforelse
             </div>
         </div>
         
         <!-- UMKM Section -->
-        <div class="pt-10 border-t border-slate-200">
+        <div class="pt-10 border-t border-slate-200 dark:border-slate-700/50">
             <div class="max-w-3xl text-left space-y-4 mb-8">
-                <span class="text-xs font-bold text-orange-600 uppercase tracking-widest block">Pasar Lokal</span>
-                <h2 class="text-3xl font-bold font-serif text-slate-950">Dukung Produk UMKM Warga</h2>
-                <p class="text-sm text-slate-650 leading-relaxed">
+                <span class="text-xs font-bold text-orange-600 dark:text-orange-400 uppercase tracking-widest block">Pasar Lokal</span>
+                <h2 class="text-3xl font-bold font-serif text-slate-950 dark:text-white">Dukung Produk UMKM Warga</h2>
+                <p class="text-sm text-slate-650 dark:text-white leading-relaxed">
                     Temukan aneka olahan kuliner khas, kerajinan tangan kreatif, serta hasil bumi segar langsung dari para pelaku usaha mikro desa kami. Transaksi aman via kontak WhatsApp pedagang.
                 </p>
             </div>
 
             <!-- Product Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div data-aos="fade-up" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 @forelse($umkms as $umkm)
-                <div class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+                <div class="group bg-white dark:bg-[#1e293b] rounded-2xl border border-slate-100 dark:border-slate-700/50 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
                     <div>
-                        <div class="aspect-square bg-slate-100 overflow-hidden relative">
+                        <div class="aspect-square bg-slate-100 dark:bg-slate-900 overflow-hidden relative">
                             @if($umkm->gambar)
                                 <img src="{{ asset('storage/' . $umkm->gambar) }}" 
                                      alt="{{ $umkm->nama_produk }}" 
                                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                             @else
-                                <div class="w-full h-full flex items-center justify-center bg-slate-100 text-slate-300">
+                                <div class="w-full h-full flex items-center justify-center bg-slate-100 dark:bg-slate-900 text-slate-300 dark:text-slate-200 dark:text-white">
                                     <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                                 </div>
                             @endif
@@ -101,17 +101,17 @@
                             </span>
                         </div>
                         <div class="p-5 space-y-2">
-                            <span class="text-[10px] text-slate-400 font-bold uppercase block">{{ $umkm->nama_penjual }}</span>
-                            <h3 class="font-bold text-slate-900 text-base group-hover:text-green-700 transition-colors">{{ $umkm->nama_produk }}</h3>
-                            <p class="text-xs text-slate-500 leading-relaxed line-clamp-2">
+                            <span class="text-[10px] text-slate-600 font-bold uppercase block">{{ $umkm->nama_penjual }}</span>
+                            <h3 class="font-bold text-slate-900 dark:text-white text-base group-hover:text-green-700 dark:text-green-300 dark:group-hover:text-green-400 transition-colors">{{ $umkm->nama_produk }}</h3>
+                            <p class="text-xs text-slate-500 dark:text-white leading-relaxed line-clamp-2">
                                 {{ $umkm->deskripsi ?? 'Belum ada deskripsi produk.' }}
                             </p>
                         </div>
                     </div>
                     <div class="p-5 pt-0 space-y-3">
-                        <div class="flex items-end justify-between border-t border-slate-100 pt-3">
-                            <span class="text-xs text-slate-400">Harga</span>
-                            <span class="text-base font-extrabold text-green-950 font-serif">Rp {{ number_format($umkm->harga, 0, ',', '.') }} <span class="text-[10px] font-sans font-normal text-slate-450">{{ $umkm->unit }}</span></span>
+                        <div class="flex items-end justify-between border-t border-slate-100 dark:border-slate-700/50 pt-3">
+                            <span class="text-xs text-slate-600">Harga</span>
+                            <span class="text-base font-extrabold text-green-950 dark:text-green-300 font-serif">Rp {{ number_format($umkm->harga, 0, ',', '.') }} <span class="text-[10px] font-sans font-normal text-slate-450 dark:text-white">{{ $umkm->unit }}</span></span>
                         </div>
                         @if($umkm->no_whatsapp)
                             @php
@@ -126,7 +126,7 @@
                                 Hubungi Penjual
                             </a>
                         @else
-                            <button disabled class="w-full py-2.5 rounded-xl bg-slate-100 text-slate-400 font-bold text-xs flex items-center justify-center gap-1.5 cursor-not-allowed">
+                            <button disabled class="w-full py-2.5 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-400 dark:text-white font-bold text-xs flex items-center justify-center gap-1.5 cursor-not-allowed">
                                 Belum Ada Kontak
                             </button>
                         @endif
@@ -134,11 +134,11 @@
                 </div>
                 @empty
                 <div class="col-span-full py-10 flex flex-col items-center justify-center text-center">
-                    <div class="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center mb-4">
-                        <svg class="w-10 h-10 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                    <div class="w-20 h-20 bg-slate-50 dark:bg-[#1e293b] rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-10 h-10 text-slate-300 dark:text-slate-200 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-700">Belum Ada Produk</h3>
-                    <p class="text-slate-500 mt-2 max-w-sm">Daftar UMKM dan produk warga desa belum tersedia saat ini. Silakan kunjungi kembali nanti.</p>
+                    <h3 class="text-xl font-bold text-slate-700 dark:text-white">Belum Ada Produk</h3>
+                    <p class="text-slate-500 dark:text-white mt-2 max-w-sm">Daftar UMKM dan produk warga desa belum tersedia saat ini. Silakan kunjungi kembali nanti.</p>
                 </div>
                 @endforelse
             </div>

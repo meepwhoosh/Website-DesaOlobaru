@@ -56,8 +56,16 @@ class PerangkatDesaSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'nama' => 'Desmon Palari',
+                'nama' => 'Eldha',
                 'jabatan' => 'Kepala Urusan Tata Usaha dan Umum',
+                'kategori' => 'pemdes',
+                'gambar' => null,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nama' => 'Desmon Palari',
+                'jabatan' => 'Kepala Urusan Perencanaan',
                 'kategori' => 'pemdes',
                 'gambar' => null,
                 'created_at' => now(),

@@ -21,7 +21,7 @@ class UmkmController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
+        $data = $request->validate([
             'nama_produk' => 'required|string|max:255',
             'nama_penjual' => 'required|string|max:255',
             'kategori' => 'required|string|max:255',
@@ -29,10 +29,8 @@ class UmkmController extends Controller
             'unit' => 'required|string|max:50',
             'no_whatsapp' => 'nullable|string|max:50',
             'deskripsi' => 'nullable|string',
-            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg|max:1024',
         ]);
-
-        $data = $request->all();
 
         if ($request->hasFile('gambar')) {
             $data['gambar'] = $request->file('gambar')->store('umkm', 'public');
@@ -50,7 +48,7 @@ class UmkmController extends Controller
 
     public function update(Request $request, Umkm $umkm)
     {
-        $request->validate([
+        $data = $request->validate([
             'nama_produk' => 'required|string|max:255',
             'nama_penjual' => 'required|string|max:255',
             'kategori' => 'required|string|max:255',
@@ -58,10 +56,8 @@ class UmkmController extends Controller
             'unit' => 'required|string|max:50',
             'no_whatsapp' => 'nullable|string|max:50',
             'deskripsi' => 'nullable|string',
-            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg|max:1024',
         ]);
-
-        $data = $request->all();
 
         if ($request->hasFile('gambar')) {
             if ($umkm->gambar) {

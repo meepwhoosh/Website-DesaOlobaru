@@ -21,13 +21,13 @@ class SejarahController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
+        $validated = $request->validate([
             'tahun' => 'required|string|max:50',
             'judul' => 'required|string|max:255',
             'konten' => 'required|string',
         ]);
 
-        Sejarah::create($request->all());
+        Sejarah::create($validated);
         return redirect()->route('admin.sejarah.index')->with('success', 'Data Sejarah berhasil ditambahkan.');
     }
 
@@ -38,13 +38,13 @@ class SejarahController extends Controller
 
     public function update(Request $request, Sejarah $sejarah)
     {
-        $request->validate([
+        $validated = $request->validate([
             'tahun' => 'required|string|max:50',
             'judul' => 'required|string|max:255',
             'konten' => 'required|string',
         ]);
 
-        $sejarah->update($request->all());
+        $sejarah->update($validated);
         return redirect()->route('admin.sejarah.index')->with('success', 'Data Sejarah berhasil diperbarui.');
     }
 

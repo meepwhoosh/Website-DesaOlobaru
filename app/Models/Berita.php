@@ -12,5 +12,10 @@ class Berita extends Model
         'konten',
         'gambar',
         'tanggal_publikasi',
+        'views',
+    ];
+
+    protected $casts = [
+        'gambar' => 'array',
     ];
 }

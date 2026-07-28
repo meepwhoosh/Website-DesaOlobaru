@@ -6,6 +6,14 @@
 @source "../**/*.js";
 @source "../**/*.vue";
 
+@custom-variant dark (&:is(.dark *));
+
+@layer base {
+    html {
+        font-size: 16px;
+    }
+}
+
 @theme {
     /* Overriding default font families */
     --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -20,7 +28,8 @@
     --color-green-400: #5b9156;
     --color-green-500: #42753d;
     --color-green-600: #335d30;
-    --color-green-700: #2d5a27; /* Exact Primary */
+    --color-green-700: #2d5a27;
+    /* Exact Primary */
     --color-green-800: #21411c;
     --color-green-850: #1a3518;
     --color-green-900: #152912;
@@ -31,7 +40,8 @@
     --color-orange-100: #f6e8da;
     --color-orange-200: #eed5bd;
     --color-orange-300: #e5c3a1;
-    --color-orange-400: #d4a373; /* Exact Secondary */
+    --color-orange-400: #d4a373;
+    /* Exact Secondary */
     --color-orange-500: #c1884f;
     --color-orange-600: #a16c3b;
     --color-orange-700: #80532b;
@@ -44,10 +54,30 @@
     --color-slate-200: #ced3d8;
     --color-slate-300: #adb5bd;
     --color-slate-400: #8c969f;
-    --color-slate-500: #6c757d; /* Exact Tertiary */
+    --color-slate-500: #6c757d;
+    /* Exact Tertiary */
     --color-slate-600: #575e64;
     --color-slate-700: #43494e;
-    --color-slate-800: #333333; /* Exact Neutral */
+    --color-slate-800: #333333;
+    /* Exact Neutral */
     --color-slate-900: #212121;
     --color-slate-950: #121212;
+}
+
+@layer utilities {
+    @keyframes fadeInUp {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in-up { 
+        animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; 
+    }
+    
+    @keyframes slideInRight {
+        0% { opacity: 0; transform: translateX(-20px); }
+        100% { opacity: 1; transform: translateX(0); }
+    }
+    .animate-slide-in-right {
+        animation: slideInRight 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
 }

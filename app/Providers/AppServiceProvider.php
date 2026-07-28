@@ -19,6 +19,13 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        if ($this->app->environment('production')) {
+            \Illuminate\Support\Facades\URL::forceScheme('https');
+        }
+
+        \Illuminate\Support\Facades\View::composer('*', function ($view) {
+            $view->with('globalVisitorCount', \App\Models\Visitor::count());
+            $view->with('globalVisitorsToday', \App\Models\Visitor::whereDate('created_at', \Carbon\Carbon::today())->count());
+        });
     }
 }

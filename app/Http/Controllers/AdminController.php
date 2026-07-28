@@ -28,7 +28,8 @@ class AdminController extends Controller
         $validated = $request->validate([
             'judul' => 'required|max:255',
             'konten' => 'required',
-            'gambar' => 'nullable|image|max:2048',
+            'gambar' => 'nullable|array|max:3',
+            'gambar.*' => 'image|mimes:jpeg,png,jpg|max:1024',
             'tanggal_publikasi' => 'nullable|date',
         ]);
 
@@ -36,7 +37,13 @@ class AdminController extends Controller
         $validated['tanggal_publikasi'] = $validated['tanggal_publikasi'] ?? now();
 
         if ($request->hasFile('gambar')) {
-            $validated['gambar'] = $request->file('gambar')->store('berita', 'public');
+            $gambarPaths = [];
+            foreach ($request->file('gambar') as $file) {
+                $gambarPaths[] = $file->store('berita', 'public');
+            }
+            $validated['gambar'] = array_slice($gambarPaths, 0, 3);
+        } else {
+            $validated['gambar'] = null;
         }
 
         Berita::create($validated);
@@ -57,7 +64,9 @@ class AdminController extends Controller
         $validated = $request->validate([
             'judul' => 'required|max:255',
             'konten' => 'required',
-            'gambar' => 'nullable|image|max:2048',
+            'gambar' => 'nullable|array|max:3',
+            'gambar.*' => 'image|mimes:jpeg,png,jpg|max:1024',
+            'deleted_gambar' => 'nullable|array',
             'tanggal_publikasi' => 'nullable|date',
         ]);
 
@@ -65,17 +74,25 @@ class AdminController extends Controller
             $validated['slug'] = \Illuminate\Support\Str::slug($validated['judul']) . '-' . time();
         }
 
-        if ($request->hasFile('gambar')) {
-            if ($berita->gambar && \Illuminate\Support\Facades\Storage::disk('public')->exists($berita->gambar)) {
-                \Illuminate\Support\Facades\Storage::disk('public')->delete($berita->gambar);
+        $existingGambar = is_array($berita->gambar) ? $berita->gambar : (is_string($berita->gambar) ? [$berita->gambar] : []);
+
+        if ($request->has('deleted_gambar')) {
+            foreach ($request->deleted_gambar as $delImg) {
+                if (\Illuminate\Support\Facades\Storage::disk('public')->exists($delImg)) {
+                    \Illuminate\Support\Facades\Storage::disk('public')->delete($delImg);
+                }
+                $existingGambar = array_filter($existingGambar, fn($g) => $g !== $delImg);
             }
-            $validated['gambar'] = $request->file('gambar')->store('berita', 'public');
-        } elseif ($request->input('remove_gambar') == '1') {
-            if ($berita->gambar && \Illuminate\Support\Facades\Storage::disk('public')->exists($berita->gambar)) {
-                \Illuminate\Support\Facades\Storage::disk('public')->delete($berita->gambar);
-            }
-            $validated['gambar'] = null;
         }
+
+        if ($request->hasFile('gambar')) {
+            foreach ($request->file('gambar') as $file) {
+                $existingGambar[] = $file->store('berita', 'public');
+            }
+        }
+
+        $existingGambar = array_slice(array_values($existingGambar), 0, 3);
+        $validated['gambar'] = empty($existingGambar) ? null : $existingGambar;
 
         $berita->update($validated);
 
@@ -86,7 +103,13 @@ class AdminController extends Controller
     {
         $berita = Berita::findOrFail($id);
         
-        if ($berita->gambar && \Illuminate\Support\Facades\Storage::disk('public')->exists($berita->gambar)) {
+        if (is_array($berita->gambar)) {
+            foreach ($berita->gambar as $g) {
+                if (\Illuminate\Support\Facades\Storage::disk('public')->exists($g)) {
+                    \Illuminate\Support\Facades\Storage::disk('public')->delete($g);
+                }
+            }
+        } elseif (is_string($berita->gambar) && \Illuminate\Support\Facades\Storage::disk('public')->exists($berita->gambar)) {
             \Illuminate\Support\Facades\Storage::disk('public')->delete($berita->gambar);
         }
         

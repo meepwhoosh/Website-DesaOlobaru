@@ -14,15 +14,27 @@ class AdminAuthController extends Controller
 
     public function login(Request $request)
     {
+        $throttleKey = strtolower($request->input('email')) . '|' . $request->ip();
+
+        if (\Illuminate\Support\Facades\RateLimiter::tooManyAttempts($throttleKey, 5)) {
+            $seconds = \Illuminate\Support\Facades\RateLimiter::availableIn($throttleKey);
+            return back()->withErrors([
+                'email' => 'Terlalu banyak percobaan. Silakan coba lagi dalam ' . $seconds . ' detik.',
+            ])->onlyInput('email');
+        }
+
         $credentials = $request->validate([
             'email' => ['required', 'email'],
             'password' => ['required'],
         ]);
 
         if (Auth::attempt($credentials)) {
+            \Illuminate\Support\Facades\RateLimiter::clear($throttleKey);
             $request->session()->regenerate();
             return redirect()->intended('admin/dashboard');
         }
+
+        \Illuminate\Support\Facades\RateLimiter::hit($throttleKey, 30); // 30 seconds
 
         return back()->withErrors([
             'email' => 'Kredensial yang diberikan tidak cocok dengan catatan kami.',
@@ -34,6 +46,6 @@ class AdminAuthController extends Controller
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect('/');
+        return redirect()->route('admin.login');
     }
 }

@@ -11,8 +11,15 @@ class PageController extends Controller
         $beritas = \App\Models\Berita::latest()->take(3)->get();
         $umkms = \App\Models\Umkm::latest()->take(4)->get();
         $wisatas = \App\Models\Wisata::latest()->take(4)->get();
+        $galeris = \App\Models\Galeri::latest()->take(6)->get();
         
-        return view('welcome', compact('beritas', 'umkms', 'wisatas'));
+        $allData = \App\Models\DataDesa::all();
+        $totalPenduduk = $allData->count();
+        $lakiLaki = $allData->where('jenis_kelamin', 'Laki-laki')->count();
+        $perempuan = $allData->where('jenis_kelamin', 'Perempuan')->count();
+        $totalDusun = $allData->groupBy('dusun')->count();
+        
+        return view('welcome', compact('beritas', 'umkms', 'wisatas', 'galeris', 'totalPenduduk', 'lakiLaki', 'perempuan', 'totalDusun'));
     }
 
     public function profil()
@@ -61,10 +68,7 @@ class PageController extends Controller
         return view('potensi', compact('wisatas', 'umkms'));
     }
 
-    public function kontak()
-    {
-        return view('kontak');
-    }
+
 
     public function dataDesa(Request $request)
     {
@@ -161,8 +165,60 @@ class PageController extends Controller
     }
 
 
+    public function kontak()
+    {
+        $num1 = rand(1, 10);
+        $num2 = rand(1, 10);
+        session(['captcha_result' => $num1 + $num2]);
+
+        return view('kontak', compact('num1', 'num2'));
+    }
+
     public function dashboard()
     {
         return view('dashboard');
+    }
+
+    public function visitorStatsAjax(Request $request)
+    {
+        $query = \App\Models\Visitor::query();
+        
+        if ($request->filled('year')) {
+            $query->whereYear('created_at', $request->year);
+        }
+        
+        if ($request->filled('month')) {
+            $query->whereMonth('created_at', $request->month);
+        }
+        
+        if ($request->filled('day')) {
+            $query->whereDay('created_at', $request->day);
+        }
+        
+        $count = $query->count();
+        
+        return response()->json([
+            'count' => $count,
+            'formatted' => number_format($count, 0, ',', '.')
+        ]);
+    }
+
+    public function incrementBeritaView(Request $request, $id)
+    {
+        $berita = \App\Models\Berita::find($id);
+        if ($berita) {
+            $ip = $request->ip();
+            $cacheKey = 'berita_view_' . $id . '_' . $ip;
+
+            // Jika belum ada di cache (berarti belum view dalam 24 jam terakhir)
+            if (!cache()->has($cacheKey)) {
+                $berita->increment('views');
+                // Simpan di cache selama 24 jam
+                cache()->put($cacheKey, true, now()->addHours(24));
+            }
+            
+            return response()->json(['success' => true, 'views' => $berita->views]);
+        }
+        return response()->json(['success' => false], 404);
     }
 }

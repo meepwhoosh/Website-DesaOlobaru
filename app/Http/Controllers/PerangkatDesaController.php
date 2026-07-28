@@ -25,7 +25,7 @@ class PerangkatDesaController extends Controller
             'nama' => 'required|max:255',
             'jabatan' => 'required|max:255',
             'kategori' => 'required|in:pemdes,bpd',
-            'gambar' => 'nullable|image|max:2048',
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg|max:1024',
         ]);
 
         if ($request->hasFile('gambar')) {
@@ -51,7 +51,7 @@ class PerangkatDesaController extends Controller
             'nama' => 'required|max:255',
             'jabatan' => 'required|max:255',
             'kategori' => 'required|in:pemdes,bpd',
-            'gambar' => 'nullable|image|max:2048',
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg|max:1024',
         ]);
 
         if ($request->hasFile('gambar')) {

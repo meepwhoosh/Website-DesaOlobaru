@@ -22,15 +22,13 @@ class WisataController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
+        $data = $request->validate([
             'nama_tempat' => 'required|string|max:255',
             'kategori' => 'required|string|max:255',
             'lokasi' => 'nullable|string|max:255',
             'deskripsi' => 'nullable|string',
-            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg|max:1024',
         ]);
-
-        $data = $request->all();
 
         if ($request->hasFile('gambar')) {
             $data['gambar'] = $request->file('gambar')->store('wisata', 'public');
@@ -48,15 +46,13 @@ class WisataController extends Controller
 
     public function update(Request $request, Wisata $wisata)
     {
-        $request->validate([
+        $data = $request->validate([
             'nama_tempat' => 'required|string|max:255',
             'kategori' => 'required|string|max:255',
             'lokasi' => 'nullable|string|max:255',
             'deskripsi' => 'nullable|string',
-            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg|max:1024',
         ]);
-
-        $data = $request->all();
 
         if ($request->hasFile('gambar')) {
             if ($wisata->gambar) {

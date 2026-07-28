@@ -12,11 +12,16 @@ use App\Http\Controllers\DataDesaController;
 
 Route::get('/', [PageController::class, 'index'])->name('home');
 Route::get('/profil', [PageController::class, 'profil'])->name('profil');
+Route::get('/struktur', [PageController::class, 'struktur'])->name('struktur');
 Route::get('/berita', [PageController::class, 'berita'])->name('berita');
 Route::get('/galeri', [PageController::class, 'galeri'])->name('galeri');
-Route::get('/potensi-desa', [PageController::class, 'potensi'])->name('potensi');
+
 Route::get('/data-desa', [PageController::class, 'dataDesa'])->name('data-desa');
 Route::get('/kontak', [PageController::class, 'kontak'])->name('kontak');
+Route::post('/kontak/kirim', [App\Http\Controllers\PesanController::class, 'store'])->name('kontak.kirim');
+// Public API
+Route::get('/api/visitor-stats', [PageController::class, 'visitorStatsAjax'])->name('api.visitor.stats');
+Route::post('/berita/{id}/view', [PageController::class, 'incrementBeritaView'])->name('api.berita.view');
 
 // Admin Routes
 Route::prefix('admin')->group(function () {
@@ -35,6 +40,9 @@ Route::prefix('admin')->group(function () {
         Route::put('/berita/{id}', [AdminController::class, 'beritaUpdate'])->name('admin.berita.update');
         Route::delete('/berita/{id}', [AdminController::class, 'beritaDestroy'])->name('admin.berita.destroy');
         
+        // Riwayat Pengunjung
+        Route::get('/riwayat-pengunjung', [\App\Http\Controllers\VisitorController::class, 'index'])->name('admin.pengunjung.index');
+        Route::delete('/riwayat-pengunjung/reset', [\App\Http\Controllers\VisitorController::class, 'reset'])->name('admin.pengunjung.reset');
         // Perangkat Desa CRUD
         Route::resource('perangkat', App\Http\Controllers\PerangkatDesaController::class, [
             'names' => [
@@ -47,29 +55,6 @@ Route::prefix('admin')->group(function () {
             ]
         ]);
 
-        // UMKM CRUD
-        Route::resource('umkm', App\Http\Controllers\UmkmController::class, [
-            'names' => [
-                'index' => 'admin.umkm.index',
-                'create' => 'admin.umkm.create',
-                'store' => 'admin.umkm.store',
-                'edit' => 'admin.umkm.edit',
-                'update' => 'admin.umkm.update',
-                'destroy' => 'admin.umkm.destroy',
-            ]
-        ]);
-
-        // Wisata CRUD
-        Route::resource('wisata', App\Http\Controllers\WisataController::class, [
-            'names' => [
-                'index' => 'admin.wisata.index',
-                'create' => 'admin.wisata.create',
-                'store' => 'admin.wisata.store',
-                'edit' => 'admin.wisata.edit',
-                'update' => 'admin.wisata.update',
-                'destroy' => 'admin.wisata.destroy',
-            ]
-        ]);
 
         // Sejarah CRUD
         Route::resource('sejarah', App\Http\Controllers\SejarahController::class, [
@@ -119,6 +104,16 @@ Route::prefix('admin')->group(function () {
                 'edit' => 'admin.data-desa.edit',
                 'update' => 'admin.data-desa.update',
                 'destroy' => 'admin.data-desa.destroy',
+            ]
+        ]);
+
+        // Pesan Masuk CRUD
+        Route::resource('pesan', App\Http\Controllers\PesanController::class, [
+            'only' => ['index', 'show', 'destroy'],
+            'names' => [
+                'index' => 'admin.pesan.index',
+                'show' => 'admin.pesan.show',
+                'destroy' => 'admin.pesan.destroy',
             ]
         ]);
     });

@@ -21,16 +21,21 @@ class GaleriController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
+        $data = $request->validate([
             'judul' => 'required|string|max:255',
-            'gambar' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'gambar' => 'required|array|max:3',
+            'gambar.*' => 'image|mimes:jpeg,png,jpg|max:1024',
             'deskripsi' => 'nullable|string',
         ]);
 
-        $data = $request->all();
-
         if ($request->hasFile('gambar')) {
-            $data['gambar'] = $request->file('gambar')->store('galeri', 'public');
+            $gambarPaths = [];
+            foreach ($request->file('gambar') as $file) {
+                $gambarPaths[] = $file->store('galeri', 'public');
+            }
+            $data['gambar'] = array_slice($gambarPaths, 0, 3);
+        } else {
+            $data['gambar'] = null;
         }
 
         Galeri::create($data);
@@ -45,25 +50,33 @@ class GaleriController extends Controller
 
     public function update(Request $request, Galeri $galeri)
     {
-        $request->validate([
+        $data = $request->validate([
             'judul' => 'required|string|max:255',
-            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'gambar' => 'nullable|array|max:3',
+            'gambar.*' => 'image|mimes:jpeg,png,jpg|max:1024',
+            'deleted_gambar' => 'nullable|array',
             'deskripsi' => 'nullable|string',
         ]);
 
-        $data = $request->all();
+        $existingGambar = is_array($galeri->gambar) ? $galeri->gambar : (is_string($galeri->gambar) ? [$galeri->gambar] : []);
+
+        if ($request->has('deleted_gambar')) {
+            foreach ($request->deleted_gambar as $delImg) {
+                if (\Illuminate\Support\Facades\Storage::disk('public')->exists($delImg)) {
+                    \Illuminate\Support\Facades\Storage::disk('public')->delete($delImg);
+                }
+                $existingGambar = array_filter($existingGambar, fn($g) => $g !== $delImg);
+            }
+        }
 
         if ($request->hasFile('gambar')) {
-            if ($galeri->gambar) {
-                Storage::disk('public')->delete($galeri->gambar);
+            foreach ($request->file('gambar') as $file) {
+                $existingGambar[] = $file->store('galeri', 'public');
             }
-            $data['gambar'] = $request->file('gambar')->store('galeri', 'public');
-        } elseif ($request->input('remove_gambar') == '1') {
-            if ($galeri->gambar) {
-                Storage::disk('public')->delete($galeri->gambar);
-            }
-            $data['gambar'] = null;
         }
+
+        $existingGambar = array_slice(array_values($existingGambar), 0, 3);
+        $data['gambar'] = empty($existingGambar) ? null : $existingGambar;
 
         $galeri->update($data);
 
@@ -72,8 +85,14 @@ class GaleriController extends Controller
 
     public function destroy(Galeri $galeri)
     {
-        if ($galeri->gambar) {
-            Storage::disk('public')->delete($galeri->gambar);
+        if (is_array($galeri->gambar)) {
+            foreach ($galeri->gambar as $g) {
+                if (\Illuminate\Support\Facades\Storage::disk('public')->exists($g)) {
+                    \Illuminate\Support\Facades\Storage::disk('public')->delete($g);
+                }
+            }
+        } elseif (is_string($galeri->gambar) && \Illuminate\Support\Facades\Storage::disk('public')->exists($galeri->gambar)) {
+            \Illuminate\Support\Facades\Storage::disk('public')->delete($galeri->gambar);
         }
         
         $galeri->delete();

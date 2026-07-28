@@ -21,12 +21,12 @@ class MisiController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
+        $validated = $request->validate([
             'urutan' => 'required|integer',
             'konten' => 'required|string',
         ]);
 
-        Misi::create($request->all());
+        Misi::create($validated);
         return redirect()->route('admin.misi.index')->with('success', 'Data Misi berhasil ditambahkan.');
     }
 
@@ -37,12 +37,12 @@ class MisiController extends Controller
 
     public function update(Request $request, Misi $misi)
     {
-        $request->validate([
+        $validated = $request->validate([
             'urutan' => 'required|integer',
             'konten' => 'required|string',
         ]);
 
-        $misi->update($request->all());
+        $misi->update($validated);
         return redirect()->route('admin.misi.index')->with('success', 'Data Misi berhasil diperbarui.');
     }
 

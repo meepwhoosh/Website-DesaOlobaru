@@ -117,14 +117,17 @@ class DataDesaController extends Controller
     public function import(Request $request)
     {
         $request->validate([
-            'file_excel' => 'required|mimes:xlsx,xls,csv|max:5120'
+            'file_excel' => 'required|mimes:xlsx,xls,csv|max:1024'
         ]);
 
         try {
             $file = $request->file('file_excel');
             
             // Simpan file ke folder Data-Excel-Desa
-            $fileName = $file->getClientOriginalName();
+            // Sanitasi nama file menggunakan slug dan penanda waktu untuk mencegah karakter berbahaya
+            $extension = $file->getClientOriginalExtension();
+            $originalName = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME);
+            $fileName = \Illuminate\Support\Str::slug($originalName) . '-' . time() . '.' . $extension;
             $folderPath = base_path('Data-Excel-Desa');
             
             if (!\Illuminate\Support\Facades\File::exists($folderPath)) {
@@ -144,6 +147,7 @@ class DataDesaController extends Controller
 
     public function downloadExcel($filename)
     {
+        $filename = basename($filename); // Mencegah path traversal
         $filePath = base_path('Data-Excel-Desa/' . $filename);
         if (\Illuminate\Support\Facades\File::exists($filePath)) {
             return response()->download($filePath);
@@ -153,6 +157,7 @@ class DataDesaController extends Controller
 
     public function deleteExcel($filename)
     {
+        $filename = basename($filename); // Mencegah path traversal
         $filePath = base_path('Data-Excel-Desa/' . $filename);
         if (\Illuminate\Support\Facades\File::exists($filePath)) {
             \Illuminate\Support\Facades\File::delete($filePath);
