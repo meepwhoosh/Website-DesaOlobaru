@@ -103,63 +103,6 @@ class PerangkatDesaSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-            // BPD
-            [
-                'nama' => 'Drs. Suharwan',
-                'jabatan' => 'Ketua BPD',
-                'kategori' => 'bpd',
-                'gambar' => null,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'nama' => 'Novi Frangki',
-                'jabatan' => 'Wakil Ketua BPD',
-                'kategori' => 'bpd',
-                'gambar' => null,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'nama' => 'Aris Andi Lolo',
-                'jabatan' => 'Sekretaris BPD',
-                'kategori' => 'bpd',
-                'gambar' => null,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'nama' => 'Bonar Palari',
-                'jabatan' => 'Anggota BPD',
-                'kategori' => 'bpd',
-                'gambar' => null,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'nama' => 'Yuliani',
-                'jabatan' => 'Anggota BPD',
-                'kategori' => 'bpd',
-                'gambar' => null,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'nama' => 'Efendi',
-                'jabatan' => 'Anggota BPD',
-                'kategori' => 'bpd',
-                'gambar' => null,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'nama' => 'Nasrin',
-                'jabatan' => 'Anggota BPD',
-                'kategori' => 'bpd',
-                'gambar' => null,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ]
         ];
 
         DB::table('perangkat_desas')->insert($perangkatDesa);

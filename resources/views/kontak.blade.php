@@ -27,20 +27,7 @@
             <div class="lg:col-span-7 space-y-8 flex flex-col justify-between">
                 
                 <!-- Info cards row -->
-                <div data-aos="fade-up" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <!-- Card 1: Telepon -->
-                    <div data-aos="fade-up" class="bg-white dark:bg-[#1e293b] p-6 rounded-2xl border border-slate-100 dark:border-slate-700/50 shadow-sm flex items-start gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-green-50 dark:bg-green-900/50 text-green-700 dark:text-green-400 flex items-center justify-center shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xs font-bold text-slate-600 uppercase tracking-wider">Telepon & WA</h3>
-                            <p class="text-sm font-semibold text-slate-800 dark:text-white mt-1">+62 822-xxxx-xxxx</p>
-                        </div>
-                    </div>
-
+                <div data-aos="fade-up" class="grid grid-cols-1 gap-4">
                     <!-- Card 2: Email -->
                     <div data-aos="fade-up" class="bg-white dark:bg-[#1e293b] p-6 rounded-2xl border border-slate-100 dark:border-slate-700/50 shadow-sm flex items-start gap-4">
                         <div class="w-10 h-10 rounded-lg bg-green-50 dark:bg-green-900/50 text-green-700 dark:text-green-400 flex items-center justify-center shrink-0">

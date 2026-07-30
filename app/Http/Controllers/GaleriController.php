@@ -26,6 +26,7 @@ class GaleriController extends Controller
             'gambar' => 'required|array|max:3',
             'gambar.*' => 'image|mimes:jpeg,png,jpg|max:1024',
             'deskripsi' => 'nullable|string',
+            'tanggal_kegiatan' => 'nullable|date',
         ]);
 
         if ($request->hasFile('gambar')) {
@@ -56,6 +57,7 @@ class GaleriController extends Controller
             'gambar.*' => 'image|mimes:jpeg,png,jpg|max:1024',
             'deleted_gambar' => 'nullable|array',
             'deskripsi' => 'nullable|string',
+            'tanggal_kegiatan' => 'nullable|date',
         ]);
 
         $existingGambar = is_array($galeri->gambar) ? $galeri->gambar : (is_string($galeri->gambar) ? [$galeri->gambar] : []);

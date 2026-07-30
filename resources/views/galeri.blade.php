@@ -120,8 +120,12 @@
 
             <div class="p-6 sm:p-8 lg:p-10 space-y-4">
                 <!-- Header Section (Title inside content) -->
-                <div class="space-y-2">
+                <div class="space-y-2 flex flex-col">
                     <p id="lightbox-date" class="text-sm font-semibold text-green-600 dark:text-green-400 uppercase tracking-widest"></p>
+                    <p id="lightbox-date-kegiatan-container" class="hidden text-xs font-medium text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        <span>Kegiatan: <span id="lightbox-date-kegiatan"></span></span>
+                    </p>
                     <h2 id="lightbox-title" class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white leading-snug"></h2>
                 </div>
                 
@@ -142,7 +146,8 @@
                 images: {!! json_encode(is_array($g->gambar) ? $g->gambar : (is_string($g->gambar) ? [$g->gambar] : [])) !!},
                 title: @json($g->judul),
                 desc: @json($g->deskripsi),
-                date: "{{ \Carbon\Carbon::parse($g->created_at)->translatedFormat('d F Y') }}"
+                date: "{{ \Carbon\Carbon::parse($g->created_at)->translatedFormat('d F Y') }}",
+                date_kegiatan: "{{ $g->tanggal_kegiatan ? \Carbon\Carbon::parse($g->tanggal_kegiatan)->translatedFormat('d F Y') : '' }}"
             },
         @endforeach
     ];
@@ -179,7 +184,15 @@
         
         // Populate Data
         document.getElementById('lightbox-title').textContent = item.title;
-        document.getElementById('lightbox-date').textContent = item.date;
+        document.getElementById('lightbox-date').textContent = "Ditambahkan: " + item.date;
+
+        const dateKegiatanContainer = document.getElementById('lightbox-date-kegiatan-container');
+        if (item.date_kegiatan) {
+            document.getElementById('lightbox-date-kegiatan').textContent = item.date_kegiatan;
+            dateKegiatanContainer.classList.remove('hidden');
+        } else {
+            dateKegiatanContainer.classList.add('hidden');
+        }
         
         const desc = document.getElementById('lightbox-desc');
         if(item.desc) {

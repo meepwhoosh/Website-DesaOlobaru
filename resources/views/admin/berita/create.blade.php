@@ -39,7 +39,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Gambar -->
-                <x-admin.image-upload-multiple name="gambar" label="Unggah Gambar / Foto Utama (Maks 6)" helper="Format: JPG, PNG. Maksimal 10MB per file." />
+                <x-admin.image-upload-multiple name="gambar" label="Unggah Gambar / Foto Utama (Maks 3)" helper="Format: JPG, PNG. 1 mb maks per foto." />
 
                 <!-- Tanggal Publikasi -->
                 <div>
@@ -47,6 +47,14 @@
                     <input type="date" name="tanggal_publikasi" id="tanggal_publikasi" value="{{ old('tanggal_publikasi', date('Y-m-d')) }}"
                         class="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 focus:border-green-600 focus:ring focus:ring-green-600/20 transition-all outline-none text-slate-700 dark:text-slate-200 dark:bg-slate-800 dark:text-white dark:border-slate-700">
                     @error('tanggal_publikasi') <span class="text-red-500 text-xs mt-1">{{ $message }}</span> @enderror
+                </div>
+                
+                <!-- Tanggal Kegiatan -->
+                <div>
+                    <label for="tanggal_kegiatan" class="block text-sm font-semibold text-slate-700 dark:text-slate-200 mb-1.5">Tanggal Kegiatan (Opsional)</label>
+                    <input type="date" name="tanggal_kegiatan" id="tanggal_kegiatan" value="{{ old('tanggal_kegiatan') }}"
+                           class="w-full rounded-xl border-slate-200 dark:border-slate-700 focus:border-green-500 focus:ring-green-500 shadow-sm dark:bg-[#0f0f0f] dark:bg-slate-800 dark:text-white dark:border-slate-700">
+                    @error('tanggal_kegiatan') <span class="text-red-500 text-xs mt-1">{{ $message }}</span> @enderror
                 </div>
             </div>
 

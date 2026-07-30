@@ -40,6 +40,16 @@
             @enderror
         </div>
 
+        <!-- Tanggal Kegiatan -->
+        <div>
+            <label for="tanggal_kegiatan" class="block text-sm font-semibold text-slate-700 dark:text-slate-200 mb-1.5">Tanggal Kegiatan (Opsional)</label>
+            <input type="date" name="tanggal_kegiatan" id="tanggal_kegiatan" value="{{ old('tanggal_kegiatan') }}"
+                   class="w-full rounded-xl border-slate-200 dark:border-slate-700 focus:border-green-500 focus:ring-green-500 shadow-sm dark:bg-slate-800 dark:text-white dark:border-slate-700">
+            @error('tanggal_kegiatan')
+                <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
+            @enderror
+        </div>
+
         <!-- Gambar -->
         <x-admin.image-upload-multiple name="gambar" label="Foto Galeri (Bisa Lebih Dari 1)" />
 

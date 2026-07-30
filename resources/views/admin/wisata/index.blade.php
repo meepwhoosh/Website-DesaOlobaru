@@ -8,10 +8,7 @@
         <h1 class="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">Potensi & Wisata</h1>
         <p class="text-slate-500 dark:text-slate-300 dark:text-white mt-1">Kelola data tempat wisata, budaya, dan potensi alam desa.</p>
     </div>
-    <a href="{{ route('admin.wisata.create') }}" class="inline-flex items-center justify-center gap-2 bg-green-700 hover:bg-green-800 text-white px-5 py-2.5 rounded-xl font-semibold shadow-sm transition-all duration-200 hover:-translate-y-0.5">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
-        Tambah Wisata
-    </a>
+
 </div>
 
 @if(session('success'))
@@ -82,7 +79,7 @@
                             </div>
                             <h3 class="font-bold text-slate-700 dark:text-slate-200 dark:text-white text-lg">Belum ada data wisata</h3>
                             <p class="text-slate-500 dark:text-slate-300 dark:text-white mt-1 max-w-sm">Anda belum menambahkan daftar destinasi atau potensi alam desa.</p>
-                            <a href="{{ route('admin.wisata.create') }}" class="mt-4 text-green-700 font-semibold hover:underline">Tambah Data Pertama</a>
+                            <p class="mt-4 text-slate-500">Fitur penambahan wisata telah dinonaktifkan.</p>
                         </div>
                     </td>
                 </tr>

@@ -55,6 +55,7 @@
                      data-id="{{ $berita->id }}"
                      data-judul="{{ $berita->judul }}"
                      data-tanggal="{{ \Carbon\Carbon::parse($berita->tanggal_publikasi)->translatedFormat('d F Y') }}"
+                     data-tanggal-kegiatan="{{ $berita->tanggal_kegiatan ? \Carbon\Carbon::parse($berita->tanggal_kegiatan)->translatedFormat('d F Y') : '' }}"
                      data-views="{{ $berita->views ?? 0 }}"
                      data-gambar="{{ json_encode($gambarArr) }}"
                      data-konten="{{ $berita->konten }}"
@@ -139,10 +140,16 @@
                             <div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center overflow-hidden">
                                 <svg class="w-6 h-6 text-slate-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
                             </div>
-                            <div>
-                                <span class="font-medium text-slate-700 dark:text-slate-300">By Admin</span>
-                                <span class="mx-1.5">—</span>
-                                <time id="modalTanggal"></time>
+                            <div class="flex flex-col gap-1">
+                                <div>
+                                    <span class="font-medium text-slate-700 dark:text-slate-300">By Admin</span>
+                                    <span class="mx-1.5">—</span>
+                                    <span>Publikasi: <time id="modalTanggal"></time></span>
+                                </div>
+                                <div id="modalTanggalKegiatanContainer" class="hidden text-xs text-slate-500 dark:text-slate-400 font-medium flex items-center gap-1.5">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                    <span>Kegiatan: <time id="modalTanggalKegiatan"></time></span>
+                                </div>
                             </div>
                         </div>
                         <div class="text-sm font-medium text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
@@ -268,6 +275,15 @@
         document.getElementById('modalTanggal').textContent = element.getAttribute('data-tanggal');
         document.getElementById('modalKonten').textContent = element.getAttribute('data-konten');
         document.getElementById('modalViews').textContent = element.getAttribute('data-views') || '0';
+
+        const tanggalKegiatan = element.getAttribute('data-tanggal-kegiatan');
+        const kegiatanContainer = document.getElementById('modalTanggalKegiatanContainer');
+        if (tanggalKegiatan) {
+            document.getElementById('modalTanggalKegiatan').textContent = tanggalKegiatan;
+            kegiatanContainer.classList.remove('hidden');
+        } else {
+            kegiatanContainer.classList.add('hidden');
+        }
         
         const beritaId = element.getAttribute('data-id');
         

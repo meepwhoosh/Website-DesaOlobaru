@@ -31,6 +31,7 @@ class AdminController extends Controller
             'gambar' => 'nullable|array|max:3',
             'gambar.*' => 'image|mimes:jpeg,png,jpg|max:1024',
             'tanggal_publikasi' => 'nullable|date',
+            'tanggal_kegiatan' => 'nullable|date',
         ]);
 
         $validated['slug'] = \Illuminate\Support\Str::slug($validated['judul']) . '-' . time();
@@ -68,6 +69,7 @@ class AdminController extends Controller
             'gambar.*' => 'image|mimes:jpeg,png,jpg|max:1024',
             'deleted_gambar' => 'nullable|array',
             'tanggal_publikasi' => 'nullable|date',
+            'tanggal_kegiatan' => 'nullable|date',
         ]);
 
         if ($request->judul !== $berita->judul) {

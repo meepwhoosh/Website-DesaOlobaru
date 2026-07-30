@@ -12,6 +12,7 @@ class Berita extends Model
         'konten',
         'gambar',
         'tanggal_publikasi',
+        'tanggal_kegiatan',
         'views',
     ];
 

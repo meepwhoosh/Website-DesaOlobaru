@@ -233,7 +233,10 @@
             <div data-aos="fade-left" class="lg:col-span-8 bg-white dark:bg-[#1e293b] border border-slate-100 dark:border-slate-700/50 p-8 sm:p-10 rounded-2xl shadow-sm">
                 <div data-aos="fade-up" class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-h-[480px] overflow-y-auto pr-2 scrollbar-thin">
                     @foreach($mantanKades as $kades)
-                    <div class="flex items-center gap-4 p-4 rounded-xl border border-slate-100 dark:border-slate-700/50 hover:border-green-150 dark:hover:border-green-600 bg-slate-50/50 dark:bg-[#1e293b] hover:bg-white dark:bg-[#1e293b] dark:hover:bg-slate-700 transition-all shadow-sm">
+                    <button type="button" class="kades-card text-left flex items-center gap-4 p-4 rounded-xl border border-slate-100 dark:border-slate-700/50 hover:border-green-150 dark:hover:border-green-600 bg-slate-50/50 dark:bg-[#1e293b] hover:bg-white dark:bg-[#1e293b] dark:hover:bg-slate-700 transition-all shadow-sm w-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-500/50"
+                        data-nama="{{ $kades->nama }}"
+                        data-status="{{ $kades->status ?? 'Kepala Desa' }}"
+                        data-foto="{{ $kades->foto ? asset('storage/' . $kades->foto) : 'https://ui-avatars.com/api/?name='.urlencode($kades->nama).'&color=166534&background=f0fdf4' }}">
                         <div class="w-10 h-10 rounded-full bg-green-700 dark:bg-green-600 text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-sm">{{ $kades->urutan }}</div>
                         <div class="w-12 h-12 rounded-full overflow-hidden bg-slate-200 dark:bg-slate-700 shrink-0 border border-slate-200 dark:border-slate-600">
                             @if($kades->foto)
@@ -253,7 +256,7 @@
                             @endif
                             <p class="text-xs text-slate-500 dark:text-white mt-0.5">{{ $kades->masa_jabatan }}</p>
                         </div>
-                    </div>
+                    </button>
                     @endforeach
 
                 </div>
@@ -263,5 +266,75 @@
     </div>
 </section>
 
+<!-- Kades Modal -->
+<div id="kades-modal" class="fixed inset-0 z-[10000] flex items-center justify-center p-4 sm:p-0 opacity-0 pointer-events-none transition-opacity duration-300">
+    <!-- Backdrop -->
+    <div id="kades-modal-backdrop" class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm cursor-pointer"></div>
+    
+    <!-- Modal Content -->
+    <div class="relative bg-white dark:bg-slate-900 rounded-3xl shadow-2xl w-full max-w-sm overflow-hidden transform scale-95 opacity-0 transition-all duration-300 p-8 text-center" id="kades-modal-panel">
+        <button id="kades-modal-close" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 dark:text-slate-500 dark:hover:text-slate-300 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 p-2 rounded-full transition-colors focus:outline-none">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        
+        <div class="flex justify-center mb-5 mt-2">
+            <div class="w-32 h-32 sm:w-40 sm:h-40 shrink-0 aspect-square rounded-full overflow-hidden border-[4px] border-green-700 dark:border-green-600 shadow-xl relative flex items-center justify-center bg-slate-100 dark:bg-slate-800">
+                <img id="kades-modal-foto" src="" alt="Foto Kades" class="w-full h-full object-cover rounded-full">
+            </div>
+        </div>
+        
+        <span id="kades-modal-status" class="inline-block px-4 py-1.5 rounded-full bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-300 font-bold text-[10px] uppercase tracking-widest mb-3"></span>
+        
+        <h3 id="kades-modal-nama" class="text-3xl font-serif font-bold text-slate-900 dark:text-white mb-2"></h3>
+    </div>
+</div>
 
+@endsection
+
+@section('scripts')
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const kadesCards = document.querySelectorAll('.kades-card');
+        const modal = document.getElementById('kades-modal');
+        const modalPanel = document.getElementById('kades-modal-panel');
+        const backdrop = document.getElementById('kades-modal-backdrop');
+        const closeBtn = document.getElementById('kades-modal-close');
+        
+        const modalFoto = document.getElementById('kades-modal-foto');
+        const modalStatus = document.getElementById('kades-modal-status');
+        const modalNama = document.getElementById('kades-modal-nama');
+
+        function openKadesModal(nama, status, foto) {
+            modalNama.textContent = nama;
+            modalStatus.textContent = status ? status : 'Kepala Desa';
+            modalFoto.src = foto;
+            
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            setTimeout(() => {
+                modalPanel.classList.remove('scale-95', 'opacity-0');
+                modalPanel.classList.add('scale-100', 'opacity-100');
+            }, 10);
+        }
+
+        function closeKadesModal() {
+            modalPanel.classList.remove('scale-100', 'opacity-100');
+            modalPanel.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => { 
+                modal.classList.add('opacity-0', 'pointer-events-none'); 
+            }, 300);
+        }
+
+        kadesCards.forEach(card => {
+            card.addEventListener('click', function() {
+                const nama = this.getAttribute('data-nama');
+                const status = this.getAttribute('data-status');
+                const foto = this.getAttribute('data-foto');
+                openKadesModal(nama, status, foto);
+            });
+        });
+
+        closeBtn.addEventListener('click', closeKadesModal);
+        backdrop.addEventListener('click', closeKadesModal);
+    });
+</script>
 @endsection

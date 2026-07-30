@@ -41,8 +41,18 @@
             @enderror
         </div>
 
+        <!-- Tanggal Kegiatan -->
+        <div>
+            <label for="tanggal_kegiatan" class="block text-sm font-semibold text-slate-700 dark:text-slate-200 mb-1.5">Tanggal Kegiatan (Opsional)</label>
+            <input type="date" name="tanggal_kegiatan" id="tanggal_kegiatan" value="{{ old('tanggal_kegiatan', $galeri->tanggal_kegiatan) }}"
+                   class="w-full rounded-xl border-slate-200 dark:border-slate-700 focus:border-green-500 focus:ring-green-500 shadow-sm dark:bg-slate-800 dark:text-white dark:border-slate-700">
+            @error('tanggal_kegiatan')
+                <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
+            @enderror
+        </div>
+
         <!-- Gambar -->
-        <x-admin.image-upload-multiple name="gambar" label="Foto Galeri (Bisa Lebih Dari 1)" helper="Biarkan kosong jika tidak ingin menambah foto. Format: JPG, PNG maksimal 10MB per file." :currentImages="is_array($galeri->gambar) ? $galeri->gambar : (is_string($galeri->gambar) ? [$galeri->gambar] : [])" />
+        <x-admin.image-upload-multiple name="gambar" label="Foto Galeri (Bisa Lebih Dari 1)" helper="Biarkan kosong jika tidak ingin menambah foto. Format: JPG, PNG 1 mb maks per foto." :currentImages="is_array($galeri->gambar) ? $galeri->gambar : (is_string($galeri->gambar) ? [$galeri->gambar] : [])" />
 
         <div class="pt-4 flex justify-end">
             <button type="submit" class="bg-green-700 hover:bg-green-800 text-white px-6 py-2.5 rounded-xl font-semibold shadow-sm transition-colors">
