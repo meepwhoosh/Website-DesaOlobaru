@@ -8,6 +8,12 @@
         <h1 class="text-2xl font-bold text-slate-800 dark:text-white">Pesan Masuk</h1>
         <p class="text-sm text-slate-500 dark:text-slate-400">Kelola pesan dari form Hubungi Kami.</p>
     </div>
+    <div class="flex items-center gap-3">
+        <button type="button" id="bulkDeleteBtn" disabled class="opacity-50 cursor-not-allowed inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-5 py-2.5 rounded-xl font-semibold shadow-sm transition-all duration-200 hover:-translate-y-0.5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+            Hapus Terpilih
+        </button>
+    </div>
 </div>
 
 @if(session('success'))
@@ -16,11 +22,15 @@
     </div>
 @endif
 
+<form id="bulkDeleteForm" action="{{ route('admin.pesan.bulk-destroy') }}" method="POST">
+    @csrf
+    @method('DELETE')
 <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-sm border border-slate-200 dark:border-slate-700/50 overflow-hidden">
     <div class="overflow-x-auto">
         <table class="w-full text-left border-collapse">
             <thead>
                 <tr class="bg-slate-50 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 text-sm">
+                    <th class="w-10 px-6 py-4 font-medium"><input type="checkbox" class="selectAllCheckbox rounded border-slate-300 dark:border-slate-600 text-blue-600 shadow-sm focus:ring-blue-500 dark:bg-slate-700"></th>
                     <th class="px-6 py-4 font-medium text-slate-600 dark:text-slate-300">No</th>
                     <th class="px-6 py-4 font-medium text-slate-600 dark:text-slate-300">Pengirim</th>
                     <th class="px-6 py-4 font-medium text-slate-600 dark:text-slate-300">Subjek</th>
@@ -32,6 +42,9 @@
             <tbody class="divide-y divide-slate-200 dark:divide-slate-700">
                 @forelse($pesans as $pesan)
                 <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors {{ $pesan->status === 'Belum Dibaca' ? 'bg-blue-50/30 dark:bg-blue-900/10' : '' }}">
+                    <td class="px-6 py-4">
+                        <input type="checkbox" name="ids[]" value="{{ $pesan->id }}" class="item-checkbox rounded border-slate-300 dark:border-slate-600 text-blue-600 shadow-sm focus:ring-blue-500 dark:bg-slate-700">
+                    </td>
                     <td class="px-6 py-4 text-sm">{{ $loop->iteration }}</td>
                     <td class="px-6 py-4">
                         <div class="font-medium text-slate-900 dark:text-white">{{ $pesan->nama_pengirim }}</div>
@@ -66,7 +79,7 @@
                 </tr>
                 @empty
                 <tr>
-                    <td colspan="6" class="px-6 py-8 text-center text-slate-500">
+                    <td colspan="7" class="px-6 py-8 text-center text-slate-500">
                         Belum ada pesan masuk.
                     </td>
                 </tr>
@@ -75,4 +88,5 @@
         </table>
     </div>
 </div>
+</form>
 @endsection

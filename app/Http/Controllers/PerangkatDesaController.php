@@ -83,4 +83,22 @@ class PerangkatDesaController extends Controller
 
         return redirect()->route('admin.perangkat.index')->with('success', 'Perangkat Desa berhasil dihapus!');
     }
+
+    public function bulkDestroy(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:perangkat_desas,id'
+        ]);
+
+        $perangkats = PerangkatDesa::whereIn('id', $request->ids)->get();
+        foreach ($perangkats as $perangkat) {
+            if ($perangkat->gambar && Storage::disk('public')->exists($perangkat->gambar)) {
+                Storage::disk('public')->delete($perangkat->gambar);
+            }
+            $perangkat->delete();
+        }
+
+        return redirect()->route('admin.perangkat.index')->with('success', 'Data Perangkat Desa terpilih berhasil dihapus!');
+    }
 }

@@ -119,4 +119,28 @@ class AdminController extends Controller
 
         return redirect()->route('admin.berita.index')->with('success', 'Berita berhasil dihapus!');
     }
+
+    public function beritaBulkDestroy(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:beritas,id'
+        ]);
+
+        $beritas = Berita::whereIn('id', $request->ids)->get();
+        foreach ($beritas as $berita) {
+            if (is_array($berita->gambar)) {
+                foreach ($berita->gambar as $g) {
+                    if (\Illuminate\Support\Facades\Storage::disk('public')->exists($g)) {
+                        \Illuminate\Support\Facades\Storage::disk('public')->delete($g);
+                    }
+                }
+            } elseif (is_string($berita->gambar) && \Illuminate\Support\Facades\Storage::disk('public')->exists($berita->gambar)) {
+                \Illuminate\Support\Facades\Storage::disk('public')->delete($berita->gambar);
+            }
+            $berita->delete();
+        }
+
+        return redirect()->route('admin.berita.index')->with('success', 'Berita terpilih berhasil dihapus!');
+    }
 }

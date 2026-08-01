@@ -242,6 +242,84 @@
             });
         });
     </script>
+
+    <!-- Bulk Delete Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const selectAllCheckboxes = document.querySelectorAll('.selectAllCheckbox');
+            const itemCheckboxes = document.querySelectorAll('.item-checkbox');
+            const bulkDeleteBtn = document.getElementById('bulkDeleteBtn');
+            const bulkDeleteForm = document.getElementById('bulkDeleteForm');
+
+            function updateBulkDeleteBtn() {
+                if (!bulkDeleteBtn) return;
+                const checkedCount = document.querySelectorAll('.item-checkbox:checked').length;
+                if (checkedCount > 0) {
+                    bulkDeleteBtn.disabled = false;
+                    bulkDeleteBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                } else {
+                    bulkDeleteBtn.disabled = true;
+                    bulkDeleteBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                }
+            }
+
+            selectAllCheckboxes.forEach(selectAll => {
+                selectAll.addEventListener('change', function() {
+                    // Find checkboxes in the same table
+                    const table = this.closest('table');
+                    if(table) {
+                        const tableCheckboxes = table.querySelectorAll('.item-checkbox');
+                        tableCheckboxes.forEach(cb => cb.checked = this.checked);
+                    } else {
+                        itemCheckboxes.forEach(cb => cb.checked = this.checked);
+                    }
+                    updateBulkDeleteBtn();
+                });
+            });
+
+            itemCheckboxes.forEach(cb => {
+                cb.addEventListener('change', function() {
+                    const table = this.closest('table');
+                    if (table) {
+                        const tableCheckboxes = table.querySelectorAll('.item-checkbox');
+                        const allChecked = table.querySelectorAll('.item-checkbox:checked').length === tableCheckboxes.length;
+                        const selectAll = table.querySelector('.selectAllCheckbox');
+                        if (selectAll) selectAll.checked = allChecked;
+                    }
+                    updateBulkDeleteBtn();
+                });
+            });
+
+            if (bulkDeleteBtn && bulkDeleteForm) {
+                bulkDeleteBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    Swal.fire({
+                        title: 'Konfirmasi Hapus Massal',
+                        text: 'Apakah Anda yakin ingin menghapus data yang dipilih?',
+                        icon: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#ef4444', 
+                        cancelButtonColor: '#64748b',  
+                        confirmButtonText: 'Ya, Hapus!',
+                        cancelButtonText: 'Batal',
+                        background: document.documentElement.classList.contains('dark') ? '#1e293b' : '#ffffff',
+                        color: document.documentElement.classList.contains('dark') ? '#f1f5f9' : '#0f172a',
+                        customClass: {
+                            popup: 'rounded-2xl border dark:border-slate-700/50',
+                            confirmButton: 'px-5 py-2.5 rounded-xl font-bold',
+                            cancelButton: 'px-5 py-2.5 rounded-xl font-bold'
+                        }
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            bulkDeleteForm.submit();
+                        }
+                    });
+                });
+            }
+            
+            updateBulkDeleteBtn();
+        });
+    </script>
     <!-- Modals Stack -->
     @stack('modals')
 

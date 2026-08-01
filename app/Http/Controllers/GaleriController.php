@@ -101,4 +101,28 @@ class GaleriController extends Controller
 
         return redirect()->route('admin.galeri.index')->with('success', 'Foto Galeri berhasil dihapus');
     }
+
+    public function bulkDestroy(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:galeris,id'
+        ]);
+
+        $galeris = Galeri::whereIn('id', $request->ids)->get();
+        foreach ($galeris as $galeri) {
+            if (is_array($galeri->gambar)) {
+                foreach ($galeri->gambar as $g) {
+                    if (\Illuminate\Support\Facades\Storage::disk('public')->exists($g)) {
+                        \Illuminate\Support\Facades\Storage::disk('public')->delete($g);
+                    }
+                }
+            } elseif (is_string($galeri->gambar) && \Illuminate\Support\Facades\Storage::disk('public')->exists($galeri->gambar)) {
+                \Illuminate\Support\Facades\Storage::disk('public')->delete($galeri->gambar);
+            }
+            $galeri->delete();
+        }
+
+        return redirect()->route('admin.galeri.index')->with('success', 'Foto Galeri terpilih berhasil dihapus');
+    }
 }

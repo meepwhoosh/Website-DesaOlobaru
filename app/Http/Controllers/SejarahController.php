@@ -53,4 +53,16 @@ class SejarahController extends Controller
         $sejarah->delete();
         return redirect()->route('admin.sejarah.index')->with('success', 'Data Sejarah berhasil dihapus.');
     }
+
+    public function bulkDestroy(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:sejarahs,id'
+        ]);
+
+        Sejarah::whereIn('id', $request->ids)->delete();
+
+        return redirect()->route('admin.sejarah.index')->with('success', 'Data Sejarah terpilih berhasil dihapus.');
+    }
 }

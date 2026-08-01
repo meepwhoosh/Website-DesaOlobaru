@@ -78,4 +78,22 @@ class MantanKadesController extends Controller
         $mantankade->delete();
         return redirect()->route('admin.mantankades.index')->with('success', 'Data Riwayat Kades berhasil dihapus.');
     }
+
+    public function bulkDestroy(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:mantan_kades,id'
+        ]);
+
+        $kades = MantanKades::whereIn('id', $request->ids)->get();
+        foreach ($kades as $k) {
+            if ($k->foto && Storage::disk('public')->exists($k->foto)) {
+                Storage::disk('public')->delete($k->foto);
+            }
+            $k->delete();
+        }
+
+        return redirect()->route('admin.mantankades.index')->with('success', 'Data Riwayat Kades terpilih berhasil dihapus.');
+    }
 }

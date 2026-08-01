@@ -160,19 +160,11 @@
         if (!slider) return;
         const slideWidth = slider.clientWidth;
         
-        slider.scrollBy({ left: slideWidth, behavior: 'smooth' });
-        
-        setTimeout(() => {
-            if (slider.scrollLeft >= slider.scrollWidth - slideWidth - 5) {
-                slider.style.scrollSnapType = 'none';
-                slider.scrollTo({ left: 0, behavior: 'auto' });
-                requestAnimationFrame(() => {
-                    requestAnimationFrame(() => {
-                        slider.style.scrollSnapType = 'x mandatory';
-                    });
-                });
-            }
-        }, 800);
+        if (slider.scrollLeft >= slider.scrollWidth - slideWidth - 5) {
+            slider.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+            slider.scrollBy({ left: slideWidth, behavior: 'smooth' });
+        }
     }
 
     function openGaleriModal(index) {
@@ -233,10 +225,7 @@
                 }
             });
             
-            if (gambarArr.length > 1) {
-                const clone = slider.children[0].cloneNode(true);
-                slider.appendChild(clone);
-            }
+            // Clone dihapus agar kembali ke awal secara smooth (rewind)
             
             imgContainer.classList.remove('hidden');
             
@@ -263,12 +252,28 @@
                 };
 
                 clearInterval(galeriCarouselInterval);
-                galeriCarouselInterval = setInterval(autoSlideGaleri, 3000);
+                galeriCarouselInterval = setInterval(autoSlideGaleri, 4000);
+                
+                // Jeda otomatis (Pause) ketika ditekan ditahan (touch) atau disentuh kursor (hover)
+                imgContainer.onmouseenter = () => clearInterval(galeriCarouselInterval);
+                imgContainer.onmouseleave = () => {
+                    clearInterval(galeriCarouselInterval);
+                    galeriCarouselInterval = setInterval(autoSlideGaleri, 4000);
+                };
+                imgContainer.ontouchstart = () => clearInterval(galeriCarouselInterval);
+                imgContainer.ontouchend = () => {
+                    clearInterval(galeriCarouselInterval);
+                    galeriCarouselInterval = setInterval(autoSlideGaleri, 4000);
+                };
             } else {
                 btnPrev.classList.add('hidden');
                 btnNext.classList.add('hidden');
                 slider.onscroll = null;
                 clearInterval(galeriCarouselInterval);
+                imgContainer.onmouseenter = null;
+                imgContainer.onmouseleave = null;
+                imgContainer.ontouchstart = null;
+                imgContainer.ontouchend = null;
             }
         } else {
             imgContainer.classList.add('hidden');
@@ -289,36 +294,21 @@
         const slideWidth = slider.clientWidth;
         
         if (direction === 1) {
-            slider.scrollBy({ left: slideWidth, behavior: 'smooth' });
-            setTimeout(() => {
-                if (slider.scrollLeft >= slider.scrollWidth - slideWidth - 5) {
-                    slider.style.scrollSnapType = 'none';
-                    slider.scrollTo({ left: 0, behavior: 'auto' });
-                    requestAnimationFrame(() => {
-                        requestAnimationFrame(() => {
-                            slider.style.scrollSnapType = 'x mandatory';
-                        });
-                    });
-                }
-            }, 800);
+            if (slider.scrollLeft >= slider.scrollWidth - slideWidth - 5) {
+                slider.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                slider.scrollBy({ left: slideWidth, behavior: 'smooth' });
+            }
         } else if (direction === -1) {
             if (slider.scrollLeft <= 5) {
-                slider.style.scrollSnapType = 'none';
-                slider.scrollTo({ left: slider.scrollWidth - slideWidth, behavior: 'auto' });
-                
-                requestAnimationFrame(() => {
-                    requestAnimationFrame(() => {
-                        slider.style.scrollSnapType = 'x mandatory';
-                        slider.scrollBy({ left: -slideWidth, behavior: 'smooth' });
-                    });
-                });
+                slider.scrollTo({ left: slider.scrollWidth, behavior: 'smooth' });
             } else {
                 slider.scrollBy({ left: -slideWidth, behavior: 'smooth' });
             }
         }
 
         clearInterval(galeriCarouselInterval);
-        galeriCarouselInterval = setInterval(autoSlideGaleri, 3000);
+        galeriCarouselInterval = setInterval(autoSlideGaleri, 4000);
     }
 
     function navigateEntry(direction) {

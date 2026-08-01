@@ -8,10 +8,16 @@
         <h1 class="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">Struktur Organisasi</h1>
         <p class="text-slate-500 dark:text-slate-300 dark:text-white mt-1">Kelola data aparatur Pemerintah Desa.</p>
     </div>
-    <a href="{{ route('admin.perangkat.create') }}" class="inline-flex items-center justify-center gap-2 bg-green-700 hover:bg-green-800 text-white px-5 py-2.5 rounded-xl font-semibold shadow-sm transition-all duration-200 hover:-translate-y-0.5">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
-        Tambah Anggota
-    </a>
+    <div class="flex items-center gap-3">
+        <button type="button" id="bulkDeleteBtn" disabled class="opacity-50 cursor-not-allowed inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-5 py-2.5 rounded-xl font-semibold shadow-sm transition-all duration-200 hover:-translate-y-0.5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+            Hapus Terpilih
+        </button>
+        <a href="{{ route('admin.perangkat.create') }}" class="inline-flex items-center justify-center gap-2 bg-green-700 hover:bg-green-800 text-white px-5 py-2.5 rounded-xl font-semibold shadow-sm transition-all duration-200 hover:-translate-y-0.5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+            Tambah Anggota
+        </a>
+    </div>
 </div>
 
 @if(session('success'))
@@ -31,6 +37,9 @@
     $bpd = $perangkats->where('kategori', 'bpd');
 @endphp
 
+<form id="bulkDeleteForm" action="{{ route('admin.perangkat.bulk-destroy') }}" method="POST">
+    @csrf
+    @method('DELETE')
     <!-- Bar/Seksi PEMDES -->
     <div class="mb-4">
         <h2 class="text-xl font-bold text-slate-900 dark:text-white">Pemerintah Desa (Pemdes)</h2>
@@ -41,6 +50,7 @@
                 <table class="w-full text-left border-collapse">
                     <thead>
                         <tr class="bg-slate-50 dark:bg-[#0f0f0f] dark:bg-[#141414] border-b border-slate-200 dark:border-white/10 text-sm text-slate-600 dark:text-slate-300 dark:text-white uppercase tracking-wider">
+                            <th class="w-10 px-6 py-4 font-semibold"><input type="checkbox" class="selectAllCheckbox rounded border-slate-300 dark:border-slate-600 text-blue-600 shadow-sm focus:ring-blue-500 dark:bg-slate-700"></th>
                             <th class="px-6 py-4 font-semibold">Profil</th>
                             <th class="px-6 py-4 font-semibold">Nama & Jabatan</th>
                             <th class="px-6 py-4 font-semibold text-right">Aksi</th>
@@ -49,6 +59,9 @@
                     <tbody class="divide-y divide-slate-200 dark:divide-white/10">
                         @forelse($pemdes as $perangkat)
                         <tr class="hover:bg-slate-50 dark:bg-[#0f0f0f] dark:bg-slate-800 dark:hover:bg-[#202020] transition-colors">
+                            <td class="px-6 py-4">
+                                <input type="checkbox" name="ids[]" value="{{ $perangkat->id }}" class="item-checkbox rounded border-slate-300 dark:border-slate-600 text-blue-600 shadow-sm focus:ring-blue-500 dark:bg-slate-700">
+                            </td>
                             <td class="px-6 py-4">
                                 @if($perangkat->gambar)
                                     <img src="{{ asset('storage/' . $perangkat->gambar) }}" alt="{{ $perangkat->nama }}" class="w-12 h-12 rounded-full object-cover border border-slate-200 dark:border-white/10">
@@ -76,7 +89,7 @@
                         </tr>
                         @empty
                         <tr>
-                            <td colspan="3" class="px-6 py-12 text-center text-slate-500 dark:text-slate-300 dark:text-white">
+                            <td colspan="4" class="px-6 py-12 text-center text-slate-500 dark:text-slate-300 dark:text-white">
                                 Belum ada data struktur Pemerintah Desa.
                             </td>
                         </tr>
@@ -97,6 +110,7 @@
                 <table class="w-full text-left border-collapse">
                     <thead>
                         <tr class="bg-slate-50 dark:bg-[#0f0f0f] dark:bg-[#141414] border-b border-slate-200 dark:border-white/10 text-sm text-slate-600 dark:text-slate-300 dark:text-white uppercase tracking-wider">
+                            <th class="w-10 px-6 py-4 font-semibold"><input type="checkbox" class="selectAllCheckbox rounded border-slate-300 dark:border-slate-600 text-blue-600 shadow-sm focus:ring-blue-500 dark:bg-slate-700"></th>
                             <th class="px-6 py-4 font-semibold">Profil</th>
                             <th class="px-6 py-4 font-semibold">Nama & Jabatan</th>
                             <th class="px-6 py-4 font-semibold text-right">Aksi</th>
@@ -105,6 +119,9 @@
                     <tbody class="divide-y divide-slate-200 dark:divide-white/10">
                         @forelse($bpd as $perangkat)
                         <tr class="hover:bg-slate-50 dark:bg-[#0f0f0f] dark:bg-slate-800 dark:hover:bg-[#202020] transition-colors">
+                            <td class="px-6 py-4">
+                                <input type="checkbox" name="ids[]" value="{{ $perangkat->id }}" class="item-checkbox rounded border-slate-300 dark:border-slate-600 text-blue-600 shadow-sm focus:ring-blue-500 dark:bg-slate-700">
+                            </td>
                             <td class="px-6 py-4">
                                 @if($perangkat->gambar)
                                     <img src="{{ asset('storage/' . $perangkat->gambar) }}" alt="{{ $perangkat->nama }}" class="w-12 h-12 rounded-full object-cover border border-slate-200 dark:border-white/10">
@@ -132,7 +149,7 @@
                         </tr>
                         @empty
                         <tr>
-                            <td colspan="3" class="px-6 py-12 text-center text-slate-500 dark:text-slate-300 dark:text-white">
+                            <td colspan="4" class="px-6 py-12 text-center text-slate-500 dark:text-slate-300 dark:text-white">
                                 Belum ada data struktur BPD.
                             </td>
                         </tr>
@@ -142,4 +159,5 @@
             </div>
         </div>
     </div>
+</form>
 @endsection

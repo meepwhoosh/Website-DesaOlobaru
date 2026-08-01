@@ -65,4 +65,16 @@ class PesanController extends Controller
 
         return redirect()->route('admin.pesan.index')->with('success', 'Pesan berhasil dihapus!');
     }
+
+    public function bulkDestroy(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:pesans,id'
+        ]);
+
+        \App\Models\Pesan::whereIn('id', $request->ids)->delete();
+
+        return redirect()->route('admin.pesan.index')->with('success', 'Pesan terpilih berhasil dihapus!');
+    }
 }

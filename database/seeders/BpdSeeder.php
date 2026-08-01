@@ -14,31 +14,31 @@ class BpdSeeder extends Seeder
     {
         $bpd = [
             [
-                'nama' => 'Drs. Suharwan',
+                'nama' => 'DRS. SUHARWAN',
                 'jabatan' => 'Ketua BPD',
                 'kategori' => 'bpd',
-                'gambar' => null,
+                'gambar' => 'perangkat/BPD/Suharwan .jpeg',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'nama' => 'Novi Frangki',
+                'nama' => 'NOVI FRANGKI',
                 'jabatan' => 'Wakil Ketua BPD',
                 'kategori' => 'bpd',
-                'gambar' => null,
+                'gambar' => 'perangkat/BPD/Novi-franki .jpeg',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'nama' => 'Aris Andi Lolo',
+                'nama' => 'ARIS ANDI LOLO',
                 'jabatan' => 'Sekretaris',
                 'kategori' => 'bpd',
-                'gambar' => null,
+                'gambar' => 'perangkat/BPD/Aris-andi-lolo.jpeg',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'nama' => 'Bonar Palari',
+                'nama' => 'BONAR PALARI',
                 'jabatan' => 'Anggota',
                 'kategori' => 'bpd',
                 'gambar' => null,
@@ -46,7 +46,7 @@ class BpdSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'nama' => 'Yuliani',
+                'nama' => 'YULIANI',
                 'jabatan' => 'Anggota',
                 'kategori' => 'bpd',
                 'gambar' => null,
@@ -54,7 +54,7 @@ class BpdSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'nama' => 'Mashun',
+                'nama' => 'MASHUN',
                 'jabatan' => 'Anggota',
                 'kategori' => 'bpd',
                 'gambar' => null,
@@ -62,7 +62,7 @@ class BpdSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'nama' => 'Nasrin',
+                'nama' => 'NASRIN',
                 'jabatan' => 'Anggota',
                 'kategori' => 'bpd',
                 'gambar' => null,

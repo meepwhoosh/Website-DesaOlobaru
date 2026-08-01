@@ -41,12 +41,14 @@ Route::prefix('admin_desa_olobaru')->group(function () {
         Route::post('/berita', [AdminController::class, 'beritaStore'])->name('admin.berita.store');
         Route::get('/berita/{id}/edit', [AdminController::class, 'beritaEdit'])->name('admin.berita.edit');
         Route::put('/berita/{id}', [AdminController::class, 'beritaUpdate'])->name('admin.berita.update');
+        Route::delete('/berita/bulk-delete', [AdminController::class, 'beritaBulkDestroy'])->name('admin.berita.bulk-destroy');
         Route::delete('/berita/{id}', [AdminController::class, 'beritaDestroy'])->name('admin.berita.destroy');
         
         // Riwayat Pengunjung
         Route::get('/riwayat-pengunjung', [\App\Http\Controllers\VisitorController::class, 'index'])->name('admin.pengunjung.index');
         Route::delete('/riwayat-pengunjung/reset', [\App\Http\Controllers\VisitorController::class, 'reset'])->name('admin.pengunjung.reset');
         // Perangkat Desa CRUD
+        Route::delete('/perangkat/bulk-delete', [App\Http\Controllers\PerangkatDesaController::class, 'bulkDestroy'])->name('admin.perangkat.bulk-destroy');
         Route::resource('perangkat', App\Http\Controllers\PerangkatDesaController::class, [
             'names' => [
                 'index' => 'admin.perangkat.index',
@@ -60,6 +62,7 @@ Route::prefix('admin_desa_olobaru')->group(function () {
 
 
         // Sejarah CRUD
+        Route::delete('/sejarah/bulk-delete', [App\Http\Controllers\SejarahController::class, 'bulkDestroy'])->name('admin.sejarah.bulk-destroy');
         Route::resource('sejarah', App\Http\Controllers\SejarahController::class, [
             'names' => [
                 'index' => 'admin.sejarah.index',
@@ -72,6 +75,7 @@ Route::prefix('admin_desa_olobaru')->group(function () {
         ]);
 
         // Mantan Kades CRUD
+        Route::delete('/mantankades/bulk-delete', [App\Http\Controllers\MantanKadesController::class, 'bulkDestroy'])->name('admin.mantankades.bulk-destroy');
         Route::resource('mantankades', App\Http\Controllers\MantanKadesController::class, [
             'names' => [
                 'index' => 'admin.mantankades.index',
@@ -84,6 +88,7 @@ Route::prefix('admin_desa_olobaru')->group(function () {
         ]);
 
         // Misi CRUD
+        Route::delete('/misi/bulk-delete', [App\Http\Controllers\MisiController::class, 'bulkDestroy'])->name('admin.misi.bulk-destroy');
         Route::resource('misi', App\Http\Controllers\MisiController::class, [
             'names' => [
                 'index' => 'admin.misi.index',
@@ -96,6 +101,7 @@ Route::prefix('admin_desa_olobaru')->group(function () {
         ]);
 
         // Galeri CRUD
+        Route::delete('/galeri/bulk-delete', [App\Http\Controllers\GaleriController::class, 'bulkDestroy'])->name('admin.galeri.bulk-destroy');
         Route::resource('galeri', App\Http\Controllers\GaleriController::class, [
             'names' => [
                 'index' => 'admin.galeri.index',
@@ -111,6 +117,7 @@ Route::prefix('admin_desa_olobaru')->group(function () {
         Route::post('/data-desa/import', [DataDesaController::class, 'import'])->name('admin.data-desa.import');
         Route::get('/data-desa/download-excel/{filename}', [DataDesaController::class, 'downloadExcel'])->name('admin.data-desa.download-excel');
         Route::delete('/data-desa/delete-excel/{filename}', [DataDesaController::class, 'deleteExcel'])->name('admin.data-desa.delete-excel');
+        Route::delete('/data-desa/bulk-delete', [DataDesaController::class, 'bulkDestroy'])->name('admin.data-desa.bulk-destroy');
         Route::resource('data-desa', DataDesaController::class, [
             'names' => [
                 'index' => 'admin.data-desa.index',
@@ -130,6 +137,7 @@ Route::prefix('admin_desa_olobaru')->group(function () {
         Route::delete('/apbdes/delete-excel/{filename}', [App\Http\Controllers\ApbdesController::class, 'deleteExcel'])->name('admin.apbdes.delete-excel');
 
         // Pesan Masuk CRUD
+        Route::delete('/pesan/bulk-delete', [App\Http\Controllers\PesanController::class, 'bulkDestroy'])->name('admin.pesan.bulk-destroy');
         Route::resource('pesan', App\Http\Controllers\PesanController::class, [
             'only' => ['index', 'show', 'destroy'],
             'names' => [

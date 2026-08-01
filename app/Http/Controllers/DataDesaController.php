@@ -128,6 +128,18 @@ class DataDesaController extends Controller
         return redirect()->route('admin.data-desa.index')->with('success', 'Data Penduduk berhasil dihapus.');
     }
 
+    public function bulkDestroy(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:data_desas,id'
+        ]);
+
+        DataDesa::whereIn('id', $request->ids)->delete();
+
+        return redirect()->route('admin.data-desa.index')->with('success', 'Data Penduduk terpilih berhasil dihapus.');
+    }
+
     public function import(Request $request)
     {
         $request->validate([

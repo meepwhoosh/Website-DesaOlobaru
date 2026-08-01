@@ -51,4 +51,16 @@ class MisiController extends Controller
         $misi->delete();
         return redirect()->route('admin.misi.index')->with('success', 'Data Misi berhasil dihapus.');
     }
+
+    public function bulkDestroy(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:misis,id'
+        ]);
+
+        Misi::whereIn('id', $request->ids)->delete();
+
+        return redirect()->route('admin.misi.index')->with('success', 'Data Misi terpilih berhasil dihapus.');
+    }
 }
